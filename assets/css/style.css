@@ -18,6 +18,17 @@
     text-align: center;
 }
 
+.section-heading {
+    color: #20234E;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 30px;
+    text-align: center;
+}
+
 /* Navbar */
 
 .navbar {
