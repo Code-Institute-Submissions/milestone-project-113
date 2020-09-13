@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Text Styling */
+
+.paragraph {
+    font-family: "Montserrat", sans-serif;
+    margin: 30px;
+}
+
+.paragraph-white {
+    color: #fafafa;
+}
+
+/* Navbar */
+
 .navbar {
     background-color: #20234E;
 }
@@ -44,6 +57,47 @@
 
 .hvr-underline-from-center:before {
     background: transparent;   
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: #20234E;
+    padding: 0;
+}
+
+.social-media-icons {
+    padding: 0;
+    text-align: center;
+    font-size: 0;
+    margin: 30px;
+}
+
+.social-media-icons li {
+    width: 25%;
+}
+
+.social-media-icons li i {
+    font-size: 20px;
+    color: #fafafa;
+    text-align: center;
+}
+
+.social-media-icons li i:hover {
+    color: #00A6E6;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.promoted {
+    margin-top: 0;
 }
 
 @media (min-width: 992px) {
