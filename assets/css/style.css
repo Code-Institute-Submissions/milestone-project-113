@@ -11,6 +11,13 @@
     color: #fafafa;
 }
 
+.modal-title {
+    font-family: "Montserrat", sans-serif;
+    color: #20234E;
+    width: 100%;
+    text-align: center;
+}
+
 /* Navbar */
 
 .navbar {
@@ -59,10 +66,41 @@
     background: transparent;   
 }
 
+/* Contact Form */
+
+.contact-form {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-form label {
+    margin-bottom: 15px;
+    color: #20234E;
+}
+
+ .contact-form input {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    background-color: #fafafa;
+    border: 2px solid #20234E;
+    color: #20234E;
+    border-radius: 23px;
+    width: 100px;
+    font-family: "Montserrat", sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #20234E;
+    color: #fafafa;
+}
+
 /* Footer */
 
 .footer-container {
     background-color: #20234E;
+    color: #fafafa;
     padding: 0;
 }
 

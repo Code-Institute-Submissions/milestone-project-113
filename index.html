@@ -67,9 +67,77 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hvr-underline-from-center" href="#">
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="#ContactUsForm"
+                    data-toggle="modal"
+                    data-target="#contactUsForm"
+                  >
                     Contact Us
                   </a>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="contactUsForm"
+                    tabindex="-1"
+                    aria-labelledby="contactUsForm"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="contactUs">
+                            Contact Us
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group contact-form">
+                              <label for="name">Name</label>
+                              <input
+                                type="firstName"
+                                class="form-control"
+                                id="name"
+                                aria-describedby="Name"
+                                placeholder="Enter name"
+                                required
+                              />
+                              <label for="emailAddress">Email Address</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="emailAddress"
+                                aria-describedby="emailAddress"
+                                placeholder="Enter email address"
+                                required
+                              />
+                              <label for="message-text" class="col-form-label"
+                                >Message:</label
+                              >
+                              <textarea
+                                class="form-control"
+                                id="message-text"
+                                rows="5"
+                                placeholder="Enter message"
+                                required
+                              ></textarea>
+                            </div>
+                            <button type="submit" class="btn">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -119,7 +187,8 @@
         <!--Social media icons end-->
         <div class="col-12">
           <p class="paragraph paragraph-white promoted text-center">
-            Promoted by Jonathan O'Donnell on behalf of Discover Australia, GPO Box 2721, Sydney, NSW, 1006.
+            Promoted by Jonathan O'Donnell on behalf of Discover Australia, GPO
+            Box 2721, Sydney, NSW, 1006.
           </p>
         </div>
       </div>
