@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<title>Sydney</title>
-</head>
-
-<body>
-	<header>
-		<div class="row no-gutters">
-			<div class="col-12">
-				<!--Navbar start-->
-				<nav class="navbar navbar-expand-lg navbar-dark">
-					<a class="navbar-brand" href="index.html">
-						<img
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sydney</title>
+  </head>
+  <body>
+    <header>
+      <div class="row no-gutters">
+        <div class="col-12">
+          <!--Navbar start-->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img
                 src="assets/images/brand/logo.png"
                 alt="logo image of a kangaroo and the text Discover Australia"
               />
             </a>
-						<button
+            <button
               class="navbar-toggler"
               type="button"
               data-toggle="collapse"
@@ -34,36 +41,55 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link active" href="index.html">Home
-										<span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="sydney.html">Sydney</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="melbourne.html">Melbourne</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="brisbane.html">Brisbane</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="#ContactUsForm"
-										data-toggle="modal" data-target="#contactUsForm">
-										Contact Us
-									</a>
-									<!-- Modal -->
-									<div class="modal fade" id="contactUsForm" tabindex="-1"
-										aria-labelledby="contactUsForm" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h5 class="modal-title" id="contactUs">
-														Contact Us
-													</h5>
-													<button
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hvr-underline-from-center" href="sydney.html"
+                    >Sydney</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hvr-underline-from-center" href="melbourne.html"
+                    >Melbourne</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hvr-underline-from-center" href="brisbane.html"
+                    >Brisbane</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="#ContactUsForm"
+                    data-toggle="modal"
+                    data-target="#contactUsForm"
+                  >
+                    Contact Us
+                  </a>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="contactUsForm"
+                    tabindex="-1"
+                    aria-labelledby="contactUsForm"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="contactUs">
+                            Contact Us
+                          </h5>
+                          <button
                             type="button"
                             class="close"
                             data-dismiss="modal"
@@ -71,12 +97,12 @@
                           >
                             <span aria-hidden="true">&times;</span>
                           </button>
-												</div>
-												<div class="modal-body">
-													<form>
-														<div class="form-group contact-form">
-															<label for="name">Name</label>
-															<input
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group contact-form">
+                              <label for="name">Name</label>
+                              <input
                                 type="firstName"
                                 class="form-control"
                                 id="name"
@@ -84,8 +110,8 @@
                                 placeholder="Enter name"
                                 required
                               />
-															<label for="emailAddress">Email Address</label>
-															<input
+                              <label for="emailAddress">Email Address</label>
+                              <input
                                 type="email"
                                 class="form-control"
                                 id="emailAddress"
@@ -93,38 +119,39 @@
                                 placeholder="Enter email address"
                                 required
                               />
-															<label for="message-text" class="col-form-label"
-                                >Message:</label>
-															<textarea
+                              <label for="message-text" class="col-form-label"
+                                >Message:</label
+                              >
+                              <textarea
                                 class="form-control"
                                 id="message-text"
                                 rows="5"
                                 placeholder="Enter message"
                                 required
                               ></textarea>
-														</div>
-														<button type="submit" class="btn">
+                            </div>
+                            <button type="submit" class="btn">
                               Submit
                             </button>
-													</form>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-				</nav>
-				<!--Navbar end-->
-			</div>
-		</div>
-	</header>
-	<section>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!--Navbar end-->
+        </div>
+      </div>
+    </header>
+    <section>
         <!--Hero Image start-->
 		<div class="row no-gutters">
 			<div class="col-12">
                 <!--Image from https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_(3)_2019-06-21.jpg-->
-				<img class="hero-image sydney-hero-image" src="assets/images/sydney.jpg" alt="Image of Sydney Harbour">
+				<img class="hero-image melbourne-hero-image" src="assets/images/sydney.jpg" alt="Image of Sydney Harbour">
 			</div>
 		</div>
         <!--Hero Image end-->
@@ -135,62 +162,67 @@
             </div>
         </div>
         <!--Section Heading end-->
-	</section>
-	<footer class="container-fluid footer-container">
-		<div class="row no-gutters">
-			<div class="col-12 col-md-6 offset-md-3">
-				<!--Social media icons start-->
-				<div class="social-media-icons">
-					<ul class="list-inline no-gutters">
-						<li class="col-3 list-inline-item">
-							<a href="https://www.facebook.com" target="_blank">
-								<!--Code for icons from https://fontawesome.com/icons/facebook?style=brands-->
-								<i class="fab fa-facebook hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="col-3 list-inline-item">
-							<a href="https://www.twitter.com" target="_blank">
-								<!--Code for icons from https://fontawesome.com/icons/twitter?style=brands-->
-								<i class="fab fa-twitter hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="col-3 list-inline-item">
-							<a href="https://www.instagram.com" target="_blank">
-								<!--Code for icons from https://fontawesome.com/icons/instagram?style=brands-->
-								<i class="fab fa-instagram hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
-						<li class="col-3 list-inline-item">
-							<a href="https://www.youtube.com" target="_blank">
-								<!--Code for icon from https://fontawesome.com/icons/youtube?style=brands-->
-								<i class="fab fa-youtube hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">YouTube</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!--Social media icons end-->
-			<div class="col-12">
-				<p class="paragraph paragraph-white promoted text-center">
-					Promoted by Jonathan O'Donnell on behalf of Discover Australia, GPO
-					Box 2721, Sydney, NSW, 1006.
-				</p>
-			</div>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-	</script>
-</body>
-
+    </section>
+    <footer class="container-fluid footer-container">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-6 offset-md-3">
+          <!--Social media icons start-->
+          <div class="social-media-icons">
+            <ul class="list-inline no-gutters">
+              <li class="col-3 list-inline-item">
+                <a href="https://www.facebook.com" target="_blank">
+                  <!--Code for icons from https://fontawesome.com/icons/facebook?style=brands-->
+                  <i class="fab fa-facebook hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="col-3 list-inline-item">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!--Code for icons from https://fontawesome.com/icons/twitter?style=brands-->
+                  <i class="fab fa-twitter hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+              <li class="col-3 list-inline-item">
+                <a href="https://www.instagram.com" target="_blank">
+                  <!--Code for icons from https://fontawesome.com/icons/instagram?style=brands-->
+                  <i class="fab fa-instagram hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li class="col-3 list-inline-item">
+                <a href="https://www.youtube.com" target="_blank">
+                  <!--Code for icon from https://fontawesome.com/icons/youtube?style=brands-->
+                  <i class="fab fa-youtube hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Social media icons end-->
+        <div class="col-12">
+          <p class="paragraph paragraph-white promoted text-center">
+            Promoted by Jonathan O'Donnell on behalf of Discover Australia, GPO
+            Box 2721, Sydney, NSW, 1006.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
