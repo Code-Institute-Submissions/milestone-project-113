@@ -175,16 +175,36 @@
             </div>
         </div>
         <!--Section Heading end-->
-        <!--Map start-->
+        <!--Map and dropdown container start-->
       <div class="container">
         <div class="row no-gutters">
-            <div class="col-12">
-                <!--Code to set margins to auto from https://getbootstrap.com/docs/4.5/utilities/spacing/#horizontal-centering-->
-                <div id="map" class="mx-auto"></div>
+          <div class="col-12">
+            <!--Dropdown start-->
+            <div class="dropdown text-center">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Attractions
+              </button>
+              <div class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Attractions</a>
+                <a class="dropdown-item" href="#">Hotels</a>
+                <a class="dropdown-item" href="#">Restaurants</a>
+              </div>
             </div>
+            <!--Dropdown end-->
+            <!--Map start. Code to set margins to auto from https://getbootstrap.com/docs/4.5/utilities/spacing/#horizontal-centering-->
+            <div id="map" class="mx-auto"></div>
+            <!--Map end-->
+          </div>
         </div>
       </div>
-      <!--Map end-->
+      <!--Map and dropdown container end-->
     </section>
     <footer class="container-fluid footer-container">
       <div class="row no-gutters">
