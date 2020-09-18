@@ -21,6 +21,11 @@
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
     ></script>
     <script src="assets/js/email.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx5PIRpENwcfNsmritJ1GJTz0sWmLb86o&callback=initMap"
+    ></script>
+    <script src="assets/js/map.js"></script>
     <title>Brisbane</title>
   </head>
   <body>
@@ -166,10 +171,19 @@
         <!--Section Heading start-->
         <div class="row no-gutters">
             <div class="col-12">
-                <h1 class="section-heading">brisbane</h1>
+                <h1 class="section-heading">Brisbane</h1>
             </div>
         </div>
         <!--Section Heading end-->
+        <!--Map start-->
+      <div class="container">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div id="map"></div>
+            </div>
+        </div>
+      </div>
+      <!--Map end-->
     </section>
     <footer class="container-fluid footer-container">
       <div class="row no-gutters">
