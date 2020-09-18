@@ -16,6 +16,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+    ></script>
+    <script src="assets/js/email.js"></script>
     <title>Melbourne</title>
   </head>
   <body>
@@ -52,17 +57,23 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hvr-underline-from-center" href="sydney.html"
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="sydney.html"
                     >Sydney</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hvr-underline-from-center" href="melbourne.html"
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="melbourne.html"
                     >Melbourne</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hvr-underline-from-center" href="brisbane.html"
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="brisbane.html"
                     >Brisbane</a
                   >
                 </li>
@@ -99,22 +110,24 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form>
+                          <form onsubmit="return sendMail(this);">
                             <div class="form-group contact-form">
                               <label for="name">Name</label>
                               <input
-                                type="firstName"
-                                class="form-control"
+                                type="text"
+                                name="name"
                                 id="name"
+                                class="form-control"
                                 aria-describedby="Name"
                                 placeholder="Enter name"
                                 required
                               />
                               <label for="emailAddress">Email Address</label>
                               <input
-                                type="email"
-                                class="form-control"
+                                type="text"
+                                name="email"
                                 id="emailAddress"
+                                class="form-control"
                                 aria-describedby="emailAddress"
                                 placeholder="Enter email address"
                                 required
@@ -123,8 +136,9 @@
                                 >Message:</label
                               >
                               <textarea
-                                class="form-control"
+                                name="message"
                                 id="message-text"
+                                class="form-control"
                                 rows="5"
                                 placeholder="Enter message"
                                 required
@@ -147,21 +161,25 @@
       </div>
     </header>
     <section>
-        <!--Hero Image start-->
-		<div class="row no-gutters">
-			<div class="col-12">
-                <!--Image from https://www.pikrepo.com/fbouf/flinders-street-station-melbourne-aust-yellow-concrete-building-->
-				<img class="hero-image melbourne-hero-image" src="assets/images/melbourne.jpg" alt="Image of Sydney Harbour">
-			</div>
-		</div>
-        <!--Hero Image end-->
-        <!--Section Heading start-->
-        <div class="row no-gutters">
-            <div class="col-12">
-                <h1 class="section-heading">Melbourne</h1>
-            </div>
+      <!--Hero Image start-->
+      <div class="row no-gutters">
+        <div class="col-12">
+          <!--Image from https://www.pikrepo.com/fbouf/flinders-street-station-melbourne-aust-yellow-concrete-building-->
+          <img
+            class="hero-image melbourne-hero-image"
+            src="assets/images/melbourne.jpg"
+            alt="Image of Sydney Harbour"
+          />
         </div>
-        <!--Section Heading end-->
+      </div>
+      <!--Hero Image end-->
+      <!--Section Heading start-->
+      <div class="row no-gutters">
+        <div class="col-12">
+          <h1 class="section-heading">Melbourne</h1>
+        </div>
+      </div>
+      <!--Section Heading end-->
     </section>
     <footer class="container-fluid footer-container">
       <div class="row no-gutters">

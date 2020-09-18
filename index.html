@@ -16,6 +16,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+    ></script>
+    <script src="assets/js/email.js"></script>
     <title>Discover Australia</title>
   </head>
   <body>
@@ -99,22 +104,24 @@
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form>
+                          <form onsubmit="return sendMail(this);">
                             <div class="form-group contact-form">
                               <label for="name">Name</label>
                               <input
-                                type="firstName"
-                                class="form-control"
+                                type="text"
+                                name="name"
                                 id="name"
+                                class="form-control"
                                 aria-describedby="Name"
                                 placeholder="Enter name"
                                 required
                               />
                               <label for="emailAddress">Email Address</label>
                               <input
-                                type="email"
-                                class="form-control"
+                                type="text"
+                                name="email"
                                 id="emailAddress"
+                                class="form-control"
                                 aria-describedby="emailAddress"
                                 placeholder="Enter email address"
                                 required
@@ -123,8 +130,9 @@
                                 >Message:</label
                               >
                               <textarea
-                                class="form-control"
+                                name="message"
                                 id="message-text"
+                                class="form-control"
                                 rows="5"
                                 placeholder="Enter message"
                                 required
