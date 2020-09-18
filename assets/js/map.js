@@ -1,4 +1,5 @@
 function initMap() {
+
   function getCity() {
     let cityName = $("h1").html();
     if (cityName === "Melbourne") {
@@ -12,19 +13,41 @@ function initMap() {
     }
   }
 
+  let city = getCity();
+
   let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
-    center: getCity()
+    center: city,
+    mapTypeControl: false,
+    panControl: false,
+    zoomControl: false,
+    streetViewControl: false,
   });
 
-  let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let request = {
+    location: city,
+    radius: "500",
+    type: ["restaurant"],
+  };
 
-  let locations = [];
+  MARKER_PATH = "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 
-  let markers = locations.map(function (location, i) {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
-  });
+  service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
+
+  function callback(results, status) {
+    if (status == google.maps.places.PlacesServiceStatus.OK) {
+      for (let i = 0; i < results.length; i++) {  
+        const markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const markerIcon = MARKER_PATH + markerLetter[i] + ".png";
+        let marker = new google.maps.Marker({
+            map: map,
+            position: results[i].geometry.location,
+            animation: google.maps.Animation.DROP,
+            icon: markerIcon
+        }); 
+      }
+    }
+  }
+  callback()
 }
