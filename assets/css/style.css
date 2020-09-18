@@ -127,6 +127,14 @@ button[type="submit"]:hover {
     object-position: 50% 20%;
 }
 
+/* Map */
+
+#map {
+   width: 80%;
+   height: 400px;
+   background-color: grey;
+ }
+
 /* Footer */
 
 .footer-container {
