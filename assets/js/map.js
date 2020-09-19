@@ -1,5 +1,8 @@
-function initMap() {
+let map;
+let MARKER_PATH =
+  "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 
+function initMap() {
   function getCity() {
     let cityName = $("h1").html();
     if (cityName === "Melbourne") {
@@ -15,7 +18,7 @@ function initMap() {
 
   let city = getCity();
 
-  let map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     center: city,
     mapTypeControl: false,
@@ -30,24 +33,36 @@ function initMap() {
     type: ["restaurant"],
   };
 
-  MARKER_PATH = "https://developers.google.com/maps/documentation/javascript/images/marker_green";
-
-  service = new google.maps.places.PlacesService(map);
+  let service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callback);
+}
 
-  function callback(results, status) {
-    if (status == google.maps.places.PlacesServiceStatus.OK) {
-      for (let i = 0; i < results.length; i++) {  
-        const markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        const markerIcon = MARKER_PATH + markerLetter[i] + ".png";
-        let marker = new google.maps.Marker({
-            map: map,
-            position: results[i].geometry.location,
-            animation: google.maps.Animation.DROP,
-            icon: markerIcon
-        }); 
-      }
+function addResult(result, i) {
+  let markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let markerIcon = MARKER_PATH + markerLetter[i] + ".png";
+  $("#results").append(
+    `<tr><td><img src="${markerIcon}"></td><td><strong>${result[i].name}</strong><br>${result[i].vicinity}</td></tr>`
+  );
+  $("tr:odd").addClass("odd");
+  $("tr:even").addClass("even");
+}
+
+function addMarker(result, i) {
+  let markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let markerIcon = MARKER_PATH + markerLetter[i] + ".png";
+  let marker = new google.maps.Marker({
+    map: map,
+    position: result[i].geometry.location,
+    animation: google.maps.Animation.DROP,
+    icon: markerIcon,
+  });
+}
+
+function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (let i = 0; i < results.length; i++) {
+      addMarker(results, i);
+      addResult(results, i);
     }
   }
-  callback()
 }
