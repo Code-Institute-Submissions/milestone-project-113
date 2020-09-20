@@ -155,16 +155,28 @@ button:hover {
   background-color: grey;
 }
 
-.table {
+.table-font {
   font-family: "Montserrat", sans-serif;
   color: #20234e;
-  text-transform: capitalize;
+}
+
+.table-capitalise {
+    text-transform: capitalize;
 }
 
 #results {
   display: block;
   height: 400px;
   overflow: scroll;
+}
+
+#info-window th,
+#info-window tr {
+    padding: 4px;
+}
+
+#info-window img {
+    height: 20px;
 }
 
 .odd {
