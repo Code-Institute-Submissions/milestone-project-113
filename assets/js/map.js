@@ -34,6 +34,7 @@ function initMap() {
     radius: "500",
     type: ["restaurant"],
   };
+  infoWindow = new google.maps.InfoWindow();
   service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, function (results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -43,7 +44,6 @@ function initMap() {
       }
       $("tr:odd").addClass("odd");
       $("tr:even").addClass("even");
-      showIW(results);
     }
   });
 }
@@ -57,6 +57,10 @@ function addMarker(result, i) {
     animation: google.maps.Animation.DROP,
     icon: markerIcon,
   });
+  markers[i].placeResult = result[i];
+  markers[i].addListener("click", function () {
+    getPlaceDetails(markers[i].placeResult.place_id, markers[i]);
+  });
 }
 
 function addResult(result, i) {
@@ -65,9 +69,12 @@ function addResult(result, i) {
   $("#results").append(
     `<tr><td><img src="${markerIcon}"></td><td><strong>${result[i].name}</strong><br>${result[i].vicinity}</td></tr>`
   );
+  $("tr").eq(i).click(function () {
+    getPlaceDetails(markers[i].placeResult.place_id, markers[i]);
+  });
 }
 
-function getPlaceDetails(place) {
+function getPlaceDetails(place, marker) {
   let request = {
     placeId: place,
     fields: [
@@ -80,37 +87,20 @@ function getPlaceDetails(place) {
     ],
   };
   service.getDetails(request, function (results, status) {
-      console.log(results)
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       rating = "";
       for (let i = 0; i < 5; i++) {
-        if (results.rating > i + 0.5 ) {
-          rating+= `<i class="fas fa-star"></i>`;
+        if (results.rating > i + 0.5) {
+          rating += `<i class="fas fa-star"></i>`;
         } else {
           rating += `<i class="far fa-star"></i>`;
         }
       }
       //setContent method code is from https://developers.google.com/maps/documentation/javascript/infowindows
       infoWindow.setContent(
-        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${results.icon}"></th><th><a href="${results.website}">${results.name}</a></th></tr></thead><tbody><tr><th class="text-right">Address:</th><td>${results.formatted_address}</td></tr><tr><th class="text-right">Telephone:</th><td>${results.formatted_phone_number}</td></tr><tr><th class="text-right">Rating:</th><td>${rating}${results.rating}</td></tr></tbody></table>`
+        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${results.icon}"></th><th><a href="${results.website}">${results.name}</a></th></tr></thead><tbody><tr><th class="text-right">Address:</th><td>${results.formatted_address}</td></tr><tr><th class="text-right">Telephone:</th><td>${results.formatted_phone_number}</td></tr><tr><th class="text-right">Rating:</th><td>${rating}</td></tr></tbody></table>`
       );
+      infoWindow.open(map, marker);
     }
-  });
-}
-
-function showIW(results) {
-  infoWindow = new google.maps.InfoWindow();
-  for (let i = 0; i < results.length; i++) {
-    markers[i].addListener("click", function () {
-      getPlaceDetails(results[i].place_id);
-      infoWindow.open(map, markers[i]);
-    });
-  }
-
-  $("tr").click(function () {
-    //Code below to get index of tr clicked is from https://stackoverflow.com/questions/469883/how-to-find-the-index-of-a-row-in-a-table-using-jquery/57145013
-    let index = $("tr").index(this);
-    getPlaceDetails(results[index].place_id);
-    infoWindow.open(map, markers[index]);
   });
 }
