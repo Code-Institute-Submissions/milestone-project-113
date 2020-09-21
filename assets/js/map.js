@@ -2,6 +2,7 @@ $(document).ready(function () {
   $(".dropdown-item").click(function () {
     $("#dropdownMenuButton").html($(this).html());
     $("#dropdownMenuButton").val($(this).val());
+    search();
   });
 });
 
@@ -35,14 +36,19 @@ function initMap() {
     zoomControl: false,
     streetViewControl: false,
   });
+  infoWindow = new google.maps.InfoWindow();
+  service = new google.maps.places.PlacesService(map);
+  search();
+}
 
+function search() {
+  clearMarkers();
+  $("#results").html("");
   let request = {
     location: getCity(),
     radius: "500",
-    type: ["restaurant"],
+    type: $(".dropdown-toggle").val(),
   };
-  infoWindow = new google.maps.InfoWindow();
-  service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, function (results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       for (let i = 0; i < results.length; i++) {
@@ -54,6 +60,15 @@ function initMap() {
       $("tr:even").addClass("even");
     }
   });
+}
+
+function clearMarkers() {
+  for (let i = 0; i < markers.length; i++) {
+    if (markers[i]) {
+      markers[i].setMap(null);
+    }
+  }
+  markers = [];
 }
 
 function addMarker(result, i) {

@@ -147,6 +147,7 @@ button:hover {
 .dropdown-item:hover {
   color: #fafafa;
   background-color: #20234e;
+  border-radius: 0px;
 }
 
 #map {

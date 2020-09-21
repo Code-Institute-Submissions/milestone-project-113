@@ -208,6 +208,7 @@
             <div class="dropdown text-center">
               <button
                 class="dropdown-toggle"
+                value="tourist_attraction"
                 type="button"
                 id="dropdownMenuButton"
                 data-toggle="dropdown"
@@ -220,9 +221,13 @@
                 class="dropdown-menu dropdown-menu-center"
                 aria-labelledby="dropdownMenuButton"
               >
-                <a class="dropdown-item" href="#">Attractions</a>
-                <a class="dropdown-item" href="#">Hotels</a>
-                <a class="dropdown-item" href="#">Restaurants</a>
+                <button class="dropdown-item" value="tourist_attraction">
+                  Attractions
+                </button>
+                <button class="dropdown-item" value="lodging">Hotels</button>
+                <button class="dropdown-item" value="restaurant">
+                  Restaurants
+                </button>
               </div>
             </div>
             <!--Dropdown end-->
@@ -233,7 +238,10 @@
               </div>
               <div class="col-4">
                 <div id="listing">
-                  <table id="resultsTable" class="table table-font table-capitalise">
+                  <table
+                    id="resultsTable"
+                    class="table table-font table-capitalise"
+                  >
                     <tbody id="results"></tbody>
                   </table>
                 </div>
