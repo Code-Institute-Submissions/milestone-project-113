@@ -40,6 +40,7 @@ function initMap() {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       for (let i = 0; i < results.length; i++) {
         addMarker(results, i);
+        setTimeout(dropMarker(i), i * 100);
         addResult(results, i);
       }
       $("tr:odd").addClass("odd");
@@ -52,7 +53,6 @@ function addMarker(result, i) {
   let markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let markerIcon = MARKER_PATH + markerLetter[i] + ".png";
   markers[i] = new google.maps.Marker({
-    map: map,
     position: result[i].geometry.location,
     animation: google.maps.Animation.DROP,
     icon: markerIcon,
@@ -61,6 +61,12 @@ function addMarker(result, i) {
   markers[i].addListener("click", function () {
     getPlaceDetails(markers[i].placeResult.place_id, markers[i]);
   });
+}
+
+function dropMarker(i) {
+  return function() {
+    markers[i].setMap(map);
+  };
 }
 
 function addResult(result, i) {
