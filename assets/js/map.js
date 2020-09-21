@@ -1,3 +1,10 @@
+$(document).ready(function () {
+  $(".dropdown-item").click(function () {
+    $("#dropdownMenuButton").html($(this).html());
+    $("#dropdownMenuButton").val($(this).val());
+  });
+});
+
 let map;
 let MARKER_PATH =
   "https://developers.google.com/maps/documentation/javascript/images/marker_green";
@@ -64,7 +71,7 @@ function addMarker(result, i) {
 }
 
 function dropMarker(i) {
-  return function() {
+  return function () {
     markers[i].setMap(map);
   };
 }
@@ -75,9 +82,11 @@ function addResult(result, i) {
   $("#results").append(
     `<tr><td><img src="${markerIcon}"></td><td><strong>${result[i].name}</strong><br>${result[i].vicinity}</td></tr>`
   );
-  $("tr").eq(i).click(function () {
-    getPlaceDetails(markers[i].placeResult.place_id, markers[i]);
-  });
+  $("tr")
+    .eq(i)
+    .click(function () {
+      getPlaceDetails(markers[i].placeResult.place_id, markers[i]);
+    });
 }
 
 function getPlaceDetails(place, marker) {
