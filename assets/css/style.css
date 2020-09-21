@@ -24,7 +24,7 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 30px;
   text-align: center;
 }
@@ -38,11 +38,12 @@
 .navbar-brand img {
   object-fit: contain;
   height: 50px;
-  width: 250px;
+  width: 200px;
 }
 
 .navbar .navbar-toggler {
   border: 0;
+  width: auto;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -162,7 +163,7 @@ button:hover {
 }
 
 .table-capitalise {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 #results {
@@ -173,11 +174,11 @@ button:hover {
 
 #info-window th,
 #info-window tr {
-    padding: 4px;
+  padding: 4px;
 }
 
 #info-window img {
-    height: 20px;
+  height: 20px;
 }
 
 .odd {
@@ -230,6 +231,15 @@ button:hover {
 
 .promoted {
   margin-top: 0;
+}
+@media (min-width: 576px) {
+  .navbar-brand img {
+    width: 250px;
+  }
+
+  .section-heading {
+      font-size: 3rem;
+  }
 }
 
 @media (min-width: 992px) {
