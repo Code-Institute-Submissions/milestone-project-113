@@ -4,11 +4,12 @@
 
 .paragraph {
   font-family: "Montserrat", sans-serif;
-  margin: 30px;
+  color: #20234e;
 }
 
-.paragraph-white {
+.paragraph-footer {
   color: #fafafa;
+  margin: 0 30px 30px;
 }
 
 .modal-title {
@@ -36,6 +37,11 @@
 
 .table-capitalise {
   text-transform: capitalize;
+}
+
+.blockquote-footer {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
 }
 
 /* Navbar */
@@ -233,9 +239,6 @@ button:hover {
   transform: scale(1.5);
 }
 
-.promoted {
-  margin-top: 0;
-}
 @media (min-width: 576px) {
   .navbar-brand img {
     width: 250px;
