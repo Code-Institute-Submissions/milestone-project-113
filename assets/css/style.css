@@ -109,7 +109,7 @@
   margin-bottom: 15px;
 }
 
-button {
+.btn {
   background-color: #fafafa;
   border: 2px solid #20234e;
   color: #20234e;
@@ -118,7 +118,7 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
-button:hover {
+.btn:hover {
   background-color: #20234e;
   color: #fafafa;
 }
