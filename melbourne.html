@@ -182,72 +182,66 @@
     </header>
     <section>
       <!--Hero Image start-->
-      <div class="row no-gutters">
-        <div class="col-12">
-          <!--Image from https://www.pikrepo.com/fbouf/flinders-street-station-melbourne-aust-yellow-concrete-building-->
-          <img
-            class="hero-image melbourne-hero-image"
-            src="assets/images/melbourne.jpg"
-            alt="Image of Sydney Harbour"
-          />
+      <div class="container-fluid hero-image-container">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <!--Image from https://www.pikrepo.com/fbouf/flinders-street-station-melbourne-aust-yellow-concrete-building-->
+            <img
+              class="hero-image melbourne-hero-image"
+              src="assets/images/melbourne.jpg"
+              alt="Image of Sydney Harbour"
+            />
+          </div>
         </div>
       </div>
       <!--Hero Image end-->
       <!--Section Heading start-->
-      <div class="row no-gutters">
-        <div class="col-12">
-          <h1 class="section-heading">Melbourne</h1>
-        </div>
-      </div>
-      <!--Section Heading end-->
-      <!--Map and dropdown container start-->
-      <div class="container">
+      <div class="container section-container">
         <div class="row no-gutters">
           <div class="col-12">
-            <!--Dropdown start-->
-            <div class="dropdown text-center">
-              <button
-                class="dropdown-toggle"
-                value="tourist_attraction"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Attractions
-              </button>
-              <div
-                class="dropdown-menu dropdown-menu-center"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <button class="dropdown-item" value="tourist_attraction">
-                  Attractions
-                </button>
-                <button class="dropdown-item" value="lodging">Hotels</button>
-                <button class="dropdown-item" value="restaurant">
-                  Restaurants
-                </button>
-              </div>
-            </div>
-            <!--Dropdown end-->
-            <!--Map start. Code to set margins to auto from https://getbootstrap.com/docs/4.5/utilities/spacing/#horizontal-centering-->
-            <div class="row no-gutters">
-              <div class="col-md-8">
-                <div id="map"></div>
-              </div>
-              <div class="col-md-4">
-                <table
-                  id="resultsTable"
-                  class="table table-font table-capitalise"
-                >
-                  <tbody id="results"></tbody>
-                </table>
-              </div>
-            </div>
-            <!--Map end-->
+            <h1 class="section-heading text-center">Melbourne</h1>
           </div>
         </div>
+        <!--Section Heading end-->
+        <!--Dropdown start-->
+        <div class="dropdown text-center">
+          <button
+            class="dropdown-toggle"
+            value="tourist_attraction"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Attractions
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <button class="dropdown-item" value="tourist_attraction">
+              Attractions
+            </button>
+            <button class="dropdown-item" value="lodging">Hotels</button>
+            <button class="dropdown-item" value="restaurant">
+              Restaurants
+            </button>
+          </div>
+        </div>
+        <!--Dropdown end-->
+        <!--Map start. Code to set margins to auto from https://getbootstrap.com/docs/4.5/utilities/spacing/#horizontal-centering-->
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div id="map"></div>
+          </div>
+          <div class="col-md-4">
+            <table id="resultsTable" class="table table-font table-capitalise">
+              <tbody id="results"></tbody>
+            </table>
+          </div>
+        </div>
+        <!--Map end-->
       </div>
       <!--Map and dropdown container end-->
     </section>
