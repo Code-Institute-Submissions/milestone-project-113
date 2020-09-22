@@ -33,7 +33,7 @@ function initMap() {
     center: getCity(),
     mapTypeControl: false,
     panControl: false,
-    zoomControl: false,
+    zoomControl: true,
     streetViewControl: false,
   });
   infoWindow = new google.maps.InfoWindow();
