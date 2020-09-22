@@ -40,8 +40,8 @@
 }
 
 .blockquote-footer {
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
 }
 
 /* Navbar */
@@ -159,6 +159,19 @@
   width: 60%;
 }
 
+.dropdown-toggle {
+  background-color: #fafafa;
+  border: 2px solid #20234e;
+  color: #20234e;
+  border-radius: 23px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dropdown-toggle:hover {
+  background-color: #20234e;
+  color: #fafafa;
+}
+
 .dropdown-item {
   color: #20234e;
   font-family: "Montserrat", sans-serif;
@@ -196,7 +209,7 @@
 }
 
 .even {
-  background-color: #C2DFFF;
+  background-color: #c2dfff;
 }
 
 /* Footer */
