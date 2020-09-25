@@ -229,9 +229,13 @@
 
 /* Home */
 
-.highlights {
+.slideshow-wrapper {
+  background-color: #82d0f5;
+}
+
+.featured-text {
   display: inline-block;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .controls {
@@ -247,7 +251,7 @@
 .controls-btn {
   border: 2px solid #20234e;
   border-radius: 25px;
-  background-color: #ffffff;
+  background-color: #82d0f5;
   width: 35px;
   height: 35px;
 }
@@ -264,6 +268,11 @@
 
 .next i {
   padding-left: 5px;
+}
+
+.cards {
+  margin: 0 auto 30px;
+  max-width: 300px;
 }
 
 /* Footer */
@@ -323,8 +332,9 @@
     font-size: 3rem;
   }
 
-  .section-container {
-    padding: 0 30px 30px;
+  .featured-text {
+    display: inline-block;
+    max-width: 80%;
   }
 
   .hero-images {
