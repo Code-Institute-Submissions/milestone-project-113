@@ -140,7 +140,7 @@
 
 .hero-images {
   width: 100%;
-  height: 70vh;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -224,14 +224,14 @@
 /* Resolves preventDefault error on swipe over slideshow. Code is from https://stackoverflow.com/questions/55733863/unable-to-preventdefault-inside-passive-event-listener-jquery-mobile */
 
 .slideshow {
-    touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 /* Home */
 
 .highlights {
-    display: inline-block;
-    max-width: 80%;
+  display: inline-block;
+  max-width: 80%;
 }
 
 .controls {
@@ -239,16 +239,17 @@
   margin-top: 30px;
 }
 
-.prev, .next {
-    margin-right: 20px;
+.prev,
+.next {
+  margin-right: 20px;
 }
 
 .controls-btn {
- border: 2px solid #20234e;
- border-radius: 25px;
- background-color: #ffffff;
- width: 35px;
- height: 35px;
+  border: 2px solid #20234e;
+  border-radius: 25px;
+  background-color: #ffffff;
+  width: 35px;
+  height: 35px;
 }
 
 .controls i {
@@ -258,11 +259,11 @@
 }
 
 .prev i {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 
 .next i {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 /* Footer */
@@ -308,7 +309,7 @@
 /* Remove UI Loader. Code from https://stackoverflow.com/questions/24185748/how-do-you-completely-disable-the-loader-in-jquery-mobile?rq=1 */
 
 .ui-loader {
-   display: none !important;
+  display: none !important;
 }
 
 /* Media Queries */
@@ -324,6 +325,10 @@
 
   .section-container {
     padding: 0 30px 30px;
+  }
+
+  .hero-images {
+    height: 400px;
   }
 }
 
