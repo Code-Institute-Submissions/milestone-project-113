@@ -231,6 +231,7 @@
 
 .highlights {
     display: inline-block;
+    max-width: 80%;
 }
 
 .controls {
