@@ -212,6 +212,44 @@
   background-color: #c2dfff;
 }
 
+/* Resolves preventDefault error on swipe over slideshow. Code is from https://stackoverflow.com/questions/55733863/unable-to-preventdefault-inside-passive-event-listener-jquery-mobile */
+
+.slideshow {
+    touch-action: manipulation;
+}
+
+/* Home */
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+.controls-btn {
+ border: 2px solid #20234e;
+ border-radius: 25px;
+ background-color: #ffffff;
+ width: 35px;
+ height: 35px;
+}
+
+.controls i {
+  font-size: 30px;
+  line-height: 30px;
+  color: #20234e;
+}
+
+.prev i {
+    padding-right: 5px;
+}
+
+.next i {
+    padding-left: 5px;
+}
+
 /* Footer */
 
 .footer-container {
@@ -251,6 +289,14 @@
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
+
+/* Remove UI Loader. Code from https://stackoverflow.com/questions/24185748/how-do-you-completely-disable-the-loader-in-jquery-mobile?rq=1 */
+
+.ui-loader {
+   display: none !important;
+}
+
+/* Media Queries */
 
 @media (min-width: 576px) {
   .navbar-brand img {
