@@ -30,6 +30,15 @@
   line-height: 1;
 }
 
+.section-subheading {
+  color: #20234e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 30px 0;
+  line-height: 1;
+}
+
 .table-font {
   font-family: "Montserrat", sans-serif;
   color: #20234e;
@@ -220,12 +229,17 @@
 
 /* Home */
 
-.prev {
-  float: left;
+.highlights {
+    display: inline-block;
 }
 
-.next {
+.controls {
   float: right;
+  margin-top: 30px;
+}
+
+.prev, .next {
+    margin-right: 20px;
 }
 
 .controls-btn {
