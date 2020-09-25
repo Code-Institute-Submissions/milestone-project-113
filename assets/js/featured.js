@@ -17,29 +17,33 @@ $(document).ready(function () {
   $(".slideshow").on("swiperight", function () {
     nextSlide($(".slides"));
   });
+  //Click on card flips the card to show the content on the back of the card. Code adapted from https://codepen.io/bycreator/pen/RNQmZK
+  $(".card").click(function () {
+    $(this).toggleClass("flipped");
+  });
 });
 
 //Initialise slide show and display first image
 function iniShow() {
   $(".slides").each(function () {
     $(this).children().hide();
-    $(this).children().first().fadeIn(500)
+    $(this).children().first().fadeIn(500);
   });
 }
 
 function prevSlide(slides) {
   $(slides).children().last().prependTo(slides);
-  showSlide(slides)
+  showSlide(slides);
 }
 
 function nextSlide(slides) {
   $(slides).children().first().appendTo(slides);
-  showSlide(slides)
+  showSlide(slides);
 }
 
 function showSlide(slides) {
-    //hide (reset) all slides
-    slides.children().hide();
-    //fade in next slide
-    slides.children().first().fadeIn(500);
+  //hide (reset) all slides
+  slides.children().hide();
+  //fade in next slide
+  slides.children().first().fadeIn(500);
 }
