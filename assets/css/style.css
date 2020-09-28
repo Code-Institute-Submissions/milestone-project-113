@@ -57,6 +57,17 @@
   margin-bottom: 30px;
 }
 
+/* Content Wrappers */
+
+.content-wrapper {
+  background-color: #fafafa;
+}
+
+
+.slideshow-wrapper {
+  background-color: #C2DFFF;
+}
+
 /* Navbar */
 
 .navbar {
@@ -498,6 +509,7 @@
 
 .dropdown-menu {
   width: 60%;
+  background-color: #fafafa;
 }
 
 .dropdown-toggle {
@@ -546,11 +558,11 @@
 }
 
 .odd {
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 
 .even {
-  background-color: #c2dfff;
+  background-color: #C2DFFF;
 }
 
 /* Resolves preventDefault error on swipe over slideshow. Code is from https://stackoverflow.com/questions/55733863/unable-to-preventdefault-inside-passive-event-listener-jquery-mobile */
@@ -560,10 +572,6 @@
 }
 
 /* Home */
-
-.slideshow-wrapper {
-  background-color: #82d0f5;
-}
 
 .featured-text {
   display: inline-block;
@@ -583,7 +591,7 @@
 .controls-btn {
   border: 2px solid #20234e;
   border-radius: 25px;
-  background-color: #82d0f5;
+  background-color: #C2DFFF;
   width: 35px;
   height: 35px;
 }
@@ -665,10 +673,6 @@
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
-
-.gallery-wrapper {
-  background-color: #f4f4f4;
 }
 
 #gallery {
