@@ -472,20 +472,20 @@
 
 .hero-images {
   width: 100%;
-  height: 200px;
+  height: 66vh;
   object-fit: cover;
 }
 
 .sydney-hero-image {
-  object-position: 50% 70%;
+  object-position: 90% 50%;
 }
 
 .melbourne-hero-image {
-  object-position: 50% 92%;
+  object-position: 80% 80%;
 }
 
 .brisbane-hero-image {
-  object-position: 50% 20%;
+  object-position: 50% 70%;
 }
 
 /* Map */
@@ -742,10 +742,6 @@
   .featured-text {
     display: inline-block;
     max-width: 80%;
-  }
-
-  .hero-images {
-    height: 400px;
   }
 
   .slider__slide-heading {
