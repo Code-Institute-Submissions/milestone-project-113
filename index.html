@@ -28,6 +28,9 @@
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
@@ -38,7 +41,8 @@
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
     ></script>
     <script src="assets/js/email.js"></script>
-    <script src="assets/js/gallery.js"></script>
+    <script defer src="assets/js/hero-image-slider.js"></script>
+    <!--<script src="assets/js/gallery.js"></script>-->
     <script src="assets/js/featured.js"></script>
     <title>Discover Australia</title>
   </head>
@@ -183,13 +187,7 @@
       <!--Hero image start. Image from https://pixabay.com/photos/australia-great-ocean-road-beach-3912587/-->
       <div class="container-fluid hero-image-container">
         <div class="row no-gutters">
-          <div class="col">
-            <img
-              class="hero-images"
-              src="assets/images/australia.jpg"
-              alt="Image of the twelve apostles"
-            />
-          </div>
+          <div id="hero-image" class="col"></div>
         </div>
       </div>
       <!--Hero-image end-->
@@ -214,9 +212,7 @@
               </div>
               <div class="slides">
                 <!--Slide 1 cards start. Code from https://getbootstrap.com/docs/4.5/components/card/-->
-                <div
-                  class="row row-cols-2 row-cols-lg-4"
-                >
+                <div class="row row-cols-2 row-cols-lg-4">
                   <div class="col">
                     <div class="cards-container">
                       <div class="card">
@@ -324,9 +320,7 @@
                 </div>
                 <!--Slide 1 cards end-->
                 <!--Slide 2 cards start. Code from https://getbootstrap.com/docs/4.5/components/card/-->
-                <div
-                  class="row row-cols-2 row-cols-lg-4"
-                >
+                <div class="row row-cols-2 row-cols-lg-4">
                   <div class="col">
                     <div class="cards-container">
                       <div class="card">
@@ -434,9 +428,7 @@
                 </div>
                 <!--Slide 2 cards end-->
                 <!--Slide 3 cards start. Code from https://getbootstrap.com/docs/4.5/components/card/-->
-                <div
-                  class="row row-cols-2 row-cols-lg-4"
-                >
+                <div class="row row-cols-2 row-cols-lg-4">
                   <div class="col">
                     <div class="cards-container">
                       <div class="card">
@@ -554,25 +546,17 @@
           <!--Gallery start-->
           <div class="row no-gutters">
             <div class="col-12">
-                <h2 class="section-subheading">Gallery</h2>
-                <div id="gallery" class="row no-gutters">
-                    <div class="col-6 col-lg-3">
-                    </div>
-                    <div class="col-6 col-lg-3">
-                    </div>
-                    <div class="col-6 col-lg-3">
-                    </div>
-                    <div class="col-6 col-lg-3">
-                    </div>
-                    <div class="col-6 col-lg-3">
-                    </div>
-                    <div class="col-6 col-lg-3">
-                    </div>
-                    <div class="col-6 col-lg-3">
-                    </div>
-                    <div class="col-6 col-lg-3">
-                    </div>
-                </div>
+              <h2 class="section-subheading">Gallery</h2>
+              <div id="gallery" class="row no-gutters">
+                <div class="col-6 col-lg-3"></div>
+                <div class="col-6 col-lg-3"></div>
+                <div class="col-6 col-lg-3"></div>
+                <div class="col-6 col-lg-3"></div>
+                <div class="col-6 col-lg-3"></div>
+                <div class="col-6 col-lg-3"></div>
+                <div class="col-6 col-lg-3"></div>
+                <div class="col-6 col-lg-3"></div>
+              </div>
             </div>
           </div>
           <!--Gallery end-->
