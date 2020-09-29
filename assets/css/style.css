@@ -571,109 +571,36 @@
   touch-action: manipulation;
 }
 
-/* Home */
+/* Discover Best of Australia Carousel. Most of the code below is from https://codepen.io/Anahiiit/pen/wvGPvaQ */
 
-.featured-text {
-  display: inline-block;
-  max-width: 100%;
+.framebox {
+    width: 95%;
+    margin: auto;
 }
 
-.controls {
-  float: right;
-  margin-top: 30px;
+.owl-prev,.owl-next {
+    font-size: 30px;
+    background-color: #C2DFFF;
+    color: #20234e;
+    border: 0;
+    padding: 10px;
 }
 
-.prev,
-.next {
-  margin-right: 20px;
+.owl-prev:hover,.owl-next:hover,.owl-prev:focus,.owl-next:focus{
+    outline: none;
 }
 
-.controls-btn {
-  border: 2px solid #20234e;
-  border-radius: 25px;
-  background-color: #C2DFFF;
-  width: 35px;
-  height: 35px;
+.owl-nav {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.controls i {
-  font-size: 30px;
-  line-height: 30px;
-  color: #20234e;
+.owl-dot{
+    display: none;
 }
 
-.prev i {
-  padding-right: 5px;
-}
-
-.next i {
-  padding-left: 5px;
-}
-
-/* Most of code below from https://codepen.io/bycreator/pen/RNQmZK */
-
-.cards-container {
-  position: relative;
-  max-width: 300px;
-  margin: 0 auto 30px;
-  height: 220px;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-}
-
-/* Code below from https://codepen.io/bycreator/pen/RNQmZK */
-
-.card {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  position: absolute;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  -o-transition: -o-transform 0.4s;
-  transition: transform 0.4s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-/* Code below from https://codepen.io/bycreator/pen/RNQmZK */
-
-.flipped {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-/* Code below from https://codepen.io/bycreator/pen/RNQmZK */
-
-.front,
-.back {
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: #fafafa;
-  border-radius: 0.25rem;
-}
-
-/* Code below from https://codepen.io/bycreator/pen/RNQmZK */
-
-.back {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
+/* Gallery */
 
 #gallery {
   padding-bottom: 10px;
@@ -726,12 +653,6 @@
   transform: scale(1.5);
 }
 
-/* Remove UI Loader. Code from https://stackoverflow.com/questions/24185748/how-do-you-completely-disable-the-loader-in-jquery-mobile?rq=1 */
-
-.ui-loader {
-  display: none !important;
-}
-
 /* Media Queries */
 
 @media (min-width: 576px) {
@@ -741,11 +662,6 @@
 
   .section-heading {
     font-size: 3rem;
-  }
-
-  .featured-text {
-    display: inline-block;
-    max-width: 80%;
   }
 
   .slider__slide-heading {
