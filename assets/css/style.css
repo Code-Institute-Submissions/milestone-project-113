@@ -709,10 +709,6 @@
     color: #00a6e6;
   }
 
-  .navbar-dark .navbar-nav .active:hover {
-    color: #fafafa;
-  }
-
   .hvr-underline-from-center:before {
     background: #00a6e6;
   }
