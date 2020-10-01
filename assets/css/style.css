@@ -63,9 +63,8 @@
   background-color: #fafafa;
 }
 
-
 .slideshow-wrapper {
-  background-color: #C2DFFF;
+  background-color: #c2dfff;
 }
 
 /* Navbar */
@@ -158,7 +157,9 @@
 
 /* Home Page Hero Image Slider. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -176,7 +177,7 @@
 }
 .slider.s--ready {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
 }
 .slider__slides {
@@ -209,7 +210,7 @@
   transition-delay: 0.65s;
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .slider__slide-heading {
   display: flex;
@@ -220,17 +221,17 @@
   display: block;
   opacity: 0;
   -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
+  transform: translateY(-60px);
   transition: all 0.3333333333s;
 }
 .slider__slide.s--prev .slider__slide-heading span {
   -webkit-transform: translateY(60px);
-          transform: translateY(60px);
+  transform: translateY(60px);
 }
 .slider__slide.s--active .slider__slide-heading span {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .slider__slide-heading span:nth-child(1) {
   transition-delay: 0s;
@@ -268,10 +269,10 @@
 .slider__slide.s--active .slider__slide-heading span:nth-child(6) {
   transition-delay: 0.8333333333s;
 }
-.slider__slide-heading span:nth-child(n+7) {
+.slider__slide-heading span:nth-child(n + 7) {
   transition-delay: 0.6s;
 }
-.slider__slide.s--active .slider__slide-heading span:nth-child(n+7) {
+.slider__slide.s--active .slider__slide-heading span:nth-child(n + 7) {
   transition-delay: 0.9333333333s;
 }
 .slider__slide-readmore {
@@ -279,9 +280,9 @@
   font-size: 14px;
   text-transform: lowercase;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  transform: translateY(-20px);
   cursor: pointer;
   opacity: 0;
   transition: 0.5s;
@@ -290,7 +291,7 @@
   transition-delay: 0.65s;
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .slider__slide-readmore:hover:before {
   transition-delay: 0s;
@@ -305,7 +306,7 @@
   height: 100%;
 }
 .slider__slide-parts:after {
-  content: '';
+  content: "";
   z-index: 5;
   position: absolute;
   left: 0;
@@ -330,7 +331,7 @@
   transition: transform 0.5s ease-in-out;
 }
 .slider__slide-part-inner:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100vw;
   height: 100%;
@@ -344,69 +345,85 @@
   z-index: 3;
   transition-delay: 0.24s;
   -webkit-transform: translateX(-32.5%);
-          transform: translateX(-32.5%);
+  transform: translateX(-32.5%);
 }
-.slider__slide.s--active .slider__slide-part:nth-child(1) .slider__slide-part-inner {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(1)
+  .slider__slide-part-inner {
   transition-delay: 0.28s;
 }
 .slider__slide-part:nth-child(1) .slider__slide-part-inner:before {
   left: 0vw;
   transition-delay: 0.365s;
 }
-.slider__slide.s--active .slider__slide-part:nth-child(1) .slider__slide-part-inner:before {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(1)
+  .slider__slide-part-inner:before {
   transition-delay: 0.28s;
 }
 .slider__slide-part:nth-child(2) .slider__slide-part-inner {
   z-index: 2;
   transition-delay: 0.16s;
   -webkit-transform: translateX(-65%);
-          transform: translateX(-65%);
+  transform: translateX(-65%);
 }
-.slider__slide.s--active .slider__slide-part:nth-child(2) .slider__slide-part-inner {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(2)
+  .slider__slide-part-inner {
   transition-delay: 0.36s;
 }
 .slider__slide-part:nth-child(2) .slider__slide-part-inner:before {
   left: -25vw;
   transition-delay: 0.285s;
 }
-.slider__slide.s--active .slider__slide-part:nth-child(2) .slider__slide-part-inner:before {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(2)
+  .slider__slide-part-inner:before {
   transition-delay: 0.36s;
 }
 .slider__slide-part:nth-child(3) .slider__slide-part-inner {
   z-index: 1;
   transition-delay: 0.08s;
   -webkit-transform: translateX(-97.5%);
-          transform: translateX(-97.5%);
+  transform: translateX(-97.5%);
 }
-.slider__slide.s--active .slider__slide-part:nth-child(3) .slider__slide-part-inner {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(3)
+  .slider__slide-part-inner {
   transition-delay: 0.44s;
 }
 .slider__slide-part:nth-child(3) .slider__slide-part-inner:before {
   left: -50vw;
   transition-delay: 0.205s;
 }
-.slider__slide.s--active .slider__slide-part:nth-child(3) .slider__slide-part-inner:before {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(3)
+  .slider__slide-part-inner:before {
   transition-delay: 0.44s;
 }
 .slider__slide-part:nth-child(4) .slider__slide-part-inner {
   z-index: 0;
   transition-delay: 0s;
   -webkit-transform: translateX(-130%);
-          transform: translateX(-130%);
+  transform: translateX(-130%);
 }
-.slider__slide.s--active .slider__slide-part:nth-child(4) .slider__slide-part-inner {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(4)
+  .slider__slide-part-inner {
   transition-delay: 0.52s;
 }
 .slider__slide-part:nth-child(4) .slider__slide-part-inner:before {
   left: -75vw;
   transition-delay: 0.125s;
 }
-.slider__slide.s--active .slider__slide-part:nth-child(4) .slider__slide-part-inner:before {
+.slider__slide.s--active
+  .slider__slide-part:nth-child(4)
+  .slider__slide-part-inner:before {
   transition-delay: 0.52s;
 }
 .slider__slide.s--active .slider__slide-part-inner {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   transition-timing-function: ease;
 }
 .slider__slide.s--active .slider__slide-part-inner:before {
@@ -423,13 +440,13 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.4);
   -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  transform: translateX(-50px);
   opacity: 0;
   transition: all 0.5s 1s;
   cursor: pointer;
 }
 .slider__control:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -441,21 +458,21 @@
   border-bottom: none;
   border-right: none;
   -webkit-transform: translateX(5px) rotate(-45deg);
-          transform: translateX(5px) rotate(-45deg);
+  transform: translateX(5px) rotate(-45deg);
 }
 .slider__control--right {
   left: auto;
   right: 50px;
   -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  transform: translateX(50px);
 }
 .slider__control--right:before {
   -webkit-transform: translateX(-5px) rotate(135deg);
-          transform: translateX(-5px) rotate(135deg);
+  transform: translateX(-5px) rotate(135deg);
 }
 .slider.s--ready .slider__control {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
   opacity: 1;
 }
 
@@ -562,7 +579,7 @@
 }
 
 .even {
-  background-color: #C2DFFF;
+  background-color: #c2dfff;
 }
 
 /* Resolves preventDefault error on swipe over slideshow. Code is from https://stackoverflow.com/questions/55733863/unable-to-preventdefault-inside-passive-event-listener-jquery-mobile */
@@ -574,30 +591,44 @@
 /* Discover Best of Australia Carousel. Most of the code below is from https://codepen.io/Anahiiit/pen/wvGPvaQ */
 
 .framebox {
-    width: 95%;
-    margin: auto;
+  width: 95%;
+  margin: auto;
 }
 
-.owl-prev,.owl-next {
-    font-size: 30px;
-    background-color: #C2DFFF;
-    color: #20234e;
-    border: 0;
-    padding: 10px;
+.owl-prev,
+.owl-next {
+  font-size: 30px;
+  background-color: #c2dfff;
+  color: #20234e;
+  border: 0;
+  padding: 10px;
 }
 
-.owl-prev:hover,.owl-next:hover,.owl-prev:focus,.owl-next:focus{
-    outline: none;
+.owl-prev:hover,
+.owl-next:hover,
+.owl-prev:focus,
+.owl-next:focus {
+  outline: none;
 }
 
 .owl-nav {
-    display: block;
-    margin-top: 10px;
-    text-align: center;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
 }
 
-.owl-dot{
-    display: none;
+.owl-dot {
+  display: none;
+}
+
+.card img {
+  object-fit: cover;
+  height: 150px;
+}
+
+.card-title {
+    min-height: 50px;
+    margin-bottom: 1rem;
 }
 
 /* Gallery */
