@@ -128,7 +128,7 @@ function getPlaceDetails(place, marker) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       //setContent method code is from https://developers.google.com/maps/documentation/javascript/infowindows
       infoWindow.setContent(
-        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${results.icon}"></th><th><a href="${results.website}">${results.name}</a></th></tr></thead><tbody><tr><th class="text-right">Address:</th><td>${results.formatted_address}</td></tr><tr><th class="text-right">Telephone:</th><td>${results.formatted_phone_number}</td></tr><tr><th class="text-right">Rating:</th><td>${ratings(results.rating)}</td></tr></tbody></table>`
+        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${results.icon}"></th><th><a href="${results.website}">${results.name}</a></th></tr></thead><tbody>${notUndefined("Address:", results.formatted_address)}${notUndefined("Telephone:", results.formatted_phone_number)}${notUndefined("Rating:", ratings(results.rating))}</tbody></table>`
       );
       infoWindow.open(map, marker);
     }
@@ -139,10 +139,18 @@ function ratings(rating) {
   if (rating === "undefined") {
     return "";
   } else if (rating >= 4 && rating < 4.5) {
-    return `<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>`;
+    return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>`;
   } else if (rating >= 4.5 && rating < 5) {
-    return `<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>`;
+    return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>`;
   } else {
-    return `<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>`;
+    return `<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>`;
   }
+}
+
+function notUndefined(heading, text) {
+    if (text !== undefined) {
+        return `<tr><th class="text-right">${heading}</th><td>${text}</td></tr>`
+    } else {
+        return ""
+    }
 }
