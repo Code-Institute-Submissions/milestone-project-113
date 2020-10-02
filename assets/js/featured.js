@@ -30,27 +30,24 @@ function search(id) {
 
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
-    console.log(results);
-    $(document).ready(function () {
-      $(".card")
-        .eq(currentindex(results.place_id))
-        .append(
-          `<img src="${results.photos[0].getUrl()}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
-            results.name
-          }</strong></p></div><div class="card-text paragraph text-center">${ratings(results.rating)}<a href="${
-            results.website
-          }">Visit website</a></p></div></div>`
-        );
-      $(".card")
-        .eq(currentindex(results.place_id) + 10)
-        .append(
-          `<img src="${results.photos[0].getUrl()}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
-            results.name
-          }</strong></p></div><div class="card-text paragraph text-center">${ratings(results.rating)}<a href="${
-            results.website
-          }">Visit website</a></p></div></div>`
-        );
-    });
+    $(".card")
+      .eq(currentindex(results.place_id))
+      .append(
+        `<img src="${results.photos[0].getUrl()}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
+          results.name
+        }</strong></p></div><div class="card-text paragraph text-center">${ratings(
+          results.rating
+        )}<a href="${results.website}">Visit website</a></p></div></div>`
+      );
+    $(".card")
+      .eq(currentindex(results.place_id) + 10)
+      .append(
+        `<img src="${results.photos[0].getUrl()}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
+          results.name
+        }</strong></p></div><div class="card-text paragraph text-center">${ratings(
+          results.rating
+        )}<a href="${results.website}">Visit website</a></p></div></div>`
+      );
   }
 }
 
