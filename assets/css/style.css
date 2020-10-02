@@ -87,8 +87,8 @@
 }
 
 .navbar-toggler i {
-    color: #fafafa;
-    font-size: 30px;
+  color: #fafafa;
+  font-size: 30px;
 }
 
 .nav-item {
@@ -121,31 +121,21 @@
 
 /* Contact Form */
 
-.modal-backdrop {
-  z-index: 8;
+.modal-title {
+  padding-left: 2rem;
+  width: 100%;
 }
 
 .contact-form {
   text-align: left;
   font-family: "Montserrat", sans-serif;
-}
-
-.contact-form label {
-  margin-bottom: 15px;
   color: #20234e;
-}
-
-.contact-form input {
-  margin-bottom: 15px;
 }
 
 .btn {
   background-color: #fafafa;
   border: 2px solid #20234e;
-  color: #20234e;
   border-radius: 23px;
-  width: auto;
-  font-family: "Montserrat", sans-serif;
 }
 
 .btn:hover {
@@ -558,11 +548,11 @@
 }
 
 #results {
-    height: 400px;
+  height: 400px;
 }
 
 .spinner {
-    margin: auto;
+  margin: auto;
 }
 
 #resultsTable {
@@ -632,8 +622,8 @@
 }
 
 .card-title {
-    min-height: 50px;
-    margin-bottom: 1rem;
+  min-height: 50px;
+  margin-bottom: 1rem;
 }
 
 /* Gallery */
