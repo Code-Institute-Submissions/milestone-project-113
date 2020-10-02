@@ -43,7 +43,12 @@ function initMap() {
 
 function search() {
   clearMarkers();
-  $("#results").html("");
+  //Code below is from https://getbootstrap.com/docs/4.5/components/spinners/#about
+  $("#results").html(`<div class="text-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>`);
   let request = {
     location: getCity(),
     radius: "500",
@@ -51,6 +56,9 @@ function search() {
   };
   service.nearbySearch(request, function (results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
+      $("#results").html(
+        `<table id="resultsTable" class="table table-font table-capitalise"><tbody></tbody></table>`
+      );
       for (let i = 0; i < results.length; i++) {
         addMarker(results, i);
         setTimeout(dropMarker(i), i * 100);
@@ -94,7 +102,7 @@ function dropMarker(i) {
 function addResult(result, i) {
   let markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let markerIcon = MARKER_PATH + markerLetter[i] + ".png";
-  $("#results").append(
+  $("tbody").append(
     `<tr><td><img src="${markerIcon}"></td><td><strong>${result[i].name}</strong><br>${result[i].vicinity}</td></tr>`
   );
   $("tr")

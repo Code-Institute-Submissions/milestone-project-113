@@ -41,12 +41,9 @@
   line-height: 1;
 }
 
-.table-font {
+.table-text {
   font-family: "Montserrat", sans-serif;
   color: #20234e;
-}
-
-.table-capitalise {
   text-transform: capitalize;
 }
 
@@ -561,6 +558,11 @@
 }
 
 #results {
+    height: 100%;
+    margin: auto 0;
+}
+
+#resultsTable {
   display: block;
   height: 400px;
   overflow: scroll;
