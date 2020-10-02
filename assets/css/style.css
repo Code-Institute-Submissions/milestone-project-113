@@ -138,6 +138,7 @@
   background-color: #fafafa;
   border: 2px solid #20234e;
   border-radius: 23px;
+  text-transform: none;
 }
 
 .btn:hover {
@@ -283,10 +284,7 @@
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-.slider__slide-readmore:hover:before {
-  transition-delay: 0s;
-  opacity: 1;
-}
+
 .slider__slide-parts {
   position: absolute;
   left: 0;

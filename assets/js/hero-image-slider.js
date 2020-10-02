@@ -172,12 +172,18 @@ var CitiesSlider = (function (_React$Component) {
                     })
                   ),
                   React.createElement(
-                    "a",
+                    "div",
                     {
-                      className: "slider__slide-readmore btn",
-                      href: slide.link,
+                      className: "slider__slide-readmore",
                     },
-                    "find out more"
+                    React.createElement(
+                      "a",
+                      {
+                        className: "btn",
+                        href: slide.link,
+                      },
+                      "Find out more "
+                    )
                   )
                 ),
                 React.createElement(
@@ -243,4 +249,7 @@ var slides = [
   },
 ];
 
-ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#hero-image'));
+ReactDOM.render(
+  React.createElement(CitiesSlider, { slides: slides }),
+  document.querySelector("#hero-image")
+);
