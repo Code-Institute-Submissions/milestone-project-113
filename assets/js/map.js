@@ -44,7 +44,7 @@ function initMap() {
 function search() {
   clearMarkers();
   //Code below is from https://getbootstrap.com/docs/4.5/components/spinners/#about
-  $("#results").html(`<div class="text-center">
+  $("#results").html(`<div class="spinner">
   <div class="spinner-border" role="status">
     <span class="sr-only">Loading...</span>
   </div>

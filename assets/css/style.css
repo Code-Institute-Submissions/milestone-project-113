@@ -558,13 +558,15 @@
 }
 
 #results {
-    height: 100%;
-    margin: auto 0;
+    height: 400px;
+}
+
+.spinner {
+    margin: auto;
 }
 
 #resultsTable {
   display: block;
-  height: 400px;
   overflow: scroll;
 }
 
