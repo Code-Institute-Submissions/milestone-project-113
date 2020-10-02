@@ -126,19 +126,23 @@ function getPlaceDetails(place, marker) {
   };
   service.getDetails(request, function (results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
-      rating = "";
-      for (let i = 0; i < 5; i++) {
-        if (results.rating > i + 0.5) {
-          rating += `<i class="fas fa-star"></i>`;
-        } else {
-          rating += `<i class="far fa-star"></i>`;
-        }
-      }
       //setContent method code is from https://developers.google.com/maps/documentation/javascript/infowindows
       infoWindow.setContent(
-        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${results.icon}"></th><th><a href="${results.website}">${results.name}</a></th></tr></thead><tbody><tr><th class="text-right">Address:</th><td>${results.formatted_address}</td></tr><tr><th class="text-right">Telephone:</th><td>${results.formatted_phone_number}</td></tr><tr><th class="text-right">Rating:</th><td>${rating}</td></tr></tbody></table>`
+        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${results.icon}"></th><th><a href="${results.website}">${results.name}</a></th></tr></thead><tbody><tr><th class="text-right">Address:</th><td>${results.formatted_address}</td></tr><tr><th class="text-right">Telephone:</th><td>${results.formatted_phone_number}</td></tr><tr><th class="text-right">Rating:</th><td>${ratings(results.rating)}</td></tr></tbody></table>`
       );
       infoWindow.open(map, marker);
     }
   });
+}
+
+function ratings(rating) {
+  if (rating === "undefined") {
+    return "";
+  } else if (rating >= 4 && rating < 4.5) {
+    return `<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>`;
+  } else if (rating >= 4.5 && rating < 5) {
+    return `<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>`;
+  } else {
+    return `<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>`;
+  }
 }
