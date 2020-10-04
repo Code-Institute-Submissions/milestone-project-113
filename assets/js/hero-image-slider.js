@@ -219,6 +219,9 @@ var CitiesSlider = (function (_React$Component) {
             onClick: function onClick() {
               return _this4.changeSlides(1);
             },
+            onMouseLeave: function () {
+              _this4.runAutochangeTO()
+            },
           })
         );
       },
