@@ -39,10 +39,10 @@ function initMap() {
   infoWindow = new google.maps.InfoWindow();
   service = new google.maps.places.PlacesService(map);
   search();
+  centerChanged();
 }
 
 function search() {
-  clearMarkers();
   //Code below is from https://getbootstrap.com/docs/4.5/components/spinners/#about
   $("#results").html(`<div class="spinner">
   <div class="spinner-border" role="status">
@@ -50,12 +50,13 @@ function search() {
   </div>
 </div>`);
   let request = {
-    location: getCity(),
+    location: map.getCenter(),
     radius: "500",
     type: $(".dropdown-toggle").val(),
   };
   service.nearbySearch(request, function (results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
+      clearMarkers();
       $("#results").html(
         `<table id="resultsTable" class="table table-font table-capitalise"><tbody></tbody></table>`
       );
@@ -72,9 +73,7 @@ function search() {
 
 function clearMarkers() {
   for (let i = 0; i < markers.length; i++) {
-    if (markers[i]) {
-      markers[i].setMap(null);
-    }
+    markers[i].setMap(null);
   }
   markers = [];
 }
@@ -128,7 +127,17 @@ function getPlaceDetails(place, marker) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       //setContent method code is from https://developers.google.com/maps/documentation/javascript/infowindows
       infoWindow.setContent(
-        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${results.icon}"></th><th><a href="${results.website}">${results.name}</a></th></tr></thead><tbody>${notUndefined("Address:", results.formatted_address)}${notUndefined("Telephone:", results.formatted_phone_number)}${notUndefined("Rating:", ratings(results.rating))}</tbody></table>`
+        `<table id="info-window" class="table-borderless table-font"><thead><tr><th class="text-right"><img src="${
+          results.icon
+        }"></th><th><a href="${results.website}">${
+          results.name
+        }</a></th></tr></thead><tbody>${notUndefined(
+          "Address:",
+          results.formatted_address
+        )}${notUndefined(
+          "Telephone:",
+          results.formatted_phone_number
+        )}${notUndefined("Rating:", ratings(results.rating))}</tbody></table>`
       );
       infoWindow.open(map, marker);
     }
@@ -148,9 +157,15 @@ function ratings(rating) {
 }
 
 function notUndefined(heading, text) {
-    if (text !== undefined) {
-        return `<tr><th class="text-right">${heading}</th><td>${text}</td></tr>`
-    } else {
-        return ""
-    }
+  if (text !== undefined) {
+    return `<tr><th class="text-right">${heading}</th><td>${text}</td></tr>`;
+  } else {
+    return "";
+  }
+}
+
+function centerChanged() {
+  map.addListener("dragend", function () {
+    search();
+  });
 }
