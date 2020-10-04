@@ -558,6 +558,7 @@
 #resultsTable {
   display: block;
   overflow: scroll;
+  margin-bottom: 0px;
 }
 
 #info-window th,
@@ -693,6 +694,10 @@
   .slider__slide-heading {
     font-size: 60px;
   }
+
+  .map-container {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -706,5 +711,9 @@
 
   .hvr-underline-from-center:before {
     background: #00a6e6;
+  }
+
+  .quotes, .map-container {
+    margin: 0 50px 30px;
   }
 }
