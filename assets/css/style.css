@@ -623,7 +623,7 @@
 }
 
 .card-title {
-  min-height: 50px;
+  min-height: 75px;
   margin-bottom: 1rem;
 }
 
@@ -682,6 +682,12 @@
 
 /* Media Queries */
 
+@media (min-width: 439px) {
+  .card-title {
+    min-height: 50px;
+  }
+}
+
 @media (min-width: 576px) {
   .navbar-brand img {
     width: 250px;
@@ -713,7 +719,8 @@
     background: #00a6e6;
   }
 
-  .quotes, .map-container {
+  .quotes,
+  .map-container {
     margin: 0 50px 30px;
   }
 }
