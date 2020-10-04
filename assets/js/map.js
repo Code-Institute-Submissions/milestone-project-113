@@ -7,8 +7,6 @@ $(document).ready(function () {
 });
 
 let map;
-let MARKER_PATH =
-  "https://developers.google.com/maps/documentation/javascript/images/marker_green";
 let markers = [];
 let service;
 let infoWindow;
@@ -60,10 +58,14 @@ function search() {
       $("#results").html(
         `<table id="resultsTable" class="table table-font table-capitalise"><tbody></tbody></table>`
       );
+      let markerPath =
+        "https://developers.google.com/maps/documentation/javascript/images/marker_green";
+      let markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       for (let i = 0; i < results.length; i++) {
-        addMarker(results, i);
+        let markerIcon = markerPath + markerLetter[i] + ".png";
+        addMarker(results[i], markerIcon, i);
         setTimeout(dropMarker(i), i * 100);
-        addResult(results, i);
+        addResult(results[i], markerIcon, i);
       }
       $("tr:odd").addClass("odd");
       $("tr:even").addClass("even");
@@ -78,17 +80,17 @@ function clearMarkers() {
   markers = [];
 }
 
-function addMarker(result, i) {
-  let markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let markerIcon = MARKER_PATH + markerLetter[i] + ".png";
-  markers[i] = new google.maps.Marker({
-    position: result[i].geometry.location,
-    animation: google.maps.Animation.DROP,
-    icon: markerIcon,
-  });
-  markers[i].placeResult = result[i];
-  markers[i].addListener("click", function () {
-    getPlaceDetails(markers[i].placeResult.place_id, markers[i]);
+function addMarker(result, markerIcon, i) {
+  markers.push(
+    new google.maps.Marker({
+      position: result.geometry.location,
+      animation: google.maps.Animation.DROP,
+      icon: markerIcon,
+      placeResult: result,
+    })
+  );
+  markers[markers.length - 1].addListener("click", function () {
+    getPlaceDetails(markers[i]);
   });
 }
 
@@ -98,22 +100,20 @@ function dropMarker(i) {
   };
 }
 
-function addResult(result, i) {
-  let markerLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let markerIcon = MARKER_PATH + markerLetter[i] + ".png";
+function addResult(result, markerIcon, i) {
   $("tbody").append(
-    `<tr><td><img src="${markerIcon}"></td><td><strong>${result[i].name}</strong><br>${result[i].vicinity}</td></tr>`
+    `<tr><td><img src="${markerIcon}"></td><td><strong>${result.name}</strong><br>${result.vicinity}</td></tr>`
   );
   $("tr")
     .eq(i)
     .click(function () {
-      getPlaceDetails(markers[i].placeResult.place_id, markers[i]);
+      getPlaceDetails(markers[i]);
     });
 }
 
-function getPlaceDetails(place, marker) {
+function getPlaceDetails(marker) {
   let request = {
-    placeId: place,
+    placeId: marker.placeResult.place_id,
     fields: [
       "icon",
       "name",
