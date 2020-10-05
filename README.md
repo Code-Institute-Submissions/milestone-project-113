@@ -110,6 +110,36 @@ More information about forking a GitHub repository is available [here](https://d
 
 ### Making a Local Clone
 
+A local clone of the project can be created using the following steps:
+
+1.  Log in to GitHub and locate the project's [GitHub Repository](https://github.com/jonathan-odonnell/milestone-project-2).
+2.  Under the repository name, click the "Code" button.
+![Image showing the code button](assets/images/clone/clone1.png)
+3.  To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard button to copy the repository URL. 
+![Image showing the clipboard button](assets/images/clone/clone2.png)
+    To clone using SSH click "Use SSH" and then click the clipboard button.
+![Image showing the use ssh button](assets/images/clone/clone3.png)
+![Image showing the clipboard button](assets/images/clone/clone4.png)
+4.  Open Git Bash
+5.  Change the current working directory to the location where you want to store the cloned repository.
+6.  Type ```git clone``` and then paste the URL you copied in Step 3.
+```
+$ git clone https://github.com/jonathan-odonnell/milestone-project-2.git
+```
+7.  Press enter to create your clone.
+```
+$ git clone https://github.com/jonathan-odonnell/milestone-project-2.git
+Cloning into 'milestone-project-2'...
+remote: Enumerating objects: 240, done.
+remote: Counting objects: 100% (240/240), done.
+remote: Compressing objects: 100% (151/151), done.
+remote: Total 639 (delta 132), reused 178 (delta 72), pack-reused 399
+Receiving objects: 100% (639/639), 22.71 MiB | 5.33 MiB/s, done.
+Resolving deltas: 100% (322/322), done.
+```
+
+More information about making a local clone of a GitHub repository is available [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
 ## Credits
 
 ### Code
