@@ -82,6 +82,22 @@
 
 ### GitHub Pages
 
+The project was deployed to GitHub Pages using the following steps:
+
+1.  Log in to GitHub and click on the relelavant [GitHub Repository](https://github.com/jonathan-odonnell/milestone-project-1).
+2.  Click on the "Settings" button at the top of the repository.
+![Image showing the settings button](assets/images/github_pages/github_pages_1.png)
+3.  Scroll down to the "GitHub Pages" section.
+![Image showing the github pages section](assets/images/github_pages/github_pages_2.png)
+4.  In the source section, click the branch dropdown and select "master".
+![Image showing the branch dropdown](assets/images/github_pages/github_pages_3.png)
+5.  Click save and wait for the page to refresh.
+![Image showing the save button](assets/images/github_pages/github_pages_4.png)
+6.  Scroll back down to the "Github Pages" section and locate the link to the published site.
+![Image showing the link](assets/images/github_pages/github_pages_5.png)
+
+More information about deploying a website to GitHub Pages is available [here](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site).
+
 ### Forking the GitHub repository
 
 ### Making a Local Clone
