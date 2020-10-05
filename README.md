@@ -8,9 +8,18 @@
 
 #### Colour Scheme
 
+- The three main colours used in the website are white, light blue and dark blue. 
+- These colours were chosen because the white/light blue contrasts with the dark blue.
+
 #### Typography
 
+- The main font used throughout the website is Montserrat. 
+- This font was chosen because it makes the content easy to read.
+- Sans Serif is the fallback font which is used in the event that the specified font fails to import into the website correctly.
+
 #### Imagery
+
+- The hero images were chosen because they give the user an idea of what they can expect to experience in each destination should they choose to book a holiday there.
 
 ### Wireframes
 
