@@ -1,4 +1,4 @@
-//Most of the code below is from https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints
+// Defines the URL of each photo to request.
 
 let photos = [
   "https://instagram-grabber.p.rapidapi.com/grab/?url=https%253A%252F%252Fwww.instagram.com%252Fp%252FCFaUTokCTx_%252F",
@@ -10,6 +10,8 @@ let photos = [
   "https://instagram-grabber.p.rapidapi.com/grab/?url=https%253A%252F%252Fwww.instagram.com%252Fp%252FCFZWhgIifyA%252F",
   "https://instagram-grabber.p.rapidapi.com/grab/?url=https%253A%252F%252Fwww.instagram.com%252Fp%252FCEuiyrQiim2%252F",
 ];
+
+// Returns the photo associated with each URL in the photos array. Code is from https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints 
 
 function fetchPhotos() {
   for (let i = 0; i < photos.length; i++) {
@@ -31,5 +33,7 @@ function fetchPhotos() {
     });
   }
 }
+
+// Runs the fetchPhotos function when once the document's DOM has loaded.
 
 $(document).ready(fetchPhotos());
