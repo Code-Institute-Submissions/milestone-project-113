@@ -50,9 +50,9 @@
 9. [Instagram Grabber API](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints)
     - Instagram Grabber API was used to request the images used in the gallery.
 10. [Cities Slider](https://codepen.io/suez/pen/OjGQza)
-    - Cities Slider was used for the hero image slider. License is here.
+    - Cities Slider was used for the hero image slider. License is [here](assets/licenses/cities-slider-license.md).
 11. [Owl Carousel 2.3.4](https://owlcarousel2.github.io/OwlCarousel2/)
-    - Owl Carousel was used for the discover the best of Australia carousel. License is here.
+    - Owl Carousel was used for the discover the best of Australia carousel. License is [here](assets/licenses/owl-carousel-license.md).
 12. [Gitpod](https://www.gitpod.io/) 
     - Gitpod was used to write the code for this project and gitpod terminal was used to commit changes to Git and Push them to GitHub.
 13. [Git](https://git-scm.com/)
