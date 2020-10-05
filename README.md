@@ -169,4 +169,4 @@ More information about making a local clone of a GitHub repository is available 
 
 ### Acknowledgements
 
-- I received inspiration for this project from [Tourism Australia ](https://www.australia.com/).
+- I received inspiration for this project from [Tourism Australia](https://www.australia.com/).
