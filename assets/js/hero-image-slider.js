@@ -206,23 +206,7 @@ var CitiesSlider = (function (_React$Component) {
                 )
               );
             })
-          ),
-          React.createElement("div", {
-            className: "slider__control d-none d-md-block",
-            onClick: function onClick() {
-              return _this4.changeSlides(-1);
-            },
-          }),
-          React.createElement("div", {
-            className:
-              "slider__control slider__control--right d-none d-md-block",
-            onClick: function onClick() {
-              return _this4.changeSlides(1);
-            },
-            onMouseLeave: function () {
-              _this4.runAutochangeTO()
-            },
-          })
+          )
         );
       },
     },
