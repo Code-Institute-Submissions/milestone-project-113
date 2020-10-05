@@ -100,6 +100,14 @@ More information about deploying a website to GitHub Pages is available [here](h
 
 ### Forking the GitHub repository
 
+The GitHub Repository can be forked using the following steps:
+
+1.  Log in to GitHub and locate the project's [GitHub Repository](https://github.com/jonathan-odonnell/milestone-project-1).
+2.  At the top-right of the repository, click the "Fork" Button.
+![Image showing the fork button](assets/images/fork/fork.png)
+
+More information about forking a GitHub repository is available [here](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+
 ### Making a Local Clone
 
 ## Credits
