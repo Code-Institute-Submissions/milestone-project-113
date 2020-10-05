@@ -157,4 +157,16 @@ More information about making a local clone of a GitHub repository is available 
 
 ### Media
 
+- The brand logo was designed using [Hatchful](https://hatchful.shopify.com/).
+- The home page hero image slider Sydney image was from [Shutterstock](https://www.shutterstock.com/image-photo/aerial-view-sydney-australia-drone-shot-1580548351).
+- The home page hero image slider Melbourne image was from [Pixabay](https://pixabay.com/photos/central-station-melbourne-victoria-2661255/).
+- The home page hero image slider Brisbane image was from [Shutterstock](https://www.shutterstock.com/image-photo/brisbane-city-skyline-river-twilight-australia-657755617).
+- The Discover the Best of Australia images were from the [Google Places API](https://developers.google.com/places/web-service/overview)
+- The Gallery images were from the [Instagram Grabber API](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints)
+- The Sydney page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/sydney-nswaustralia-surfers-leaving-bondi-beach-1075866242).
+- The Melbourne page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/melbourne-australia-december-18-2016-degraves-558010618).
+- The Brisbane page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/arches-covered-pink-bougainvillea-flowers-southbank-379090987).
+
 ### Acknowledgements
+
+- I received inspiration for this project from [Tourism Australia ](https://www.australia.com/)
