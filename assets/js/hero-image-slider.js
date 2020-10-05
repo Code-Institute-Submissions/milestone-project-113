@@ -1,4 +1,4 @@
-// Code below is from https://www.codeseek.co/suez/cities-slider-react-OjGQza
+// Creates the HTML for the hero image slider. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza
 
 var _createClass = (function () {
   function defineProperties(target, props) {
@@ -215,6 +215,8 @@ var CitiesSlider = (function (_React$Component) {
   return CitiesSlider;
 })(React.Component);
 
+// Defines the cities, images and links to be used for each slide in the hero image slider.
+
 var slides = [
   {
     city: "Sydney",
@@ -235,6 +237,8 @@ var slides = [
     link: "brisbane.html",
   },
 ];
+
+// Renders the hero image slider HTML to the element containing the hero image id. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza
 
 ReactDOM.render(
   React.createElement(CitiesSlider, { slides: slides }),
