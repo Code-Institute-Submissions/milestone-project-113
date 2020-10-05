@@ -1,16 +1,21 @@
+// Collapses navbar when the navbar contact us link is clicked and prevents both contact links from going back to active status when the modal is closed. Code below is from // Code is from // Code below from https://getbootstrap.com/docs/4.0/components/collapse/#via-javascript and https://stackoverflow.com/questions/30322918/bootstrap-modal-restores-button-focus-on-close
+
 $(document).ready(function () {
   $(".nav-item a:last").click(function () {
-    // Code below from https://getbootstrap.com/docs/4.0/components/collapse/#via-javascript
     $(".navbar-collapse").collapse("hide");
     $("#contactUsForm").show();
   });
   $(".close").click(function() {
-      // Code below from https://stackoverflow.com/questions/30322918/bootstrap-modal-restores-button-focus-on-close
     $(".nav-item a:last").one("focus", function() {
+      $(this).blur();
+    });
+    $(".footer-links a:last").one("focus", function() {
       $(this).blur();
     });
   });
 });
+
+// Gets data inputted to the contact form and sends it to emailJS.
 
 function sendMail(contactForm) {
     emailjs.init('user_boozmhp8QWVEdS0lHsScn')
