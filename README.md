@@ -84,7 +84,7 @@
 
 The project was deployed to GitHub Pages using the following steps:
 
-1.  Log in to GitHub and click on the relelavant [GitHub Repository](https://github.com/jonathan-odonnell/milestone-project-1).
+1.  Log in to GitHub and click on the relelavant [GitHub Repository](https://github.com/jonathan-odonnell/milestone-project-2).
 2.  Click on the "Settings" button at the top of the repository.
 ![Image showing the settings button](assets/images/github_pages/github_pages_1.png)
 3.  Scroll down to the "GitHub Pages" section.
@@ -102,7 +102,7 @@ More information about deploying a website to GitHub Pages is available [here](h
 
 The GitHub Repository can be forked using the following steps:
 
-1.  Log in to GitHub and locate the project's [GitHub Repository](https://github.com/jonathan-odonnell/milestone-project-1).
+1.  Log in to GitHub and locate the project's [GitHub Repository](https://github.com/jonathan-odonnell/milestone-project-2).
 2.  At the top-right of the repository, click the "Fork" Button.
 ![Image showing the fork button](assets/images/fork/fork.png)
 
