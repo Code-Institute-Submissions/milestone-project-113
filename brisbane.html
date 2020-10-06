@@ -162,7 +162,9 @@
                         placeholder="Enter name"
                         required
                       />
-                      <label for="emailAddress" class="col-form-label">Email Address</label>
+                      <label for="emailAddress" class="col-form-label"
+                        >Email Address</label
+                      >
                       <input
                         type="text"
                         name="email"
@@ -201,97 +203,96 @@
     <!--Section start-->
     <section>
       <!--Hero Image start-->
-      <div class="container-fluid hero-image-container">
-        <div class="row no-gutters">
-          <div class="col-12">
-            <!--Image from https://www.shutterstock.com/image-photo/arches-covered-pink-bougainvillea-flowers-southbank-379090987-->
-            <img
-              class="hero-images brisbane-hero-image"
-              src="assets/images/brisbane2.jpg"
-              alt="Image of Brisbane's South Bank arches"
-            />
-          </div>
+      <div class="row no-gutters">
+        <div class="col-12">
+          <!--Image from https://www.shutterstock.com/image-photo/arches-covered-pink-bougainvillea-flowers-southbank-379090987-->
+          <img
+            class="hero-images brisbane-hero-image"
+            src="assets/images/brisbane2.jpg"
+            alt="Image of Brisbane's South Bank arches"
+          />
         </div>
       </div>
       <!--Hero Image end-->
       <!--Section Heading start-->
-      <div class="content-wrapper">
-        <div class="container section-container">
-          <div class="row no-gutters">
-            <div class="col-12">
-              <h1 class="section-heading text-center">Brisbane</h1>
-            </div>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <h1 class="section-heading text-center">Brisbane</h1>
           </div>
-          <!--Section Heading end-->
-          <!--Quote start-->
-          <div class="row no-gutters">
-            <div class="col-12 text-center">
-              <blockquote class="blockquote quotes">
-                <!--Text from https://www.australia.com/en-gb/places/brisbane-and-surrounds/guide-to-brisbane.html-->
-                <p class="paragraph">
-                  With almost 300 days of sunshine per year, brisbane is the
-                  perfect spot to spend lots of time enjoying the outdoors with
-                  your family and friends.
-                </p>
-                <footer class="blockquote-footer">
-                  Robert Friedler, Lone Pine Koala Sanctuary
-                </footer>
-              </blockquote>
-            </div>
+        </div>
+        <!--Section Heading end-->
+        <!--Quote start-->
+        <div class="row no-gutters">
+          <div class="col-12 text-center">
+            <blockquote class="blockquote quotes">
+              <!--Text from https://www.australia.com/en-gb/places/brisbane-and-surrounds/guide-to-brisbane.html-->
+              <p class="paragraph">
+                With almost 300 days of sunshine per year, brisbane is the
+                perfect spot to spend lots of time enjoying the outdoors with
+                your family and friends.
+              </p>
+              <footer class="blockquote-footer">
+                Robert Friedler, Lone Pine Koala Sanctuary
+              </footer>
+            </blockquote>
           </div>
-          <!--Quote end-->
-          <!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
-          <div class="dropdown text-center">
-            <button
-              class="dropdown-toggle"
-              value="tourist_attraction"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+        </div>
+        <!--Quote end-->
+        <!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
+        <div class="dropdown text-center">
+          <button
+            class="dropdown-toggle"
+            value="tourist_attraction"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Attractions
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <button class="dropdown-item" value="tourist_attraction">
               Attractions
             </button>
-            <div
-              class="dropdown-menu dropdown-menu-center"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <button class="dropdown-item" value="tourist_attraction">
-                Attractions
-              </button>
-              <button class="dropdown-item" value="lodging">Hotels</button>
-              <button class="dropdown-item" value="shopping_mall">
-                Shopping
-              </button>
-              <button class="dropdown-item" value="cafe">
-                Cafes
-              </button>
-              <button class="dropdown-item" value="restaurant">
-                Restaurants
-              </button>
-              <button class="dropdown-item" value="bar">
-                Bars
-              </button>
-            </div>
+            <button class="dropdown-item" value="lodging">Hotels</button>
+            <button class="dropdown-item" value="shopping_mall">
+              Shopping
+            </button>
+            <button class="dropdown-item" value="cafe">
+              Cafes
+            </button>
+            <button class="dropdown-item" value="restaurant">
+              Restaurants
+            </button>
+            <button class="dropdown-item" value="bar">
+              Bars
+            </button>
           </div>
-          <!--Dropdown end-->
-          <!--Map start-->
-          <div class="row no-gutters map-container">
-            <div class="col-md-8">
-              <div id="map"></div>
-            </div>
-            <div id="results" class="col-md-4 d-flex justify-content-center table-text"></div>
-          </div>
-          <!--Map end-->
         </div>
+        <!--Dropdown end-->
+        <!--Map start-->
+        <div class="row no-gutters map-container">
+          <div class="col-md-8">
+            <div id="map"></div>
+          </div>
+          <div
+            id="results"
+            class="col-md-4 d-flex justify-content-center table-text"
+          ></div>
+        </div>
+        <!--Map end-->
       </div>
       <!--Map and dropdown container end-->
     </section>
     <!--Section end-->
     <!--Footer start-->
-    <footer class="container-fluid footer-container">
-      <div class="row no-gutters">
+    <footer>
+      <div class="row no-gutters footer-container">
         <div class="col-12 col-md-6 offset-md-3">
           <!--Social media icons start-->
           <div class="social-media-icons">
