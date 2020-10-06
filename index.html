@@ -55,12 +55,11 @@
     <script defer src="assets/js/featured.js"></script>
     <title>Discover Australia</title>
   </head>
-
   <body>
     <header>
       <div class="row no-gutters">
         <div class="col-12">
-          <!--Navbar start-->
+          <!--Navbar start. Code from https://getbootstrap.com/docs/4.5/components/navbar/-->
           <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="index.html">
               <img
@@ -126,7 +125,7 @@
             </div>
           </nav>
           <!--Navbar end-->
-          <!-- Modal start-->
+          <!-- Modal start. Code from https://getbootstrap.com/docs/4.5/components/modal/-->
           <div
             class="modal fade"
             id="contactUsForm"
@@ -150,6 +149,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
+                  <!--Form start. Code from https://getbootstrap.com/docs/4.5/components/forms/-->
                   <form onsubmit="return sendMail(this);">
                     <div class="form-group contact-form">
                       <label for="name" class="col-form-label">Name</label>
@@ -190,6 +190,7 @@
                       Submit
                     </button>
                   </form>
+                  <!--Form end-->
                 </div>
               </div>
             </div>
