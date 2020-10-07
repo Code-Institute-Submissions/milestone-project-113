@@ -1,6 +1,10 @@
+/* Font import start. Code from https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* Text Styling */
+/* Font import end */
+
+/* Text Styling start */
 
 .paragraph {
   font-family: "Montserrat", sans-serif;
@@ -10,6 +14,17 @@
 .paragraph-footer {
   color: #fafafa;
   margin: 0 30px 30px;
+}
+
+.paragraph-footer a {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.paragraph-footer a:hover {
+  color: #00a6e6;
 }
 
 .modal-title {
@@ -52,7 +67,9 @@
   margin-bottom: 30px;
 }
 
-/* Content Wrappers */
+/* Text Styling end */
+
+/* Content Wrappers start */
 
 .content-wrapper {
   background-color: #fafafa;
@@ -62,7 +79,9 @@
   background-color: #c2dfff;
 }
 
-/* Navbar */
+/* Content Wrappers end */
+
+/* Navbar start */
 
 .navbar {
   background-color: #20234e;
@@ -79,7 +98,7 @@
   width: 200px;
 }
 
-/* Outline property code below from https://codepen.io/Anahiiit/pen/wvGPvaQ */
+/* Outline property in .navbar .navbar-toggler is from https://codepen.io/Anahiiit/pen/wvGPvaQ */
 
 .navbar .navbar-toggler {
   border: 0;
@@ -115,11 +134,13 @@
   color: #fafafa;
 }
 
-.hvr-underline-from-center:before {
+.nav-link:before {
   background: transparent;
 }
 
-/* Contact Form */
+/* Navbar end */
+
+/* Contact Form start */
 
 .modal-title {
   padding-left: 2rem;
@@ -146,7 +167,10 @@
   color: #fafafa;
 }
 
-/* Home Page Hero Image Slider. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza */
+
+/* Contact Form end */
+
+/* Home Page Hero Image Slider start. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza */
 
 *,
 *:before,
@@ -417,70 +441,75 @@
 .slider__slide.s--active .slider__slide-part-inner:before {
   opacity: 1;
 }
-.slider__control {
-  z-index: 100;
-  position: absolute;
-  left: 50px;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: -25px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.4);
-  -webkit-transform: translateX(-50px);
-  transform: translateX(-50px);
-  opacity: 0;
-  transition: all 0.5s 1s;
-  cursor: pointer;
-}
-.slider__control:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  margin-left: -10px;
-  margin-top: -10px;
-  border: 2px solid #000;
-  border-bottom: none;
-  border-right: none;
-  -webkit-transform: translateX(5px) rotate(-45deg);
-  transform: translateX(5px) rotate(-45deg);
-}
-.slider__control--right {
-  left: auto;
-  right: 50px;
-  -webkit-transform: translateX(50px);
-  transform: translateX(50px);
-}
-.slider__control--right:before {
-  -webkit-transform: translateX(-5px) rotate(135deg);
-  transform: translateX(-5px) rotate(135deg);
-}
-.slider.s--ready .slider__control {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
+
+/* Home Page Hero Image Slider end */
+
+/* Discover the best of Australia Carousel start. Code is from https://codepen.io/Anahiiit/pen/wvGPvaQ */
+
+.framebox {
+  width: 95%;
+  margin: auto;
 }
 
-.icon-link {
-  z-index: 100;
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-  width: 32px;
+.owl-prev,
+.owl-next {
+  font-size: 30px;
+  background-color: #c2dfff;
+  color: #20234e;
+  border: 0;
+  padding: 10px;
 }
-.icon-link img {
+
+.owl-prev:hover,
+.owl-next:hover,
+.owl-prev:focus,
+.owl-next:focus {
+  outline: none;
+}
+
+.owl-nav {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.owl-dot {
+  display: none;
+}
+
+/* Discover the best of Australia carousel end */
+
+/* Cards start */
+
+.card img {
+  object-fit: cover;
+  height: 150px;
+}
+
+.card-title {
+  min-height: 75px;
+  margin-bottom: 1rem;
+}
+
+/* Cards end */
+
+/* Gallery start */
+
+#gallery {
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+.gallery-images {
+  object-fit: cover;
   width: 100%;
-  vertical-align: top;
-}
-.icon-link--twitter {
-  left: auto;
-  right: 5px;
+  height: 100%;
+  padding: 0 10px 10px;
 }
 
-/* Back to top of page link */
+/* Gallery end */
+
+/* Back to top of page link start */
 
 /* Code for box-shadow was obtained from http://www.corelangs.com/css/box/shadow.html and adapted to have the desired effect */
 
@@ -512,7 +541,9 @@
   color: #20234e;
 }
 
-/* Destination Hero Images */
+/* Back to top of page link end */
+
+/* Destination Hero Images start */
 
 .hero-image-container {
   padding: 0;
@@ -536,7 +567,9 @@
   object-position: 50% 70%;
 }
 
-/* Map */
+/* Destination Hero Images end */
+
+/* Dropdown menu start */
 
 #dropdownMenuButton {
   width: 60%;
@@ -573,6 +606,10 @@
   border-radius: 0px;
 }
 
+/* Dropdown Menu end */
+
+/* Map start */
+
 .map-container {
   margin-bottom: 30px;
 }
@@ -582,6 +619,10 @@
   height: 400px;
   background-color: grey;
 }
+
+/* Map end */
+
+/* Results table start */
 
 #results {
   height: 400px;
@@ -597,6 +638,18 @@
   margin-bottom: 0px;
 }
 
+.odd {
+  background-color: #fafafa;
+}
+
+.even {
+  background-color: #c2dfff;
+}
+
+/* Results table end */
+
+/* Info Window start */
+
 #info-window th,
 #info-window tr {
   padding: 5px;
@@ -606,78 +659,9 @@
   height: 20px;
 }
 
-.odd {
-  background-color: #fafafa;
-}
+/* Info Window end */
 
-.even {
-  background-color: #c2dfff;
-}
-
-/* Resolves preventDefault error on swipe over slideshow. Code is from https://stackoverflow.com/questions/55733863/unable-to-preventdefault-inside-passive-event-listener-jquery-mobile */
-
-.slideshow {
-  touch-action: manipulation;
-}
-
-/* Discover Best of Australia Carousel. Most of the code below is from https://codepen.io/Anahiiit/pen/wvGPvaQ */
-
-.framebox {
-  width: 95%;
-  margin: auto;
-}
-
-.owl-prev,
-.owl-next {
-  font-size: 30px;
-  background-color: #c2dfff;
-  color: #20234e;
-  border: 0;
-  padding: 10px;
-}
-
-.owl-prev:hover,
-.owl-next:hover,
-.owl-prev:focus,
-.owl-next:focus {
-  outline: none;
-}
-
-.owl-nav {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.owl-dot {
-  display: none;
-}
-
-.card img {
-  object-fit: cover;
-  height: 150px;
-}
-
-.card-title {
-  min-height: 75px;
-  margin-bottom: 1rem;
-}
-
-/* Gallery */
-
-#gallery {
-  margin-bottom: 20px;
-  height: 200px;
-}
-
-.gallery-images {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  padding: 0 10px 10px;
-}
-
-/* Footer */
+/* Footer start */
 
 .footer-container {
   background-color: #20234e;
@@ -711,7 +695,9 @@
   margin-right: 0;
 }
 
-.social-media-icons .hvr-grow:hover {
+/* Code for .social-media-icons:hover was obtained by viewing the hover.css css properties for the grow effect and adapted to have the desired effect */
+
+.social-media-icons:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
@@ -721,18 +707,9 @@
   padding: 0 20px;
 }
 
-.paragraph-footer a {
-  padding: 0 10px;
-  margin-bottom: 20px;
-  text-decoration: none;
-  color: #fafafa;
-}
+/* Footer end */
 
-.paragraph-footer a:hover {
-  color: #00a6e6;
-}
-
-/* Media Queries */
+/* Media Queries start */
 
 @media (min-width: 439px) {
   .card-title {
@@ -763,7 +740,7 @@
     color: #00a6e6;
   }
 
-  .hvr-underline-from-center:before {
+  .nav-link:before {
     background: #00a6e6;
   }
 
@@ -772,3 +749,5 @@
     margin: 0 50px 30px;
   }
 }
+
+/* Media Queries end */
