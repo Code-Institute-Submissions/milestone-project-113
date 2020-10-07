@@ -85,7 +85,24 @@
 
 ### Fixed Bugs
 
+1. Back to top button was appearing much larger than expected on hover. 
+    - Fixed error in code which was allowing the social media icons hover effect to override the back to top button hover effect. 
+
+2. When the contact form modal was closed the navbar was still expanded and the links remained in active status.
+    - Added jQuery to fix the issue.
+
+3. Results table spinner was not appearing both horizontally and vertically centered.
+    - Fixed an error in the code preventing the spinner from displaying in the correct position.
+
+4. InfoWindows were appearing with the previous result or no result in them.
+    - Changed the code to ensure that the results had been returned before the InfoWindow was opened.
+
+5. Hero image slider was not loading.
+    - Defered the running of the hero-image-slider.js script. 
+
 ### Known Bugs
+
+- Images in the Discover the Best of Australia carousel randomly fail to be returned by the Google Places API when the getURL function is called. 
 
 ## Deployment
 
