@@ -154,14 +154,13 @@ $ git clone https://github.com/jonathan-odonnell/milestone-project-2.git
 ```
 7.  Press enter to create your clone.
 ```
-$ git clone https://github.com/jonathan-odonnell/milestone-project-2.git
 Cloning into 'milestone-project-2'...
-remote: Enumerating objects: 240, done.
-remote: Counting objects: 100% (240/240), done.
-remote: Compressing objects: 100% (151/151), done.
-remote: Total 639 (delta 132), reused 178 (delta 72), pack-reused 399
-Receiving objects: 100% (639/639), 22.71 MiB | 5.33 MiB/s, done.
-Resolving deltas: 100% (322/322), done.
+remote: Enumerating objects: 375, done.
+remote: Counting objects: 100% (375/375), done.
+remote: Compressing objects: 100% (231/231), done.
+remote: Total 671 (delta 219), reused 270 (delta 116), pack-reused 296
+Receiving objects: 100% (671/671), 9.99 MiB | 5.69 MiB/s, done.
+Resolving deltas: 100% (378/378), done.
 ```
 
 More information about making a local clone of a GitHub repository is available [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
