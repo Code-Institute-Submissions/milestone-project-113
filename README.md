@@ -154,7 +154,7 @@
     - Git was the version control system used for this project.
 14. [GitHub](https://github.com/)
     - GitHub is used to store the project's code and any other required files.
-15. B[Balsamiq](https://balsamiq.com/)
+15. [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design phase of the project.
 
 ## Testing
