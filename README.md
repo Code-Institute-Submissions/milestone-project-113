@@ -269,6 +269,14 @@ More information about making a local clone of a GitHub repository is available 
 
 ### Content
 
+- Sydney quote is from [this](https://www.australia.com/en-gb/places/sydney-and-surrounds/guide-to-sydney.html) Tourism Australia page.
+- Melbourne quote is from [this](https://www.australia.com/en-gb/places/melbourne-and-surrounds/guide-to-melbourne.html) Tourism Australia page.
+- Brisbane quote is from [this](https://www.australia.com/en-gb/places/brisbane-and-surrounds/guide-to-brisbane.html) Tourism Australia page.
+- The information in the Github Pages section of the readme was adapted from the GitHub configuring a publishing source for your GitHub Pages site [documentation](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site#creating-your-site).
+- The information in the Forking a Github Repository section of the readme was adapted from the GitHub forking a repository [documentation](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+- The information in the Making a Clone section of the readme was adapted from the GitHub cloning a repository [documentation](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+- All other content was written by the developer.
+
 ### Media
 
 - The brand logo was designed using [Hatchful](https://hatchful.shopify.com/).
