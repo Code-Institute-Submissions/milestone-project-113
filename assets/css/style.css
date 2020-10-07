@@ -480,6 +480,38 @@
   right: 5px;
 }
 
+/* Back to top of page link */
+
+/* Code for box-shadow was obtained from http://www.corelangs.com/css/box/shadow.html and adapted to have the desired effect */
+
+.top-of-page {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #fafafa;
+  box-shadow: 0 0 10px #20234e;
+  -moz-box-shadow: 0 0 10px #20234e;
+  -webkit-box-shadow: 0 0 10px #20234e;
+  -o-box-shadow: 0 0 10px #20234e;
+  border-radius: 50%;
+  z-index: 100;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+}
+
+/* Code for .top-of-page:hover was obtained by viewing the hover.css css properties for the grow effect and adapted to have the desired effect */
+
+.top-of-page:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.top-of-page i {
+  color: #20234e;
+}
+
 /* Destination Hero Images */
 
 .hero-image-container {
@@ -635,6 +667,7 @@
 
 #gallery {
   margin-bottom: 20px;
+  height: 200px;
 }
 
 .gallery-images {
@@ -678,13 +711,10 @@
   margin-right: 0;
 }
 
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
+.social-media-icons .hvr-grow:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
-
 
 .footer-links {
   margin-bottom: 20px;
@@ -692,14 +722,14 @@
 }
 
 .paragraph-footer a {
-    padding: 0 10px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #fafafa;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .paragraph-footer a:hover {
-    color: #00a6e6;
+  color: #00a6e6;
 }
 
 /* Media Queries */
