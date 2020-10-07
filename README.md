@@ -161,6 +161,14 @@
 
 ### WC3 Validation
 
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure that the code used in the project was in compliance with the HTML5 and CSS3 standards and that there were no syntax errors.
+
+- [Home](assets/images/validation/home.png)
+- [Sydney](assets/images/validation/sydney.png)
+- [Melbourne](assets/images/validation/melbourne.png)
+- [Brisbane](assets/images/validation/brisbane.png)
+- [CSS](assets/images/validation/css.png)
+
 ### Testing User Stories from User Experience (UX) Section
 
 ### Manual Testing
