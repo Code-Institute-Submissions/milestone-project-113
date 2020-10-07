@@ -25,7 +25,93 @@
 
 ## Features
 
-### Existing Features### Features Left to Implement
+### Existing Features
+
+1. Brand Logo
+
+    - This familiarises users with the organisation's logo and is also a link which the user can access from any page to take them back to the home page.
+
+2. Navigation links
+
+    - These enable users to access the different pages of the website so they can easily find the content they are looking for.
+
+3. Home Page Hero Image Slider
+
+    - This provides users with an image which gives them an idea of the kind of experience they can expect if they choose to visit the destination and a link to the destination's page.
+
+4. Discover the Best of Australia Carousel
+
+    - This enables users to find out about the top attractions across Australia and view key information about each attraction such as an image of the attraction, it's name, it's rating and a link to it's website.
+
+5. Gallery
+
+    - This allows users to view images which give them an idea of the kind of experience they can expect if they choose to visit Australia.
+
+6. Destination Hero Image
+
+    - This provides users with an idea of the kind of experience they can expect if they choose to visit the destination.
+
+7. Dropdown Menu
+
+    - This enables the user to select the type of places they would like to be displayed on the map. A new search is then conducted and new markers are displayed on the map.
+
+8. Google Map
+
+    - This displays a map of the destination's city centre with a markers for each place returned by the place search. If the user drags the map a new search is conducted and new markers are displayed on the map.
+
+9. InfoWindow
+
+    - This provides users with the place's name, address, telephone number, rating, website link and place type icon. The relevant infowindow is opened when the user clicks on a marker or a results table row.
+
+10. Place Search Results Table
+
+    - This displays the marker, name and vicinity for each result returned by the place search.
+
+11. Contact us form
+
+    - This enables users to contact the cafe about any questions they may have by completing the form.
+
+12. Social Media links
+
+    - These provide users with links to the different social media platforms where the cafe has a presence.
+
+13. Responsive Design
+   
+    - Bootstrap grids and CSS media queries are used throughout the website to ensure that it is optimised for use on devices with a wide range of screen sizes.
+
+### Features Left to Implement
+
+1. More Destinations
+
+    - Add more destinations including city, costal and countryside destinations.
+
+2. Check in Date Selector
+
+    - Add a check in date selector which is displayed when the user selects hotels from the main map dropdown.
+
+3. Length of Stay Dropdown
+
+    - Add a length of stay dropdown which is displayed when the user selects hotels from the main map dropdown.
+
+4. Hotel Price Markers
+
+    - Display the price per night as the marker for each hotel. This information can be obtained by conducting a Hotel Prices search using the Google Hotel Prices API. 
+
+5. Add Attraction Entry Prices to Infowindows.
+
+    - Amend the attraction infowindows to include the attraction's entry price. This information can be obtained by amending the place details search. 
+
+6. Add Restaurant Price Levels to Infowindows.
+
+    - Amend the restaurant infowindows to include the restaurant's price level. This information can be obtained by amending the place details search.
+
+7. Add Hotel Star Rating and Facilities to Infowindows.
+
+    - Amend the hotel infowindows to include hotel star rating and details of hotel facilities. This information can be obtained by conducting a hotel content search using the Google Hotel Content API.
+
+8. Custom Markers
+
+    - Add custom markers for each type of place (excluding hotels).
 
 ## Technologies Used
 
