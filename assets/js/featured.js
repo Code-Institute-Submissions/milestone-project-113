@@ -42,7 +42,7 @@ function callback(results, status) {
     $(".card")
       .eq(currentindex(results.place_id) + 10)
       .append(
-        `<img src="${results.photos[0].getUrl()}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
+        `<img src="${results.photos[0].getUrl()}" alt="Image of ${results.place}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
           results.name
         }</strong></p></div><div class="card-text paragraph text-center">${ratings(
           results.rating
