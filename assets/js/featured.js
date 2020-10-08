@@ -96,8 +96,6 @@ function initMap() {
   getData();
 }
 
-initMap();
-
 //Most of the code below is from https://codepen.io/Anahiiit/pen/wvGPvaQ
 
 $(document).ready(function ($) {
