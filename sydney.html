@@ -249,13 +249,52 @@
             <!--Dropdown end-->
             <!--Map start-->
             <div class="row no-gutters map-container">
-              <div class="col-md-8">
-                <div id="map"></div>
+              <div class="d-block d-md-none col-12">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item map-tabs" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="map-view-tab"
+                      data-toggle="pill"
+                      href="#map-view"
+                      role="tab"
+                      aria-controls="map-view"
+                      aria-selected="true"
+                      >Map View</a
+                    >
+                  </li>
+                  <li class="nav-item map-tabs" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="list-view-tab"
+                      data-toggle="pill"
+                      href="#list-view"
+                      role="tab"
+                      aria-controls="list-view"
+                      aria-selected="false"
+                      >List View</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div
-                id="results"
-                class="col-md-4 d-flex justify-content-center table-text"
-              ></div>
+              <div class="col-12">
+                <div class="row no-gutters tab-content" id="pills-tabContent">
+                  <div
+                    class="col-12 col-md-8 tab-pane fade show active"
+                    id="map-view"
+                    role="tabpanel"
+                    aria-labelledby="map-view-tab"
+                  >
+                  </div>
+                  <div
+                    class="col-12 col-md-4 align-self-center table-text tab-pane fade"
+                    id="list-view"
+                    role="tabpanel"
+                    aria-labelledby="list-view-tab"
+                  >
+                  </div>
+                </div>
+              </div>
             </div>
             <!--Map end-->
             <!--Back to top of page button start-->
@@ -352,7 +391,7 @@
     <!--EmailJS import. Code from https://www.emailjs.com/docs/sdk/installation/-->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
     <!--Email.js import-->
-    <script src="assets/js/email.js"></script>
+    <!--<script src="assets/js/email.js"></script>-->
     <!--Google Maps and Places import. Code from https://developers.google.com/maps/documentation/javascript/overview-->
     <script
       defer

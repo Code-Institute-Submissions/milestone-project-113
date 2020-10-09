@@ -26,7 +26,7 @@ function getCity() {
 }
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map-view"), {
     zoom: 15,
     center: getCity(),
     mapTypeControl: false,
@@ -42,7 +42,7 @@ function initMap() {
 
 function search() {
   //Code below is from https://getbootstrap.com/docs/4.5/components/spinners/#about
-  $("#results").html(`<div class="spinner">
+  $("#list-view").html(`<div class="spinner text-center">
   <div class="spinner-border" role="status">
     <span class="sr-only">Loading...</span>
   </div>
@@ -55,7 +55,7 @@ function search() {
   service.nearbySearch(request, function (results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       clearMarkers();
-      $("#results").html(
+      $("#list-view").html(
         `<table id="resultsTable" class="table table-font table-capitalise"><tbody></tbody></table>`
       );
       let markerPath =
@@ -169,3 +169,7 @@ function centerChanged() {
     search();
   });
 }
+
+//
+
+
