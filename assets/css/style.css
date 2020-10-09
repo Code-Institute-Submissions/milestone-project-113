@@ -629,8 +629,17 @@
   font-family: "Montserrat", sans-serif;
   color: #20234e;
   font-weight: 400;
-  border-radius: 0;
+  border-radius: 23px 0 0 23px;
   border: 2px solid #20234e;
+  padding: 5px;
+}
+
+.map-tabs:first-of-type .nav-link {
+  border-radius: 23px 0 0 23px;
+}
+
+.map-tabs:last-of-type .nav-link {
+  border-radius: 0 23px 23px 0;
 }
 
 .map-tabs .active {
