@@ -79,6 +79,10 @@
   background-color: #fafafa;
 }
 
+.content-container {
+  padding: 0 30px;
+}
+
 .owl-carousel-wrapper {
   background-color: #c2dfff;
 }
@@ -450,8 +454,7 @@
 /* Discover the best of Australia Carousel start. Code is from https://codepen.io/Anahiiit/pen/wvGPvaQ */
 
 .framebox {
-  width: 95%;
-  margin: auto;
+  margin: 0 10px;
 }
 
 .owl-prev,
@@ -789,7 +792,7 @@
 
   .quotes,
   .map-container {
-    margin: 0 50px 30px;
+    margin-bottom: 30px;
   }
 }
 

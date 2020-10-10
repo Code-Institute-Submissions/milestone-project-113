@@ -186,134 +186,136 @@
       </div>
       <!--Hero Image end-->
       <!--Main content container start-->
-      <div class="section-wrapper container">
-        <!--Section Heading start-->
-        <div class="row no-gutters">
-          <div class="col-12">
-            <h1 class="section-heading text-center">Melbourne</h1>
-          </div>
-        </div>
-        <!--Section Heading end-->
-        <!--Quote start-->
-        <div class="row no-gutters">
-          <div class="col-12 text-center">
-            <!--Blockquote code from https://getbootstrap.com/docs/4.5/content/typography/#blockquotes-->
-            <blockquote class="blockquote quotes">
-              <!--Text from https://www.australia.com/en-gb/places/melbourne-and-surrounds/guide-to-melbourne.html-->
-              <p class="paragraph blockquote-text">
-                As a cultural capital of Australia, Melbourne has a hidden gem
-                around every corner.
-              </p>
-              <footer class="blockquote-footer">
-                Stuart Dobson, Acacia Luxury Private Tours
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <!--Quote end-->
-        <!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
-        <div class="dropdown text-center">
-          <button
-            class="dropdown-toggle"
-            value="tourist_attraction"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Attractions
-          </button>
-          <div
-            class="dropdown-menu dropdown-menu-center"
-            aria-labelledby="dropdownMenuButton"
-          >
-            <button class="dropdown-item" value="tourist_attraction">
-              Attractions
-            </button>
-            <button class="dropdown-item" value="lodging">Hotels</button>
-            <button class="dropdown-item" value="shopping_mall">
-              Shopping
-            </button>
-            <button class="dropdown-item" value="cafe">
-              Cafes
-            </button>
-            <button class="dropdown-item" value="restaurant">
-              Restaurants
-            </button>
-            <button class="dropdown-item" value="bar">
-              Bars
-            </button>
-          </div>
-        </div>
-        <!--Dropdown end-->
-        <!--Map and results table start-->
-        <div class="row no-gutters map-container">
-          <!--Tabs start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
-          <div class="d-block d-md-none col-12">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-              <li class="nav-item map-tabs" role="presentation">
-                <a
-                  class="nav-link active"
-                  id="map-view-tab"
-                  data-toggle="pill"
-                  href="#map-view"
-                  role="tab"
-                  aria-controls="map-view"
-                  aria-selected="true"
-                  >Map View</a
-                >
-              </li>
-              <li class="nav-item map-tabs" role="presentation">
-                <a
-                  class="nav-link"
-                  id="list-view-tab"
-                  data-toggle="pill"
-                  href="#list-view"
-                  role="tab"
-                  aria-controls="list-view"
-                  aria-selected="false"
-                  >List View</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!--Tabs end-->
-          <!--Tab content start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
-          <div class="col-12">
-            <div class="row no-gutters tab-content" id="pills-tabContent">
-              <!--Map start-->
-              <div
-                class="col-12 col-md-8 tab-pane fade show active"
-                id="map-view"
-                role="tabpanel"
-                aria-labelledby="map-view-tab"
-              ></div>
-              <!--Map end-->
-              <!--Results table start-->
-              <div
-                class="col-12 col-md-4 align-self-center table-text tab-pane fade"
-                id="list-view"
-                role="tabpanel"
-                aria-labelledby="list-view-tab"
-              ></div>
-              <!--Results table end-->
+      <div class="content-wrapper">
+        <div class="container content-container">
+          <!--Section Heading start-->
+          <div class="row no-gutters">
+            <div class="col-12">
+              <h1 class="section-heading text-center">Melbourne</h1>
             </div>
           </div>
-          <!--Tab content end-->
-        </div>
-        <!--Map and results table end-->
-        <!--Back to top of page button start-->
-        <div class="row no-gutters">
-          <div class="col">
-            <a class="top-of-page d-none hvr-grow">
-              <!--Arrow up code from https://fontawesome.com/icons/arrow-up?style=solid-->
-              <i class="fas fa-arrow-up" aria-hidden="true"></i>
-              <span class="sr-only">Back to top of page</span>
-            </a>
+          <!--Section Heading end-->
+          <!--Quote start-->
+          <div class="row no-gutters">
+            <div class="col-12 text-center">
+              <!--Blockquote code from https://getbootstrap.com/docs/4.5/content/typography/#blockquotes-->
+              <blockquote class="blockquote quotes">
+                <!--Text from https://www.australia.com/en-gb/places/melbourne-and-surrounds/guide-to-melbourne.html-->
+                <p class="paragraph blockquote-text">
+                  As a cultural capital of Australia, Melbourne has a hidden gem
+                  around every corner.
+                </p>
+                <footer class="blockquote-footer">
+                  Stuart Dobson, Acacia Luxury Private Tours
+                </footer>
+              </blockquote>
+            </div>
           </div>
+          <!--Quote end-->
+          <!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
+          <div class="dropdown text-center">
+            <button
+              class="dropdown-toggle"
+              value="tourist_attraction"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Attractions
+            </button>
+            <div
+              class="dropdown-menu dropdown-menu-center"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <button class="dropdown-item" value="tourist_attraction">
+                Attractions
+              </button>
+              <button class="dropdown-item" value="lodging">Hotels</button>
+              <button class="dropdown-item" value="shopping_mall">
+                Shopping
+              </button>
+              <button class="dropdown-item" value="cafe">
+                Cafes
+              </button>
+              <button class="dropdown-item" value="restaurant">
+                Restaurants
+              </button>
+              <button class="dropdown-item" value="bar">
+                Bars
+              </button>
+            </div>
+          </div>
+          <!--Dropdown end-->
+          <!--Map and results table start-->
+          <div class="row no-gutters map-container">
+            <!--Tabs start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
+            <div class="d-block d-md-none col-12">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item map-tabs" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="map-view-tab"
+                    data-toggle="pill"
+                    href="#map-view"
+                    role="tab"
+                    aria-controls="map-view"
+                    aria-selected="true"
+                    >Map View</a
+                  >
+                </li>
+                <li class="nav-item map-tabs" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="list-view-tab"
+                    data-toggle="pill"
+                    href="#list-view"
+                    role="tab"
+                    aria-controls="list-view"
+                    aria-selected="false"
+                    >List View</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Tabs end-->
+            <!--Tab content start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
+            <div class="col-12">
+              <div class="row no-gutters tab-content" id="pills-tabContent">
+                <!--Map start-->
+                <div
+                  class="col-12 col-md-8 tab-pane fade show active"
+                  id="map-view"
+                  role="tabpanel"
+                  aria-labelledby="map-view-tab"
+                ></div>
+                <!--Map end-->
+                <!--Results table start-->
+                <div
+                  class="col-12 col-md-4 align-self-center table-text tab-pane fade"
+                  id="list-view"
+                  role="tabpanel"
+                  aria-labelledby="list-view-tab"
+                ></div>
+                <!--Results table end-->
+              </div>
+            </div>
+            <!--Tab content end-->
+          </div>
+          <!--Map and results table end-->
+          <!--Back to top of page button start-->
+          <div class="row no-gutters">
+            <div class="col">
+              <a class="top-of-page d-none hvr-grow">
+                <!--Arrow up code from https://fontawesome.com/icons/arrow-up?style=solid-->
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                <span class="sr-only">Back to top of page</span>
+              </a>
+            </div>
+          </div>
+          <!--Back to top of page button start-->
         </div>
-        <!--Back to top of page button start-->
       </div>
       <!--Main content container end-->
     </section>
