@@ -4,6 +4,10 @@ $(document).ready(function () {
     $("#dropdownMenuButton").val($(this).val());
     search();
   });
+  $("#list-view-tab").on('shown.bs.tab', function() {
+      hideMarkers();
+      showMarkers();
+    });
 });
 
 let map;
@@ -168,5 +172,17 @@ function notUndefined(heading, text) {
 function centerChanged() {
   map.addListener("dragend", function () {
     search();
-  });
+  })
+}
+
+function hideMarkers() {
+  for (let i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+}
+
+function showMarkers() {
+  for (let i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
 }
