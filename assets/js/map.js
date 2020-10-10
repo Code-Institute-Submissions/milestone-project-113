@@ -108,10 +108,7 @@ function addResult(result, markerIcon, i) {
     .eq(i)
     .click(function () {
       getPlaceDetails(markers[i]);
-      $("#map-view").tab('show');
-      $("#map-view-tab").addClass('active show');
-      $("#list-view-tab").removeClass('active show');
-      $("#list-view").removeClass('active show');
+      $("#map-view-tab").tab('show');
     });
 }
 
