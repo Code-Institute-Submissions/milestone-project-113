@@ -4,10 +4,10 @@ $(document).ready(function () {
     $("#dropdownMenuButton").val($(this).val());
     search();
   });
-  $("#list-view-tab").on('shown.bs.tab', function() {
-      hideMarkers();
-      showMarkers();
-    });
+  $("#list-view-tab").on("shown.bs.tab", function () {
+    hideMarkers();
+    showMarkers();
+  });
 });
 
 let map;
@@ -112,7 +112,7 @@ function addResult(result, markerIcon, i) {
     .eq(i)
     .click(function () {
       getPlaceDetails(markers[i]);
-      $("#map-view-tab").tab('show');
+      $("#map-view-tab").tab("show");
     });
 }
 
@@ -171,8 +171,10 @@ function notUndefined(heading, text) {
 
 function centerChanged() {
   map.addListener("dragend", function () {
-    search();
-  })
+    map.addListener("center_changed", function () {
+      search();
+    });
+  });
 }
 
 function hideMarkers() {
