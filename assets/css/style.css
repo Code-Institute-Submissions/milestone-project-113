@@ -567,6 +567,14 @@
 
 /* Destination Hero Images end */
 
+/* Quotes start */
+
+.blockquote-footer::before {
+    content: "";
+}
+
+/* Quotes end */
+
 /* Dropdown menu start */
 
 #dropdownMenuButton {
