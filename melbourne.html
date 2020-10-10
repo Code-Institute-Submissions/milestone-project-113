@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Melbourne</title>
   </head>
+
   <body>
     <!--Header start-->
     <header>
@@ -46,6 +47,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
+              <!--Bars icon code is from https://fontawesome.com/icons/bars?style=solid-->
               <i class="fas fa-bars" aria-hidden="true"></i>
               <span class="sr-only">Bars</span>
             </button>
@@ -183,123 +185,137 @@
         </div>
       </div>
       <!--Hero Image end-->
-      <!--Section Heading start-->
-      <div class="section-wrapper">
-        <div class="container">
-          <div class="row no-gutters">
-            <div class="col-12">
-              <h1 class="section-heading text-center">Melbourne</h1>
-            </div>
+      <!--Main content container start-->
+      <div class="section-wrapper container">
+        <!--Section Heading start-->
+        <div class="row no-gutters">
+          <div class="col-12">
+            <h1 class="section-heading text-center">Melbourne</h1>
           </div>
-          <!--Section Heading end-->
-          <!--Quote start-->
-          <div class="row no-gutters">
-            <div class="col-12 text-center">
-              <blockquote class="blockquote quotes">
-                <!--Text from https://www.australia.com/en-gb/places/melbourne-and-surrounds/guide-to-melbourne.html-->
-                <p class="paragraph blockquote-text">
-                  As a cultural capital of Australia, Melbourne has a hidden gem
-                  around every corner.
-                </p>
-                <footer class="blockquote-footer">
-                  Stuart Dobson, Acacia Luxury Private Tours
-                </footer>
-              </blockquote>
-            </div>
+        </div>
+        <!--Section Heading end-->
+        <!--Quote start-->
+        <div class="row no-gutters">
+          <div class="col-12 text-center">
+            <!--Blockquote code from https://getbootstrap.com/docs/4.5/content/typography/#blockquotes-->
+            <blockquote class="blockquote quotes">
+              <!--Text from https://www.australia.com/en-gb/places/melbourne-and-surrounds/guide-to-melbourne.html-->
+              <p class="paragraph blockquote-text">
+                As a cultural capital of Australia, Melbourne has a hidden gem
+                around every corner.
+              </p>
+              <footer class="blockquote-footer">
+                Stuart Dobson, Acacia Luxury Private Tours
+              </footer>
+            </blockquote>
           </div>
-          <!--Quote end-->
-          <!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
-          <div class="dropdown text-center">
-            <button
-              class="dropdown-toggle"
-              value="tourist_attraction"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
+        </div>
+        <!--Quote end-->
+        <!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
+        <div class="dropdown text-center">
+          <button
+            class="dropdown-toggle"
+            value="tourist_attraction"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Attractions
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <button class="dropdown-item" value="tourist_attraction">
               Attractions
             </button>
-            <div
-              class="dropdown-menu dropdown-menu-center"
-              aria-labelledby="dropdownMenuButton"
-            >
-              <button class="dropdown-item" value="tourist_attraction">
-                Attractions
-              </button>
-              <button class="dropdown-item" value="lodging">Hotels</button>
-              <button class="dropdown-item" value="shopping_mall">
-                Shopping
-              </button>
-              <button class="dropdown-item" value="cafe">
-                Cafes
-              </button>
-              <button class="dropdown-item" value="restaurant">
-                Restaurants
-              </button>
-              <button class="dropdown-item" value="bar">
-                Bars
-              </button>
-            </div>
+            <button class="dropdown-item" value="lodging">Hotels</button>
+            <button class="dropdown-item" value="shopping_mall">
+              Shopping
+            </button>
+            <button class="dropdown-item" value="cafe">
+              Cafes
+            </button>
+            <button class="dropdown-item" value="restaurant">
+              Restaurants
+            </button>
+            <button class="dropdown-item" value="bar">
+              Bars
+            </button>
           </div>
-          <!--Dropdown end-->
-          <!--Map start-->
-          <div class="row no-gutters map-container">
-            <div class="d-block d-md-none col-12">
-              <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                <li class="nav-item map-tabs" role="presentation">
-                  <a
-                    class="nav-link active"
-                    id="map-view-tab"
-                    data-toggle="pill"
-                    href="#map-view"
-                    role="tab"
-                    aria-controls="map-view"
-                    aria-selected="true"
-                    >Map View</a
-                  >
-                </li>
-                <li class="nav-item map-tabs" role="presentation">
-                  <a
-                    class="nav-link"
-                    id="list-view-tab"
-                    data-toggle="pill"
-                    href="#list-view"
-                    role="tab"
-                    aria-controls="list-view"
-                    aria-selected="false"
-                    >List View</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-12">
-              <div class="row no-gutters tab-content" id="pills-tabContent">
-                <div
-                  class="col-12 col-md-8 tab-pane fade show active"
-                  id="map-view"
-                  role="tabpanel"
-                  aria-labelledby="map-view-tab"
-                ></div>
-                <div
-                  class="col-12 col-md-4 align-self-center table-text tab-pane fade"
-                  id="list-view"
-                  role="tabpanel"
-                  aria-labelledby="list-view-tab"
-                ></div>
-              </div>
-            </div>
-          </div>
-          <!--Map end-->
-          <!--Back to top of page button start-->
-          <a class="top-of-page d-none hvr-grow">
-            <i class="fas fa-arrow-up"></i>
-          </a>
-          <!--Back to top of page button start-->
         </div>
+        <!--Dropdown end-->
+        <!--Map and results table start-->
+        <div class="row no-gutters map-container">
+          <!--Tabs start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
+          <div class="d-block d-md-none col-12">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item map-tabs" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="map-view-tab"
+                  data-toggle="pill"
+                  href="#map-view"
+                  role="tab"
+                  aria-controls="map-view"
+                  aria-selected="true"
+                  >Map View</a
+                >
+              </li>
+              <li class="nav-item map-tabs" role="presentation">
+                <a
+                  class="nav-link"
+                  id="list-view-tab"
+                  data-toggle="pill"
+                  href="#list-view"
+                  role="tab"
+                  aria-controls="list-view"
+                  aria-selected="false"
+                  >List View</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Tabs end-->
+          <!--Tab content start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
+          <div class="col-12">
+            <div class="row no-gutters tab-content" id="pills-tabContent">
+              <!--Map start-->
+              <div
+                class="col-12 col-md-8 tab-pane fade show active"
+                id="map-view"
+                role="tabpanel"
+                aria-labelledby="map-view-tab"
+              ></div>
+              <!--Map end-->
+              <!--Results table start-->
+              <div
+                class="col-12 col-md-4 align-self-center table-text tab-pane fade"
+                id="list-view"
+                role="tabpanel"
+                aria-labelledby="list-view-tab"
+              ></div>
+              <!--Results table end-->
+            </div>
+          </div>
+          <!--Tab content end-->
+        </div>
+        <!--Map and results table end-->
+        <!--Back to top of page button start-->
+        <div class="row no-gutters">
+          <div class="col">
+            <a class="top-of-page d-none hvr-grow">
+              <!--Arrow up code from https://fontawesome.com/icons/arrow-up?style=solid-->
+              <i class="fas fa-arrow-up" aria-hidden="true"></i>
+              <span class="sr-only">Back to top of page</span>
+            </a>
+          </div>
+        </div>
+        <!--Back to top of page button start-->
       </div>
-      <!--Map and dropdown container end-->
+      <!--Main content container end-->
     </section>
     <!--Section end-->
     <!--Footer start-->
@@ -311,28 +327,28 @@
             <ul class="list-inline no-gutters">
               <li class="col-3 list-inline-item">
                 <a href="https://www.facebook.com" target="_blank">
-                  <!--Code for icons from https://fontawesome.com/icons/facebook?style=brands-->
+                  <!--Code for Facebook icon from https://fontawesome.com/icons/facebook?style=brands-->
                   <i class="fab fa-facebook hvr-grow" aria-hidden="true"></i>
                   <span class="sr-only">Facebook</span>
                 </a>
               </li>
               <li class="col-3 list-inline-item">
                 <a href="https://www.twitter.com" target="_blank">
-                  <!--Code for icons from https://fontawesome.com/icons/twitter?style=brands-->
+                  <!--Code for Twitter icon from https://fontawesome.com/icons/twitter?style=brands-->
                   <i class="fab fa-twitter hvr-grow" aria-hidden="true"></i>
                   <span class="sr-only">Twitter</span>
                 </a>
               </li>
               <li class="col-3 list-inline-item">
                 <a href="https://www.instagram.com" target="_blank">
-                  <!--Code for icons from https://fontawesome.com/icons/instagram?style=brands-->
+                  <!--Code for Instagram icon from https://fontawesome.com/icons/instagram?style=brands-->
                   <i class="fab fa-instagram hvr-grow" aria-hidden="true"></i>
                   <span class="sr-only">Instagram</span>
                 </a>
               </li>
               <li class="col-3 list-inline-item">
                 <a href="https://www.youtube.com" target="_blank">
-                  <!--Code for icon from https://fontawesome.com/icons/youtube?style=brands-->
+                  <!--Code for YouTube icon from https://fontawesome.com/icons/youtube?style=brands-->
                   <i class="fab fa-youtube hvr-grow" aria-hidden="true"></i>
                   <span class="sr-only">YouTube</span>
                 </a>

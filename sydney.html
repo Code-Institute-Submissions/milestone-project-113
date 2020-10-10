@@ -1,328 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap style sheet import. Code from https://getbootstrap.com/-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!--Font Awesome style sheet import. -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <!--Hover.css style sheet import. https://cdnjs.com/libraries/hover.css/2.3.1-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <!--Style.css style sheet import.-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Sydney</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!--Bootstrap style sheet import. Code from https://getbootstrap.com/-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-	<!--Font Awesome style sheet import. -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-	<!--Hover.css style sheet import. https://cdnjs.com/libraries/hover.css/2.3.1-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-	<!--Style.css style sheet import.-->
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<title>Sydney</title>
-</head>
-
-<body>
-	<!--Header start-->
-	<header>
-		<div class="row no-gutters">
-			<div class="col-12">
-				<!--Navbar start. Code from https://getbootstrap.com/docs/4.5/components/navbar/-->
-				<nav class="navbar navbar-expand-lg navbar-dark">
-					<a class="navbar-brand" href="index.html">
-						<img
-                          src="assets/images/brand/logo.png"
-                          alt="logo image of a kangaroo and the text Discover Australia"
-                        />
-                    </a>
-					<button
-                      class="navbar-toggler"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#navbarSupportedContent"
-                      aria-controls="navbarSupportedContent"
-                      aria-expanded="false"
-                     aria-label="Toggle navigation"
-                    >
-                      <i class="fas fa-bars" aria-hidden="true"></i>
-                      <span class="sr-only">Bars</span>
+  <body>
+    <!--Header start-->
+    <header>
+      <div class="row no-gutters">
+        <div class="col-12">
+          <!--Navbar start. Code from https://getbootstrap.com/docs/4.5/components/navbar/-->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/images/brand/logo.png"
+                alt="logo image of a kangaroo and the text Discover Australia"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <!--Bars icon code from https://fontawesome.com/icons/bars?style=solid-->
+              <i class="fas fa-bars" aria-hidden="true"></i>
+              <span class="sr-only">Bars</span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link hvr-underline-from-center active"
+                    href="sydney.html"
+                    >Sydney <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="melbourne.html"
+                    >Melbourne</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="brisbane.html"
+                    >Brisbane</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link hvr-underline-from-center"
+                    href="#ContactUsForm"
+                    data-toggle="modal"
+                    data-target="#contactUsForm"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!--Navbar end-->
+          <!-- Modal start. Code from https://getbootstrap.com/docs/4.5/components/modal/-->
+          <div
+            class="modal fade"
+            id="contactUsForm"
+            tabindex="-1"
+            aria-labelledby="contactUsForm"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content text-center">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="contactUs">
+                    Contact Us
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!--Form start. Code from https://getbootstrap.com/docs/4.5/components/forms/-->
+                  <form onsubmit="return sendMail(this);">
+                    <div class="form-group contact-form">
+                      <label for="name" class="col-form-label">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter name"
+                        required
+                      />
+                      <label for="emailAddress" class="col-form-label"
+                        >Email Address</label
+                      >
+                      <input
+                        type="text"
+                        name="email"
+                        id="emailAddress"
+                        class="form-control"
+                        placeholder="Enter email address"
+                        required
+                      />
+                      <label for="message-text" class="col-form-label"
+                        >Message:</label
+                      >
+                      <textarea
+                        name="message"
+                        id="message-text"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Enter message"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                      Submit
                     </button>
-			        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="index.html">Home</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center active" href="sydney.html">Sydney
-										<span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="melbourne.html">Melbourne</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="brisbane.html">Brisbane</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link hvr-underline-from-center" href="#ContactUsForm"
-										data-toggle="modal" data-target="#contactUsForm">
-										Contact Us
-									</a>
-								</li>
-							</ul>
-					</div>
-				</nav>
-				<!--Navbar end-->
-				<!-- Modal start. Code from https://getbootstrap.com/docs/4.5/components/modal/-->
-				<div class="modal fade" id="contactUsForm" tabindex="-1" aria-labelledby="contactUsForm"
-					aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content text-center">
-							<div class="modal-header">
-								<h5 class="modal-title" id="contactUs">
-									Contact Us
-								</h5>
-								<button
-                                  type="button"
-                                  class="close"
-                                  data-dismiss="modal"
-                                  aria-label="Close"
-                                >
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-							</div>
-							<div class="modal-body">
-								<!--Form start. Code from https://getbootstrap.com/docs/4.5/components/forms/-->
-								<form onsubmit="return sendMail(this);">
-									<div class="form-group contact-form">
-										<label for="name" class="col-form-label">Name</label>
-										<input
-                                          type="text"
-                                          name="name"
-                                          id="name"
-                                          class="form-control"
-                                          placeholder="Enter name"
-                                          required
-                                        />
-										<label for="emailAddress" class="col-form-label"
-                                          >Email Address</label>
-										<input
-                                          type="text"
-                                          name="email"
-                                          id="emailAddress"
-                                          class="form-control"
-                                          placeholder="Enter email address"
-                                          required
-                                        />
-										<label for="message-text" class="col-form-label"
-                                          >Message:</label>
-										<textarea
-                                          name="message"
-                                          id="message-text"
-                                          class="form-control"
-                                          rows="5"
-                                          placeholder="Enter message"
-                                          required
-                                        ></textarea>
-									</div>
-									<button type="submit" class="btn">
-                                      Submit
-                                </button>
-								</form>
-								<!--Form end-->
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--Modal end-->
-			</div>
-		</div>
-	</header>
-	<!--Header end-->
-	<!--Section start-->
-	<section>
-		<!--Hero Image start-->
-		<div class="row no-gutters">
-			<div class="col-12">
-				<!--Image from https://www.shutterstock.com/image-photo/sydney-nswaustralia-surfers-leaving-bondi-beach-1075866242-->
-				<img
+                  </form>
+                  <!--Form end-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Modal end-->
+        </div>
+      </div>
+    </header>
+    <!--Header end-->
+    <!--Section start-->
+    <section>
+      <!--Hero Image start-->
+      <div class="row no-gutters">
+        <div class="col-12">
+          <!--Image from https://www.shutterstock.com/image-photo/sydney-nswaustralia-surfers-leaving-bondi-beach-1075866242-->
+          <img
             class="hero-images sydney-hero-image"
             src="assets/images/sydney2.jpg"
             alt="Image of Surfers on Bondi Beach"
           />
         </div>
-			</div>
-			<!--Hero Image end-->
-			<!--Section Heading start-->
-			<div class="section-wrapper">
-				<div class="section-wrapper">
-					<div class="container">
-						<div class="row no-gutters">
-							<div class="col-12">
-								<h1 class="section-heading text-center">Sydney</h1>
-							</div>
-						</div>
-						<!--Section Heading end-->
-						<!--Quote start-->
-						<div class="row no-gutters">
-							<div class="col-12 text-center">
-								<blockquote class="blockquote quotes">
-									<!--Text from https://www.australia.com/en-gb/places/sydney-and-surrounds/guide-to-sydney.html-->
-									<p class="paragraph blockquote-text">
-										Sydney is one of the most visually stunning cities in the
-										world. But it's the everyday things and general lifestyle of
-										the locals that make it special too.
-									</p>
-									<footer class="blockquote-footer">
-										Curtis Stone, Australian chef, author and TV personality
-									</footer>
-								</blockquote>
-							</div>
-						</div>
-						<!--Quote end-->
-						<!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
-						<div class="dropdown text-center">
-							<button
-                class="dropdown-toggle"
-                value="tourist_attraction"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Attractions
-              </button>
-							<div class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuButton">
-								<button class="dropdown-item" value="tourist_attraction">
-                  Attractions
-                </button>
-								<button class="dropdown-item" value="lodging">Hotels</button>
-								<button class="dropdown-item" value="shopping_mall">
-                  Shopping
-                </button>
-								<button class="dropdown-item" value="cafe">
-                  Cafes
-                </button>
-								<button class="dropdown-item" value="restaurant">
-                  Restaurants
-                </button>
-								<button class="dropdown-item" value="bar">
-                  Bars
-                </button>
-							</div>
-						</div>
-						<!--Dropdown end-->
-						<!--Map start-->
-						<div class="row no-gutters map-container">
-							<div class="d-block d-md-none col-12">
-								<ul class="nav nav-pills" id="pills-tab" role="tablist">
-									<li class="nav-item map-tabs" role="presentation">
-										<a class="nav-link active" id="map-view-tab" data-toggle="pill" href="#map-view"
-											role="tab" aria-controls="map-view" aria-selected="true">Map View</a>
-									</li>
-									<li class="nav-item map-tabs" role="presentation">
-										<a class="nav-link" id="list-view-tab" data-toggle="pill" href="#list-view"
-											role="tab" aria-controls="list-view" aria-selected="false">List View</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-12">
-								<div class="row no-gutters tab-content" id="pills-tabContent">
-									<div class="col-12 col-md-8 tab-pane fade show active" id="map-view" role="tabpanel"
-										aria-labelledby="map-view-tab">
-									</div>
-									<div class="col-12 col-md-4 align-self-center table-text tab-pane fade"
-										id="list-view" role="tabpanel" aria-labelledby="list-view-tab">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--Map end-->
-						<!--Back to top of page button start-->
-						<a class="top-of-page d-none hvr-grow">
-							<i class="fas fa-arrow-up"></i>
-						</a>
-						<!--Back to top of page button start-->
-					</div>
-				</div>
-			</div>
-			<!--Map and dropdown container end-->
-	</section>
-	<!--Section end-->
-	<!--Footer start-->
-	<footer>
-		<div class="row no-gutters footer-container">
-			<div class="col-12 col-md-8 offset-md-2">
-				<!--Social media icons start-->
-				<div class="social-media-icons">
-					<ul class="list-inline no-gutters">
-						<li class="col-3 list-inline-item">
-							<a href="https://www.facebook.com" target="_blank">
-								<!--Code for icons from https://fontawesome.com/icons/facebook?style=brands-->
-								<i class="fab fa-facebook hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">Facebook</span>
-							</a>
-						</li>
-						<li class="col-3 list-inline-item">
-							<a href="https://www.twitter.com" target="_blank">
-								<!--Code for icons from https://fontawesome.com/icons/twitter?style=brands-->
-								<i class="fab fa-twitter hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="col-3 list-inline-item">
-							<a href="https://www.instagram.com" target="_blank">
-								<!--Code for icons from https://fontawesome.com/icons/instagram?style=brands-->
-								<i class="fab fa-instagram hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">Instagram</span>
-							</a>
-						</li>
-						<li class="col-3 list-inline-item">
-							<a href="https://www.youtube.com" target="_blank">
-								<!--Code for icon from https://fontawesome.com/icons/youtube?style=brands-->
-								<i class="fab fa-youtube hvr-grow" aria-hidden="true"></i>
-								<span class="sr-only">YouTube</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!--Social media icons end-->
-				<!--Links start-->
-				<p class="paragraph paragraph-footer footer-links text-center">
-					<a href="sydney.html"><strong>Sydney</strong></a>| <a
-						href="melbourne.html"><strong>Melbourne</strong></a>| <a
-						href="brisbane.html"><strong>Brisbane</strong></a>|
-					<a href="#ContactUsForm" data-toggle="modal"
-						data-target="#contactUsForm"><strong>Contact</strong></a>
-				</p>
-				<!--Links end-->
-				<!--Website designed and developed start-->
-				<p class="paragraph paragraph-footer text-center">
-					Website designed and developed by Jonathan O'Donnell.
-				</p>
-				<!--Website designed and developed end-->
-			</div>
-		</div>
-	</footer>
-	<!--Footer end-->
-	<!--jQuery import. Code from https://code.jquery.com/-->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<!--Popper.js import. Code from https://getbootstrap.com/-->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-	</script>
-	<!--Bootstrap JavaScript import. Code from https://getbootstrap.com/-->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-	</script>
-	<script src="assets/js/navbar.js"></script>
-	<!--EmailJS import. Code from https://www.emailjs.com/docs/sdk/installation/-->
-	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-	<!--Email.js import-->
-	<script src="assets/js/email.js"></script>
-	<!--Google Maps and Places import. Code from https://developers.google.com/maps/documentation/javascript/overview-->
-	<script defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx5PIRpENwcfNsmritJ1GJTz0sWmLb86o&callback=initMap&libraries=places&v=weekly">
-	</script>
-	<!--Map.js import-->
-	<script src="assets/js/map.js"></script>
-	<!--Back-to-top.js import-->
-	<script src="assets/js/back-to-top.js"></script>
-</body>
-
+      </div>
+      <!--Hero Image end-->
+      <!--Main content container start-->
+      <div class="section-wrapper container">
+        <!--Section Heading start-->
+        <div class="row no-gutters">
+          <div class="col-12">
+            <h1 class="section-heading text-center">Sydney</h1>
+          </div>
+        </div>
+        <!--Section Heading end-->
+        <!--Quote start-->
+        <div class="row no-gutters">
+          <div class="col-12 text-center">
+            <!--Blockquote code from https://getbootstrap.com/docs/4.5/content/typography/#blockquotes-->
+            <blockquote class="blockquote quotes">
+              <!--Text from https://www.australia.com/en-gb/places/sydney-and-surrounds/guide-to-sydney.html-->
+              <p class="paragraph blockquote-text">
+                Sydney is one of the most visually stunning cities in the world.
+                But it's the everyday things and general lifestyle of the locals
+                that make it special too.
+              </p>
+              <footer class="blockquote-footer">
+                Curtis Stone, Australian chef, author and TV personality
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <!--Quote end-->
+        <!--Dropdown start. Code from https://getbootstrap.com/docs/4.5/components/dropdowns/-->
+        <div class="dropdown text-center">
+          <button
+            class="dropdown-toggle"
+            value="tourist_attraction"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Attractions
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-center"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <button class="dropdown-item" value="tourist_attraction">
+              Attractions
+            </button>
+            <button class="dropdown-item" value="lodging">Hotels</button>
+            <button class="dropdown-item" value="shopping_mall">
+              Shopping
+            </button>
+            <button class="dropdown-item" value="cafe">
+              Cafes
+            </button>
+            <button class="dropdown-item" value="restaurant">
+              Restaurants
+            </button>
+            <button class="dropdown-item" value="bar">
+              Bars
+            </button>
+          </div>
+        </div>
+        <!--Dropdown end-->
+        <!--Map and results table start-->
+        <div class="row no-gutters map-container">
+          <!--Tabs start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
+          <div class="d-block d-md-none col-12">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item map-tabs" role="presentation">
+                <a
+                  class="nav-link active"
+                  id="map-view-tab"
+                  data-toggle="pill"
+                  href="#map-view"
+                  role="tab"
+                  aria-controls="map-view"
+                  aria-selected="true"
+                  >Map View</a
+                >
+              </li>
+              <li class="nav-item map-tabs" role="presentation">
+                <a
+                  class="nav-link"
+                  id="list-view-tab"
+                  data-toggle="pill"
+                  href="#list-view"
+                  role="tab"
+                  aria-controls="list-view"
+                  aria-selected="false"
+                  >List View</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Tabs end-->
+          <!--Tab content start. Code from https://getbootstrap.com/docs/4.5/components/navs/#tabs-->
+          <div class="col-12">
+            <div class="row no-gutters tab-content" id="pills-tabContent">
+              <!--Map start-->
+              <div
+                class="col-12 col-md-8 tab-pane fade show active"
+                id="map-view"
+                role="tabpanel"
+                aria-labelledby="map-view-tab"
+              ></div>
+              <!--Map end-->
+              <!--Results table start-->
+              <div
+                class="col-12 col-md-4 align-self-center table-text tab-pane fade"
+                id="list-view"
+                role="tabpanel"
+                aria-labelledby="list-view-tab"
+              ></div>
+              <!--Results table end-->
+            </div>
+          </div>
+          <!--Tab content end-->
+        </div>
+        <!--Map and results table end-->
+        <!--Back to top of page button start-->
+        <div class="row no-gutters">
+          <div class="col">
+            <a class="top-of-page d-none hvr-grow">
+              <!--Arrow up code from https://fontawesome.com/icons/arrow-up?style=solid-->
+              <i class="fas fa-arrow-up" aria-hidden="true"></i>
+              <span class="sr-only">Back to top of page</span>
+            </a>
+          </div>
+        </div>
+        <!--Back to top of page button start-->
+      </div>
+      <!--Main content container end-->
+    </section>
+    <!--Section end-->
+    <!--Footer start-->
+    <footer>
+      <div class="row no-gutters footer-container">
+        <div class="col-12 col-md-8 offset-md-2">
+          <!--Social media icons start-->
+          <div class="social-media-icons">
+            <ul class="list-inline no-gutters">
+              <li class="col-3 list-inline-item">
+                <a href="https://www.facebook.com" target="_blank">
+                  <!--Code for Facebook icon from https://fontawesome.com/icons/facebook?style=brands-->
+                  <i class="fab fa-facebook hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li class="col-3 list-inline-item">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!--Code for Twitter icon from https://fontawesome.com/icons/twitter?style=brands-->
+                  <i class="fab fa-twitter hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+              <li class="col-3 list-inline-item">
+                <a href="https://www.instagram.com" target="_blank">
+                  <!--Code for Instagram icon from https://fontawesome.com/icons/instagram?style=brands-->
+                  <i class="fab fa-instagram hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li class="col-3 list-inline-item">
+                <a href="https://www.youtube.com" target="_blank">
+                  <!--Code for YouTube icon from https://fontawesome.com/icons/youtube?style=brands-->
+                  <i class="fab fa-youtube hvr-grow" aria-hidden="true"></i>
+                  <span class="sr-only">YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Social media icons end-->
+          <!--Links start-->
+          <p class="paragraph paragraph-footer footer-links text-center">
+            <a href="sydney.html"><strong>Sydney</strong></a
+            >| <a href="melbourne.html"><strong>Melbourne</strong></a
+            >| <a href="brisbane.html"><strong>Brisbane</strong></a
+            >|
+            <a
+              href="#ContactUsForm"
+              data-toggle="modal"
+              data-target="#contactUsForm"
+              ><strong>Contact</strong></a
+            >
+          </p>
+          <!--Links end-->
+          <!--Website designed and developed start-->
+          <p class="paragraph paragraph-footer text-center">
+            Website designed and developed by Jonathan O'Donnell.
+          </p>
+          <!--Website designed and developed end-->
+        </div>
+      </div>
+    </footer>
+    <!--Footer end-->
+    <!--jQuery import. Code from https://code.jquery.com/-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!--Popper.js import. Code from https://getbootstrap.com/-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap JavaScript import. Code from https://getbootstrap.com/-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/navbar.js"></script>
+    <!--EmailJS import. Code from https://www.emailjs.com/docs/sdk/installation/-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <!--Email.js import-->
+    <script src="assets/js/email.js"></script>
+    <!--Google Maps and Places import. Code from https://developers.google.com/maps/documentation/javascript/overview-->
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx5PIRpENwcfNsmritJ1GJTz0sWmLb86o&callback=initMap&libraries=places&v=weekly"
+    ></script>
+    <!--Map.js import-->
+    <script src="assets/js/map.js"></script>
+    <!--Back-to-top.js import-->
+    <script src="assets/js/back-to-top.js"></script>
+  </body>
 </html>
