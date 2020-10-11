@@ -1,9 +1,9 @@
 // Creates the HTML for the hero image slider. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza
 
-var _createClass = (function () {
+let _createClass = (function () {
   function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
+    for (let i = 0; i < props.length; i++) {
+      let descriptor = props[i];
       descriptor.enumerable = descriptor.enumerable || false;
       descriptor.configurable = true;
       if ("value" in descriptor) descriptor.writable = true;
@@ -19,7 +19,7 @@ var _createClass = (function () {
 
 function _toConsumableArray(arr) {
   if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+    for (let i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
       arr2[i] = arr[i];
     }
     return arr2;
@@ -66,13 +66,13 @@ function _inherits(subClass, superClass) {
       : (subClass.__proto__ = superClass);
 }
 
-var CitiesSlider = (function (_React$Component) {
+let CitiesSlider = (function (_React$Component) {
   _inherits(CitiesSlider, _React$Component);
 
   function CitiesSlider(props) {
     _classCallCheck(this, CitiesSlider);
 
-    var _this = _possibleConstructorReturn(
+    let _this = _possibleConstructorReturn(
       this,
       (CitiesSlider.__proto__ || Object.getPrototypeOf(CitiesSlider)).call(
         this,
@@ -99,7 +99,7 @@ var CitiesSlider = (function (_React$Component) {
     {
       key: "componentDidMount",
       value: function componentDidMount() {
-        var _this2 = this;
+        let _this2 = this;
 
         this.runAutochangeTO();
         setTimeout(function () {
@@ -110,7 +110,7 @@ var CitiesSlider = (function (_React$Component) {
     {
       key: "runAutochangeTO",
       value: function runAutochangeTO() {
-        var _this3 = this;
+        let _this3 = this;
 
         this.changeTO = setTimeout(function () {
           _this3.changeSlides(1);
@@ -122,10 +122,10 @@ var CitiesSlider = (function (_React$Component) {
       key: "changeSlides",
       value: function changeSlides(change) {
         window.clearTimeout(this.changeTO);
-        var length = this.props.slides.length;
+        let length = this.props.slides.length;
 
-        var prevSlide = this.state.activeSlide;
-        var activeSlide = prevSlide + change;
+        let prevSlide = this.state.activeSlide;
+        let activeSlide = prevSlide + change;
         if (activeSlide < 0) activeSlide = length - 1;
         if (activeSlide >= length) activeSlide = 0;
         this.setState({ activeSlide: activeSlide, prevSlide: prevSlide });
@@ -134,9 +134,9 @@ var CitiesSlider = (function (_React$Component) {
     {
       key: "render",
       value: function render() {
-        var _this4 = this;
+        let _this4 = this;
 
-        var _state = this.state,
+        let _state = this.state,
           activeSlide = _state.activeSlide,
           prevSlide = _state.prevSlide,
           sliderReady = _state.sliderReady;
@@ -217,7 +217,7 @@ var CitiesSlider = (function (_React$Component) {
 
 // Defines the cities, images and links to be used for each slide in the hero image slider.
 
-var slides = [
+let slides = [
   {
     city: "Sydney",
     //Image from https://www.shutterstock.com/image-photo/aerial-view-sydney-australia-drone-shot-1580548351
@@ -238,7 +238,7 @@ var slides = [
   },
 ];
 
-// Renders the hero image slider HTML to the element containing the hero image id. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza
+// Renders the hero image slider HTML to the element containing the hero-image ID. Code is from https://www.codeseek.co/suez/cities-slider-react-OjGQza
 
 ReactDOM.render(
   React.createElement(CitiesSlider, { slides: slides }),
