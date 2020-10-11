@@ -170,8 +170,10 @@ function notUndefined(heading, text) {
 }
 
 function centerChanged() {
-  map.addListener("dragend", function () {
+  map.addListener("center_changed", function () {
+    map.addListener("dragend", function () {
       search();
+    });
   });
 }
 
