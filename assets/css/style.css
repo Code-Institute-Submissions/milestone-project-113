@@ -135,7 +135,6 @@
 
 .nav-item {
   padding-right: 20px;
-  text-align: center;
 }
 
 .nav-item:not(:last-of-type) {
@@ -529,7 +528,6 @@
   width: 50px;
   height: 50px;
   font-size: 30px;
-  text-align: center;
   background-color: #fafafa;
   box-shadow: 0 0 10px #20234e;
   -moz-box-shadow: 0 0 10px #20234e;
@@ -708,7 +706,6 @@
 
 .social-media-icons {
   padding: 0;
-  text-align: center;
   font-size: 0;
   margin: 0 auto 20px auto;
   max-width: 300px;
@@ -722,7 +719,6 @@
   font-size: 20px;
   line-height: 1.5;
   color: #fafafa;
-  text-align: center;
 }
 
 .social-media-icons li i:hover {
