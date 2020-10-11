@@ -731,7 +731,7 @@
 
 /* Code for .social-media-icons:hover was obtained by viewing the hover.css css properties for the grow effect and adapted to have the desired effect */
 
-.social-media-icons:hover {
+.social-media-icons li i:hover {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
