@@ -19,7 +19,8 @@ let _createClass = (function () {
 
 function _toConsumableArray(arr) {
   if (Array.isArray(arr)) {
-    for (let i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+    let arr2 = Array(arr.length);
+    for (let i = 0; i < arr.length; i++) {
       arr2[i] = arr[i];
     }
     return arr2;
