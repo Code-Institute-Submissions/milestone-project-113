@@ -31,7 +31,7 @@ function search(id) {
 
   let request = {
     placeId: id,
-    fields: ["place_id", "name", "rating", "website", "photo"],
+    fields: ["name", "rating", "user_ratings_total", "url", "photo"],
   };
 
   // Conducts the search. Code is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests
@@ -53,7 +53,9 @@ function callback(results, status) {
           results.name
         }</strong></p></div><div class="card-text paragraph text-center">${ratings(
           results.rating
-        )}<a href="${results.website}">Visit website</a></p></div></div>`
+        )}<a href="${results.url}">${
+          results.user_ratings_total
+        } reviews</a></p></div></div>`
       );
     $(".card")
       .eq(currentIndex + 10)
@@ -72,10 +74,14 @@ function callback(results, status) {
   else {
     $(".card")
       .eq(currentIndex)
-      .html(`<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`);
+      .html(
+        `<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`
+      );
     $(".card")
       .eq(currentIndex + 10)
-      .html(`<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`);
+      .html(
+        `<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`
+      );
     currentIndex++;
   }
 }
