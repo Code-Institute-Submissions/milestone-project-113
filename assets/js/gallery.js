@@ -39,12 +39,21 @@ function fetchPhotos() {
       },
       // Runs this function if an error is received.
       function (error) {
-        $("#gallery")
-          .children()
-          .eq(i)
-          .append(
-            `<p class="paragraph gallery-errors text-center">Error ${error.status}. Please refresh the page to try again in 1 minute.</p>`
-          );
+        if (error.status === 429) {
+          return $("#gallery")
+            .children()
+            .eq(i)
+            .append(
+              `<p class="paragraph gallery-errors text-center">Error ${error.status}. Unable to get image. Please refresh the page to try again in 1 minute.</p>`
+            );
+        } else {
+            return $("#gallery")
+            .children()
+            .eq(i)
+            .append(
+              `<p class="paragraph gallery-errors text-center">Error ${error.status}.</p>`
+            );
+        }
       }
     );
   }
