@@ -1,4 +1,5 @@
-//Most of the code below is from https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints
+// Declares global variables.
+
 let service;
 let map;
 let attractions = [
@@ -13,6 +14,9 @@ let attractions = [
   "ChIJI1JibStsIysRIV_Fm03NqEM",
   "ChIJWTi8xgGyEmsRgK0yFmh9AQU",
 ];
+let currentIndex = 0;
+
+// Runs the search function for each item in the attractions array.
 
 function getData() {
   for (let i = 0; i < attractions.length; i++) {
@@ -20,60 +24,63 @@ function getData() {
   }
 }
 
+// Conducts the place details search.
+
 function search(id) {
+  // Defines the request parameters and their values. Code is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests
+
   let request = {
     placeId: id,
     fields: ["place_id", "name", "rating", "website", "photo"],
   };
+
+  // Conducts the search. Code is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests
+
   service.getDetails(request, callback);
 }
 
+// Determines how to process the results based on the status code returned by the search.
+
 function callback(results, status) {
+  // Adds the results to the relevant cards in the owl carousel if the search returns a status of OK.  Code for checking the search returned a status of OK is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     $(".card")
-      .eq(currentindex(results.place_id))
-      .append(
-        `<img src="${results.photos[0].getUrl()}" alt="Image of ${results.name}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
+      .eq(currentIndex)
+      .html(
+        `<img src="${results.photos[0].getUrl()}" alt="Image of ${
+          results.name
+        }"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
           results.name
         }</strong></p></div><div class="card-text paragraph text-center">${ratings(
           results.rating
         )}<a href="${results.website}">Visit website</a></p></div></div>`
       );
     $(".card")
-      .eq(currentindex(results.place_id) + 10)
-      .append(
-        `<img src="${results.photos[0].getUrl()}" alt="Image of ${results.name}"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
+      .eq(currentIndex + 10)
+      .html(
+        `<img src="${results.photos[0].getUrl()}" alt="Image of ${
+          results.name
+        }"><div class="card-body"><div class="card-title paragraph text-center"><p><strong>${
           results.name
         }</strong></p></div><div class="card-text paragraph text-center">${ratings(
           results.rating
         )}<a href="${results.website}">Visit website</a></p></div></div>`
       );
+    currentIndex++;
+  }
+  // Adds the status to the relevant cards in the owl carousel if the search returns a status other than OK.
+  else {
+    $(".card")
+      .eq(currentIndex)
+      .html(`<p class="paragraph text-center errors">Error ${status}</p>`);
+    $(".card")
+      .eq(currentIndex + 10)
+      .html(`<p class="paragraph text-center errors">Error ${status}</p>`);
+    currentIndex++;
   }
 }
 
-function currentindex(id) {
-  if (id === attractions[0]) {
-    return 0;
-  } else if (id === attractions[1]) {
-    return 1;
-  } else if (id === attractions[2]) {
-    return 2;
-  } else if (id === attractions[3]) {
-    return 3;
-  } else if (id === attractions[4]) {
-    return 4;
-  } else if (id === attractions[5]) {
-    return 5;
-  } else if (id === attractions[6]) {
-    return 6;
-  } else if (id === attractions[7]) {
-    return 7;
-  } else if (id === attractions[8]) {
-    return 8;
-  } else if (id === attractions[9]) {
-    return 9;
-  }
-}
+// Returns the HTML for the rating. HTML is from https://fontawesome.com/icons/star?style=solid, https://fontawesome.com/icons/star?style=regular and https://fontawesome.com/icons/star-half-alt?style=solid
 
 function ratings(rating) {
   if (rating === "undefined") {
@@ -87,16 +94,18 @@ function ratings(rating) {
   }
 }
 
+// Initiates the search
+
 function initMap() {
-  //Code from https://stackoverflow.com/questions/23460435/get-google-place-details-without-map
+  // Creates the map in new div. Code from https://stackoverflow.com/questions/23460435/get-google-place-details-without-map
   map = new google.maps.Map(document.createElement("div"));
-
+  // Defines the service. Code is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests.
   service = new google.maps.places.PlacesService(map);
-
+  // Calls the getData function
   getData();
 }
 
-//Most of the code below is from https://codepen.io/Anahiiit/pen/wvGPvaQ
+// Creates the Owl Carousel. Code is from https://codepen.io/Anahiiit/pen/wvGPvaQ
 
 $(document).ready(function ($) {
   let $owl = $(".owl-carousel");
@@ -111,6 +120,7 @@ $(document).ready(function ($) {
     items: 10,
     margin: 10,
     startPosition: 0,
+    // navText HTML is from https://fontawesome.com/icons/caret-left?style=solid and https://fontawesome.com/icons/caret-right?style=solid
     navText: [
       "<i class='fas fa-caret-left'></i>",
       "<i class='fas fa-caret-right'></i>",
@@ -118,18 +128,16 @@ $(document).ready(function ($) {
     responsive: {
       0: {
         items: 2,
-        //Code below from https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
       },
       768: {
         items: 3,
-        //Code below from https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
       },
       992: {
         items: 4,
-        //Code below from https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html
       },
     },
   });
+
   $(document).on("click", ".item", function () {
     $owl.trigger("to.owl.carousel", $(this).data("position"));
   });
