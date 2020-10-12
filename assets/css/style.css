@@ -11,6 +11,10 @@
   color: #20234e;
 }
 
+.paragraph a {
+  color: #20234e;
+}
+
 .paragraph-footer {
   color: #fafafa;
   margin: 0;
@@ -25,6 +29,7 @@
 
 .paragraph-footer a:hover {
   color: #00a6e6;
+  text-decoration: underline;
 }
 
 .modal-title {
@@ -497,7 +502,7 @@
 /* Cards start */
 
 .card {
-    min-height: 363px;
+  min-height: 363px;
 }
 
 .card img {
