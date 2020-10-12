@@ -44,14 +44,14 @@ function fetchPhotos() {
             .children()
             .eq(i)
             .append(
-              `<p class="paragraph gallery-errors text-center">Error ${error.status}. Unable to get image. Please refresh the page to try again in 1 minute.</p>`
+              `<p class="paragraph errors text-center">Error ${error.status}. Unable to get image. Please refresh the page to try again in 1 minute.</p>`
             );
         } else {
             return $("#gallery")
             .children()
             .eq(i)
             .append(
-              `<p class="paragraph gallery-errors text-center">Error ${error.status}.</p>`
+              `<p class="paragraph errors text-center">Error ${error.status}.</p>`
             );
         }
       }
