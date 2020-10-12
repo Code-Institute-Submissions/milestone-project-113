@@ -95,6 +95,10 @@
   padding: 0 25px 20px;
 }
 
+.gallery-errors {
+    padding: 20px;
+}
+
 .footer-container {
   background-color: #20234e;
   color: #fafafa;
