@@ -1,16 +1,23 @@
 $(document).ready(function () {
-  // Collapses navbar and shows the contact us modal when clicked. Code is from https://getbootstrap.com/docs/4.0/components/collapse/
+  // Collapses the navbar, adds the no-hover class to the navbar contact link and shows the contact us modal when the navbar contact link is clicked. Code is from https://getbootstrap.com/docs/4.0/components/collapse/
   $(".navbar-nav a:last").click(function () {
+    $(this).addClass("no-hover");
     $(".navbar-collapse").collapse("hide");
     $("#contactUsForm").show();
   });
-  // Makes links lose their focus status when the close button is clicked. Code is from https://stackoverflow.com/questions/30322918/bootstrap-modal-restores-button-focus-on-close
+  // Adds the no-hover class to the footer contact link when clicked.
+  $(".footer-links").click(function () {
+      $(this).addClass("no-hover");
+    });
+  // Makes links lose their focus status and removes the no-hover class from links when the close button is clicked. Code is from https://stackoverflow.com/questions/30322918/bootstrap-modal-restores-button-focus-on-close
   $(".close").click(function () {
     $(".navbar-nav a:last").one("focus", function () {
       $(this).blur();
+      $(this).removeClass("no-hover");
     });
     $(".footer-links a:last").one("focus", function () {
       $(this).blur();
+      $(this).removeClass("no-hover");
     });
   });
   // Adds contact form HTML to the element containing the modal-body class before the modal is opened. Code is from https://getbootstrap.com/docs/4.0/components/modal/#via-javascript and https://getbootstrap.com/docs/4.5/components/forms/.

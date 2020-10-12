@@ -101,7 +101,6 @@
   padding: 30px;
 }
 
-
 /* Content Containers end */
 
 /* Navbar start */
@@ -779,8 +778,16 @@
     color: #00a6e6;
   }
 
+  .navbar-dark .navbar-nav .no-hover:hover, .no-hover a:hover {
+    color: #fafafa;
+  }
+
   .nav-link:before {
     background: #00a6e6;
+  }
+
+  .no-hover:before {
+    background: transparent;
   }
 }
 
