@@ -496,6 +496,10 @@
 
 /* Cards start */
 
+.card {
+    min-height: 363px;
+}
+
 .card img {
   object-fit: cover;
   height: 150px;
@@ -744,7 +748,7 @@
 /* Errors start */
 
 .errors {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* Errors end */
@@ -752,6 +756,10 @@
 /* Media Queries start */
 
 @media (min-width: 439px) {
+  .card {
+    min-height: 338px;
+  }
+
   .card-title {
     min-height: 50px;
   }
@@ -786,7 +794,8 @@
     color: #00a6e6;
   }
 
-  .navbar-dark .navbar-nav .no-hover:hover, .no-hover a:hover {
+  .navbar-dark .navbar-nav .no-hover:hover,
+  .no-hover a:hover {
     color: #fafafa;
   }
 

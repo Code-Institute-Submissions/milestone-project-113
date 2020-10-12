@@ -72,10 +72,10 @@ function callback(results, status) {
   else {
     $(".card")
       .eq(currentIndex)
-      .html(`<p class="paragraph text-center errors">Error ${status}</p>`);
+      .html(`<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`);
     $(".card")
       .eq(currentIndex + 10)
-      .html(`<p class="paragraph text-center errors">Error ${status}</p>`);
+      .html(`<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`);
     currentIndex++;
   }
 }
