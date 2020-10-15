@@ -526,6 +526,11 @@
   padding: 0 5px 10px 5px;
 }
 
+.image-not-found {
+  height: 800px;
+  width: 600px;
+}
+
 /* Gallery end */
 
 /* Back to top of page link start */

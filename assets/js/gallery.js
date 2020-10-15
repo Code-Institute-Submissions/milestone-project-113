@@ -1,5 +1,4 @@
 // Defines the URL of each photo to request.
-
 let photos = [
   "https://instagram-grabber.p.rapidapi.com/grab/?url=https%253A%252F%252Fwww.instagram.com%252Fp%252FCFaUTokCTx_%252F",
   "https://instagram-grabber.p.rapidapi.com/grab/?url=https%253A%252F%252Fwww.instagram.com%252Fp%252FCEobZ7LCehX%252F",
@@ -12,7 +11,6 @@ let photos = [
 ];
 
 // Returns the photo associated with each URL in the photos array.
-
 function fetchPhotos() {
   for (let i = 0; i < photos.length; i++) {
     // Defines the request parameters and their values. Code is from https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints.
@@ -30,35 +28,34 @@ function fetchPhotos() {
     $.getJSON(settings).then(
       // Runs this function if a response is received
       function (response) {
+        console.log(response);
+        console.log(response.success)
         $("#gallery")
           .children()
           .eq(i)
-          .append(
-            `<img class="gallery-images" src="${response.media[0].source}">`
-          );
+          .append(notUndefined(response));
       },
-      // Runs this function if an error is received.
+      // Runs this function if an error is received. Image is from https://placeholder.com/
       function (error) {
-        if (error.status === 429) {
-          return $("#gallery")
-            .children()
-            .eq(i)
-            .append(
-              `<p class="paragraph errors text-center">Error ${error.status}. Unable to get image. Please refresh the page to try again in 1 minute.</p>`
-            );
-        } else {
-            return $("#gallery")
-            .children()
-            .eq(i)
-            .append(
-              `<p class="paragraph errors text-center">Error ${error.status}.</p>`
-            );
-        }
+        return $("#gallery")
+          .children()
+          .eq(i)
+          .append(
+            `<img class="gallery-images" src="https://via.placeholder.com/600x800.png?text=Image+not+found" alt="Image not found placeholder">`
+          );
       }
     );
   }
 }
 
-// Runs the fetchPhotos function when once the document's DOM has loaded.
+// Returns image HTML if response returns a success property of true and returns placeholder image if response returns a success property of false. Placeholder image is from https://placeholder.com/
+function notUndefined(response) {
+  if (response.success === true) {
+    return `<img class="gallery-images" src="${response.media[0].source}"></img>`;
+  } else {
+    return `<img class="gallery-images" src="https://via.placeholder.com/600x800.png?text=Image+not+found" alt="Image not found placeholder"></img>`;
+  }
+}
 
+// Runs the fetchPhotos function when once the document's DOM has loaded.
 $(document).ready(fetchPhotos());
