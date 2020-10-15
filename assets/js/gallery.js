@@ -41,7 +41,7 @@ function fetchPhotos() {
           .children()
           .eq(i)
           .append(
-            `<img class="gallery-images" src="https://via.placeholder.com/600x800.png?text=Image+not+found" alt="Image not found placeholder">`
+            `<img class="gallery-images" src="https://via.placeholder.com/600x800/D3D3D3/4A4A4A.png?text=Image+not+found" alt="Image not found placeholder">`
           );
       }
     );
@@ -53,7 +53,7 @@ function notUndefined(response) {
   if (response.success === true) {
     return `<img class="gallery-images" src="${response.media[0].source}"></img>`;
   } else {
-    return `<img class="gallery-images" src="https://via.placeholder.com/600x800.png?text=Image+not+found" alt="Image not found placeholder"></img>`;
+    return `<img class="gallery-images" src="https://via.placeholder.com/600x800/D3D3D3/4A4A4A.png?text=Image+not+found" alt="Image not found placeholder"></img>`;
   }
 }
 
