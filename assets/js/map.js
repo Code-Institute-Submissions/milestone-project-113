@@ -128,7 +128,7 @@ function search() {
 
         // Runs the addResult function
 
-        addResult(results[i], markerIcon);
+        addResult(results[i], markerIcon, i);
       }
 
       // Adds the odd class to odd table rows.
@@ -177,7 +177,7 @@ function dropMarker(i) {
 
 // Adds the results to a new row in the results table and adds a click event to the table row which runs the getPlaceDetails function and opens the map tab (small screens only) when the marker is clicked.
 
-function addResult(result, markerIcon) {
+function addResult(result, markerIcon, i) {
   $("tbody").append(
     `<tr><td><img src="${markerIcon}"></td><td><strong>${result.name}</strong><br>${result.vicinity}</td></tr>`
   );
