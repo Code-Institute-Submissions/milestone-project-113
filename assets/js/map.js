@@ -255,12 +255,18 @@ function notUndefined(heading, text) {
   }
 }
 
-// Adds an event listener which triggers the search function when both the center_changed and dragend events are triggered. Code is from https://developers.google.com/maps/documentation/javascript/events
+// Adds an event listener which triggers the search function when the user stops dragging the map and the center has been changed by 500 metres or more. Code is from https://developers.google.com/maps/documentation/javascript/events
 
 function centerChanged() {
+  let prevCenter = map.getCenter();
   map.addListener("center_changed", function () {
     map.addListener("dragend", function () {
-      search();
+      if (calcDistance(prevCenter, map.getCenter()) >= 500) {
+        search();
+      } else {
+        return;
+      }
+      prevCenter = map.getCenter();
     });
   });
 }
@@ -279,4 +285,10 @@ function showMarkers() {
   for (let i = 0; i < markers.length; i++) {
     markers[i].setMap(map);
   }
+}
+
+// Calculates distance between two sets of coordinates. Code is from https://jsfiddle.net/c2qto3v8/
+
+function calcDistance(p1, p2) {
+  return google.maps.geometry.spherical.computeDistanceBetween(p1, p2);
 }
