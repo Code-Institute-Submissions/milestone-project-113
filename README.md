@@ -34,7 +34,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 #### Imagery
 
-- The hero images were chosen because they give the user an idea of what they can expect to experience in each destination should they choose to book a holiday there.
+- The hero images were chosen because they give the user an idea of what they can expect to experience in each destination if they book a holiday there.
 
 ### Wireframes
 
@@ -52,7 +52,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 3. Home Page Hero Image Slider
 
-   - This provides users with an image which gives them an idea of the kind of experience they can expect if they choose to visit the destination and a link to the destination's page.
+   - This provides users with an image which gives them an idea of the kind of experience they can expect if they visit the destination and a link to the destination's page.
 
 4. Discover the Best of Australia Carousel
 
@@ -60,11 +60,11 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 5. Gallery
 
-   - This allows users to view images which give them an idea of the kind of experience they can expect if they choose to visit Australia.
+   - This allows users to view images which give them an idea of the kind of experience they can expect if they visit Australia.
 
 6. Destination Hero Image
 
-   - This provides users with an idea of the kind of experience they can expect if they choose to visit the destination.
+   - This provides users with an idea of the kind of experience they can expect if they visit the destination.
 
 7. Dropdown Menu
 
