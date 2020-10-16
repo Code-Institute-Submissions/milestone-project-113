@@ -13,9 +13,9 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 1. To be able to navigate the website easily to find the content I am looking for.
 2. To be able to find out about the top attractions in Australia.
 3. To be able to view images to gain an understanding of what I can expect to experience if I visit Australia.
-4. To be able to find out why I should want to visit each of the destinations.
-5. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
-6. To be able to make bookings for attractions, hotels and restaurants.
+4. To be able to find out what destinations there are in Australia.
+5. To be able to find out why I should want to visit each destination.
+6. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
 7. To be able to contact the organisation to get answers to any questions I may have.
 8. To be able to find the organisation's social media links.
 
