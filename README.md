@@ -1,5 +1,11 @@
 # Discover Australia Website
 
+![Image of the website on different sized devices](assets/images/readme-main-image.png)
+
+[View the live website here](https://jonathan-odonnell.github.io/milestone-project-2/)
+
+Discover Australia is a fictitious tourism board based in Sydney, Australia. . This is the organisation's main marketing website which aims to promote  in Australia to potential customers and persuade them to book a holiday through . The website is designed to be responsive and easy to navigate on a range of devices.
+
 ## User Experience (UX)
 
 ### User Stories
