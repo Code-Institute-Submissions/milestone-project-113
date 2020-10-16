@@ -292,7 +292,7 @@ More information about making a local clone of a GitHub repository is available 
 - Code for the navbar came from [Bootstrap](https://getbootstrap.com/docs/4.5/components/navbar/).
 - Code for the navbar toggler bars icon came from [Font Awesome](https://fontawesome.com/icons/bars?style=solid).
 - Code for the navbar toggler times icon came from [Font Awesome](https://fontawesome.com/icons/times?style=solid).
-- Code for the navbar toggler interactivity came from [Bootstrap] https://getbootstrap.com/docs/4.5/components/collapse/#collapseshow).
+- Code for the navbar toggler interactivity came from [Bootstrap](https://getbootstrap.com/docs/4.5/components/collapse/#collapseshow).
 - Code for the hero image slider came from [Codeseek](https://www.codeseek.co/suez/cities-slider-react-OjGQza).
 - Code for the discover the best of Australia carousel came from [Codepen](https://codepen.io/Anahiiit/pen/wvGPvaQ).
 - Code for the API request for the place details in the discover the best of Australia carousel cards is from [Google](https://developers.google.com/maps/documentation/javascript/places#place_details_requests) and [Stack Overflow](https://stackoverflow.com/questions/23460435/get-google-place-details-without-map).
