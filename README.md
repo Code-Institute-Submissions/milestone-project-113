@@ -289,6 +289,39 @@ More information about making a local clone of a GitHub repository is available 
 
 ### Code
 
+- Code for the navbar came from [Bootstrap](https://getbootstrap.com/docs/4.5/components/navbar/).
+- Code for the navbar toggler bars icon came from [Font Awesome](https://fontawesome.com/icons/bars?style=solid).
+- Code for the navbar toggler times icon came from [Font Awesome](https://fontawesome.com/icons/times?style=solid).
+- Code for the navbar toggler interactivity came from [Bootstrap] https://getbootstrap.com/docs/4.5/components/collapse/#collapseshow).
+- Code for the hero image slider came from [Codeseek](https://www.codeseek.co/suez/cities-slider-react-OjGQza).
+- Code for the discover the best of Australia carousel came from [Codepen](https://codepen.io/Anahiiit/pen/wvGPvaQ).
+- Code for the API request for the place details in the discover the best of Australia carousel cards is from [Google](https://developers.google.com/maps/documentation/javascript/places#place_details_requests) and [Stack Overflow](https://stackoverflow.com/questions/23460435/get-google-place-details-without-map).
+- Code for the ratings full stars is from [Font Awesome](https://fontawesome.com/icons/star?style=solid).
+- Code for the ratings empty stars is from [Font Awesome](https://fontawesome.com/icons/star?style=regular).
+- Code for the ratings half stars is from [Font Awesome](https://fontawesome.com/icons/star-half-alt?style=solid).
+- Code for the Instagram Getter API request is from [RapidAPI](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints).
+- Code for the Facebook icon is from [Font Awesome](https://fontawesome.com/icons/facebook?style=brands).
+- Code for the Twitter icon is from [Font Awesome](https://fontawesome.com/icons/twitter?style=brands).
+- Code for the Instagram icon is from [Font Awesome](https://fontawesome.com/icons/instagram?style=brands).
+- Code for the Youtube icon is from [Font Awesome](https://fontawesome.com/icons/youtube?style=brands).
+- Code for the contact form modal is from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
+- Code for the contact form is from [Bootstrap](https://getbootstrap.com/docs/4.5/components/forms/).
+- Code for the contact form modal interactivity is from [Bootstrap](https://getbootstrap.com/docs/4.0/components/collapse/).
+- Code for the contact form modal interactivity is from [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/#via-javascript).
+- Code to prevent links going back to active status when the contact form modal is closed is from [Stack Overflow](https://stackoverflow.com/questions/30322918/bootstrap-modal-restores-button-focus-on-close).
+- Code for the quotes blockquotes is from [Bootstrap](https://getbootstrap.com/docs/4.5/content/typography/#blockquotes).
+- Code for the dropdown came from [Bootstrap](https://getbootstrap.com/docs/4.5/components/dropdowns/).
+- Code for the map view and list view tabs is from [Bootstrap](https://getbootstrap.com/docs/4.5/components/navs/#tabs).
+- Code for the map came from [Google](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch).
+- Code for the map nearby places search came from [Google](https://developers.google.com/maps/documentation/javascript/places#place_search_requests).
+- Code for the map place details search came from [Google](https://developers.google.com/maps/documentation/javascript/places#place_details_requests).
+- Code for setting the map InfoWindow content came from [Google](https://developers.google.com/maps/documentation/javascript/infowindows).
+- Code for the map event listeners came from [Google](https://developers.google.com/maps/documentation/javascript/events).
+- Code for preventing the map event listeners from triggering if the map center is changed by less than 500m is from [JSFiddle](https://jsfiddle.net/c2qto3v8/).
+- Code for showing and hiding the map markers is from [Google](https://developers.google.com/maps/documentation/javascript/examples/marker-remove).
+- Code from the spinner is from [Bootstrap](https://getbootstrap.com/docs/4.5/components/spinners/#about).
+- Code for the tables is from [Bootstrap](https://getbootstrap.com/docs/4.5/content/tables/).
+
 ### Content
 
 - Sydney quote is from [this](https://www.australia.com/en-gb/places/sydney-and-surrounds/guide-to-sydney.html) Tourism Australia page.
