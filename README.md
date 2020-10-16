@@ -186,6 +186,54 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Testing User Stories from User Experience (UX) Section
 
+1. To be able to navigate the website easily to find the content I am looking for.
+
+   - The navigation bar can be easily accessed in the header of each page. 
+   - It is clean and easy to read and contains the organisation's logo and the navigation links to the other pages of the website.
+   - Each of the navigation links clearly communicates to the user what page it will take them to.
+   - The Discover Australia logo is also a link which takes the user back to the home page.
+   - The user can click the back to top button at any time to take them back to the top of the page if they want to access the navigation bar. They can also access links to key parts of the site in the footer.
+   - The website is structured in a logical way with the hero image slider, discover the best of Australia carousel and gallery on the home page, each destination on it's own page and the contact form in a modal which can be opened from any page.
+
+2. To be able to find out about the top attractions in Australia.
+
+   - The discover the best of Australia carousel is clearly highlighted on the home page.
+   - Here there is information about 10 of the top attractions in Australia including their rating, number of user reviews and a link to the attraction's Google Maps page where users can find out more about the attraction. 
+
+3. To be able to view images to gain an understanding of what I can expect to experience if I visit Australia.
+
+   - The gallery section is clearly highlighted on the home page.
+   - This contains up to 8 images which give the user an idea of the kind of experience they can expect if they visit Australia.
+
+4. To be able to find out what destinations there are in Australia.
+
+    - The hero image slider section is clearly highlighted on the home page.
+    - Here each destination is featured along with a hero image which provides users with an idea of the kind of experience they can expect if they visit the destination and a link to the destination's page.
+
+5. To be able to find out why I should want to visit each destination.
+
+   - A link to each destination's page is clearly highlighted in the navigation bar, hero image slider and footer.
+   - Here there is a hero image which provides users with an idea of the kind of experience they can expect if they visit the destination.
+   - There is also a quote on each destination page which provides the user with a reason why they should want to visit that destination. 
+
+6. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
+
+   - A link to each destination page is clearly highlighted in the navigation bar hero image slider and footer.
+   - Here there is a google map displaying up to 20 of the top attractions in the destination.
+   - If the user selects an option from the dropdown, a new search will be conducted for that type of place and new markers will be displayed on the map.
+   - If the user drags the map, a new search will be conducted based on the new center of the map, and new markers will be displayed on the map.  
+   - If the user clicks on a marker in the map or table row in the results table, an InfoWindow will open which contains the place's icon, name, address, telephone number, rating and a link to their website.
+
+7. To be able to contact the organisation to get answers to any questions I may have.
+
+   - A link to the contact us modal is clearly highlighted in the navigation bar and in the footer.
+   - Here there is a form which the user can complete to get in touch with the organisation.
+
+8. To be able to find the organisation's social media links.
+
+    - The social media icons are clearly highlighted in the footer of each page.
+    - Each of these provides a link to the relevant social media platform.
+
 ### Manual Testing
 
 ### Jasmine Testing
