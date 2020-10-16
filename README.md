@@ -17,7 +17,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 5. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
 6. To be able to make bookings for attractions, hotels and restaurants.
 7. To be able to contact the organisation to get answers to any questions I may have.
-8. To be able to find the cafe's social media links.
+8. To be able to find the organisation's social media links.
 
 ### Design
 
