@@ -38,6 +38,10 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 ### Wireframes
 
+- [Desktop](assets/wireframes/desktop_wireframes.pdf)
+- [Tablet](assets/wireframes/tablet_wireframes.pdf)
+- [Mobile](assets/wireframes/mobile_wireframes.pdf)
+
 ## Features
 
 ### Existing Features
