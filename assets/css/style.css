@@ -704,6 +704,10 @@
 
 /* Info Window start */
 
+#info-window {
+    max-width: 300px;
+}
+
 #info-window th,
 #info-window tr {
   padding: 5px;
