@@ -670,7 +670,7 @@
 #resultsTable {
   display: block;
   overflow: scroll;
-  height: 480px;
+  max-height: 480px;
   margin-bottom: 0px;
 }
 
@@ -740,6 +740,9 @@
 
 .errors {
   padding: 1.25rem;
+}
+
+.cards-errors {
   position: absolute;
   left: 0;
   top: 50%;
