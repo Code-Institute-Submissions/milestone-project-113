@@ -778,6 +778,10 @@
 }
 
 @media (min-width: 768px) {
+  .content-container {
+    padding: 0 0 30px;
+  }
+
   #map-view,
   #list-view {
     display: block;
