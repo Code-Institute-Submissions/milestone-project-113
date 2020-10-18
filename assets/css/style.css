@@ -758,7 +758,6 @@
   .card-title {
     min-height: 50px;
   }
-
 }
 
 @media (min-width: 576px) {
@@ -773,7 +772,9 @@
   .slider__slide-heading {
     font-size: 60px;
   }
+}
 
+@media (min-width: 768px) {
   #map-view,
   #list-view {
     display: block;
