@@ -77,7 +77,7 @@ function search() {
   // Changes the html of the element containing the list view ID to the loader. HTML is from https://getbootstrap.com/docs/4.5/components/spinners/#about.
 
   $("#list-view").html(
-    `<div class="spinner text-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>`
+    `<div class="results-height"><div class="vertical-center text-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>`
   );
 
   // Defines the request parameters and their values. Code is from https://developers.google.com/maps/documentation/javascript/places#place_search_requests
@@ -138,10 +138,10 @@ function search() {
       // Adds the even class to even table rows.
 
       $("tr:even").addClass("even");
-    } else {
-      $("#list-view").html(
-        `<p class="text-center errors">Error: ${status}</p>`
-      );
+   // } else {
+     // $("#list-view").html(
+     //   `<div class="results-height"><p class="vertical-center text-center errors">Error: ${status}</p></div>`
+     // );
     }
   });
 }
