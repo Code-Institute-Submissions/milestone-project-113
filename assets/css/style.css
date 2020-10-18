@@ -79,7 +79,7 @@
 
 /* Text Styling end */
 
-/* Vertical Center Start */
+/* Vertical Center Start. Code is from https://css-tricks.com/centering-css-complete-guide/ */
 
 .vertical-center {
   position: absolute;
@@ -505,6 +505,7 @@
 
 .card {
   min-height: 372px;
+  position: relative;
 }
 
 .card img {
@@ -747,17 +748,11 @@
 
 /* Footer end */
 
-/* Errors start. Code for transform property is from https://stackoverflow.com/questions/54238774/bootstrap-4-card-deck-vertical-align-center */
+/* Errors start. */
 
 .errors {
   padding: 1.25rem;
-}
-
-.cards-errors {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
 }
 
 /* Errors end */
