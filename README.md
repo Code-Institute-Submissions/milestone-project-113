@@ -399,6 +399,7 @@ More information about making a local clone of a GitHub repository is available 
 - The Sydney page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/sydney-nswaustralia-surfers-leaving-bondi-beach-1075866242).
 - The Melbourne page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/melbourne-australia-december-18-2016-degraves-558010618).
 - The Brisbane page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/arches-covered-pink-bougainvillea-flowers-southbank-379090987).
+- The Gallery placeholder images used when no result is returned by the API are from [Placeholder](https://placeholder.com/).
 
 ### Acknowledgements
 
