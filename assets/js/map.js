@@ -138,6 +138,10 @@ function search() {
       // Adds the even class to even table rows.
 
       $("tr:even").addClass("even");
+    } else {
+      $("#list-view").html(
+        `<p class="text-center errors">Error: ${status}</p>`
+      );
     }
   });
 }
@@ -224,6 +228,13 @@ function getPlaceDetails(marker) {
           "Telephone:",
           results.formatted_phone_number
         )}${notUndefined("Rating:", ratings(results.rating))}</tbody></table>`
+      );
+      //Code for opening infoWindow is from https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch
+      infoWindow.open(map, marker);
+    } else {
+      //setContent method is from https://developers.google.com/maps/documentation/javascript/infowindows
+      infoWindow.setContent(
+        `<p class="text-center errors">Error: ${status}</p>`
       );
       //Code for opening infoWindow is from https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch
       infoWindow.open(map, marker);
