@@ -676,6 +676,7 @@
 /* Results table start */
 
 .results-height {
+  position: relative;
   height: 480px;
 }
 
