@@ -11,10 +11,6 @@
   color: #20234e;
 }
 
-.paragraph-contact {
-  margin: 154px 0;
-}
-
 .paragraph a {
   color: #20234e;
 }
@@ -195,6 +191,10 @@
 .modal-title {
   padding-left: 2rem;
   width: 100%;
+}
+
+.modal-body form {
+    width: 100%;
 }
 
 .contact-form {
@@ -767,12 +767,6 @@
 /* Errors end */
 
 /* Media Queries start */
-
-@media (min-width: 422px) {
-  .paragraph-contact {
-    margin: 166px 0;
-  }
-}
 
 @media (min-width: 439px) {
   .card {

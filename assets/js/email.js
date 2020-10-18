@@ -34,7 +34,7 @@ function sendMail(contactForm) {
   $(".modal-body button").html("Processing");
   emailjs.init("user_boozmhp8QWVEdS0lHsScn");
   emailjs
-    .send("gmail", "discover_australia", {
+    .send("gmailk", "discover_australia", {
       from_name: contactForm.name.value,
       from_email: contactForm.emailAddress.value,
       message: contactForm.message.value,
@@ -42,12 +42,12 @@ function sendMail(contactForm) {
     .then(
       function () {
         $(".modal-body").html(
-          `<p class="paragraph paragraph-contact text-center">Form successfully submitted. <br>A member of the team will be in touch shortly.</p>`
+          `<p class="paragraph text-center">Form successfully submitted. <br>A member of the team will be in touch shortly.</p>`
         );
       },
       function (error) {
         $(".modal-body").html(
-          `<p class="paragraph paragraph-contact text-center">Error ${error.status}. Please reload the page to try again.</p>`
+          `<p class="paragraph text-center">Error ${error.status}. Please reload the page to try again.</p>`
         );
       }
     );
