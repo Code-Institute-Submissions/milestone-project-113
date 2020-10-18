@@ -1,4 +1,4 @@
-// Makes back to top button appear when the user scrolls and they have not reached the footer. Code is from  https://codepen.io/deveb22/pen/QxPmGz and https://stackoverflow.com/questions/34874658/get-the-scroll-distance-from-bottom-to-scroll
+// Makes back to top button appear when the user scrolls and they have not reached the footer. Code is from  https://codepen.io/deveb22/pen/QxPmGz.
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 200) {
