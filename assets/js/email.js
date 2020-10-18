@@ -7,8 +7,8 @@ $(document).ready(function () {
   });
   // Adds the no-hover class to the footer contact link when clicked.
   $(".footer-links").click(function () {
-      $(this).addClass("no-hover");
-    });
+    $(this).addClass("no-hover");
+  });
   // Makes links lose their focus status and removes the no-hover class from links when the close button is clicked. Code is from https://stackoverflow.com/questions/30322918/bootstrap-modal-restores-button-focus-on-close
   $(".close").click(function () {
     $(".navbar-nav a:last").one("focus", function () {
@@ -42,13 +42,12 @@ function sendMail(contactForm) {
     .then(
       function () {
         $(".modal-body").html(
-          `<p class="paragraph text-center">Form successfully submitted. <br>A member of the team will be in touch shortly.</p>`
+          `<p class="paragraph paragraph-contact text-center">Form successfully submitted. <br>A member of the team will be in touch shortly.</p>`
         );
       },
       function (error) {
-        $(".modal-body button").html("Submit");
-        $(".modal-body").prepend(
-          `<p class="paragraph">Error ${error.status}. Please try again.</p>`
+        $(".modal-body").html(
+          `<p class="paragraph paragraph-contact text-center">Error ${error.status}. Please reload the page to try again.</p>`
         );
       }
     );

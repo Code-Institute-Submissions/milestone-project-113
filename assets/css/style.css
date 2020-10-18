@@ -11,6 +11,10 @@
   color: #20234e;
 }
 
+.paragraph-contact {
+  margin: 154px 0;
+}
+
 .paragraph a {
   color: #20234e;
 }
@@ -183,6 +187,10 @@
 /* Navbar end */
 
 /* Contact Form start */
+
+.modal-content {
+  height: 477px;
+}
 
 .modal-title {
   padding-left: 2rem;
@@ -759,6 +767,12 @@
 /* Errors end */
 
 /* Media Queries start */
+
+@media (min-width: 422px) {
+  .paragraph-contact {
+    margin: 166px 0;
+  }
+}
 
 @media (min-width: 439px) {
   .card {
