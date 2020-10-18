@@ -489,7 +489,7 @@
 /* Cards start */
 
 .card {
-  min-height: 363px;
+  min-height: 372px;
 }
 
 .card img {
@@ -498,7 +498,7 @@
 }
 
 .card-title {
-  min-height: 75px;
+  min-height: 100px;
   margin-bottom: 1rem;
 }
 
@@ -732,10 +732,14 @@
 
 /* Footer end */
 
-/* Errors start */
+/* Errors start. Code for transform property is from https://stackoverflow.com/questions/54238774/bootstrap-4-card-deck-vertical-align-center */
 
 .errors {
-  padding: 20px;
+  padding: 1.25rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Errors end */
@@ -744,12 +748,13 @@
 
 @media (min-width: 439px) {
   .card {
-    min-height: 338px;
+    min-height: 322px;
   }
 
   .card-title {
     min-height: 50px;
   }
+
 }
 
 @media (min-width: 576px) {

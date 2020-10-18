@@ -12,7 +12,7 @@ let attractions = [
   "ChIJDz1H5hWegqoRMfiDyQGd0tE",
   "ChIJM_18TMdC1moRDeauy8iFFRk",
   "ChIJI1JibStsIysRIV_Fm03NqEM",
-  "ChIJWTi8xgGyEmsRgK0yFmh9AQU",
+  "ChIJ51kExqGtEmsRzhP5ZQJ_urQ",
 ];
 let currentIndex = 0;
 
@@ -31,7 +31,7 @@ function search(id) {
 
   let request = {
     placeId: id,
-    fields: ["name", "rating", "user_ratings_total", "url", "photo"],
+    fields: ["photo", "name", "rating", "user_ratings_total", "url"],
   };
 
   // Conducts the search. Code is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests
@@ -53,9 +53,7 @@ function callback(results, status) {
           results.name
         }</strong></p></div><div class="card-text paragraph text-center">${ratings(
           results.rating
-        )}<a href="${results.url}">${
-          results.user_ratings_total
-        } reviews</a></p></div></div>`
+        )}<a href="${results.url}">Read More</a></div></div>`
       );
     $(".card")
       .eq(currentIndex + 10)
@@ -66,7 +64,7 @@ function callback(results, status) {
           results.name
         }</strong></p></div><div class="card-text paragraph text-center">${ratings(
           results.rating
-        )}<a href="${results.website}">Visit website</a></p></div></div>`
+        )}<a href="${results.url}">Read More</a></div></div>`
       );
     currentIndex++;
   }
@@ -75,12 +73,12 @@ function callback(results, status) {
     $(".card")
       .eq(currentIndex)
       .html(
-        `<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`
+        `<div class="card-body"><p class="paragraph text-center errors">Error: ${status}</p></div>`
       );
     $(".card")
       .eq(currentIndex + 10)
       .html(
-        `<div class="card-body"><p class="paragraph text-center errors">Error ${status}</p></div>`
+        `<div class="card-body"><p class="paragraph text-center errors">Error: ${status}</p></div>`
       );
     currentIndex++;
   }
