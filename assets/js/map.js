@@ -138,10 +138,10 @@ function search() {
       // Adds the even class to even table rows.
 
       $("tr:even").addClass("even");
-   // } else {
-     // $("#list-view").html(
-     //   `<div class="results-height"><p class="vertical-center text-center errors">Error: ${status}</p></div>`
-     // );
+    } else {
+      $("#list-view").html(
+        `<div class="results-height"><p class="vertical-center text-center errors">Error: ${status}</p></div>`
+      );
     }
   });
 }
