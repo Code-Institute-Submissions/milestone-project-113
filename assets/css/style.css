@@ -97,6 +97,10 @@
   padding: 0 30px 30px;
 }
 
+.owl-carousel-container {
+  padding: 0 30px;
+}
+
 .gallery-container {
   padding: 0 25px 20px;
 }
