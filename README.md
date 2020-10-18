@@ -377,6 +377,7 @@ More information about making a local clone of a GitHub repository is available 
 - Code for back to top button icon is from [Font Awesome](https://fontawesome.com/icons/arrow-up?style=solid).
 - Code for back to top button styling is from [CoreLangs](http://www.corelangs.com/css/box/shadow.html).
 - Code for back to top button interactivity is from [CodePen](https://codepen.io/deveb22/pen/QxPmGz).
+- Code for redirecting users back to the home page when the 404 page is reached is from [Stack Overflow](https://stackoverflow.com/questions/49099509/if-404-error-redirect-to-pagenotfound-and-then-redirect-to-home-page).
 
 ### Content
 
