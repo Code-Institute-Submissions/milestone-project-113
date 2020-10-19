@@ -34,7 +34,7 @@ function sendMail(contactForm) {
   $(".modal-body button").html("Processing");
   emailjs.init("user_boozmhp8QWVEdS0lHsScn");
   emailjs
-    .send("gmailk", "discover_australia", {
+    .send("gmail", "discover_australia", {
       from_name: contactForm.name.value,
       from_email: contactForm.emailAddress.value,
       message: contactForm.message.value,
