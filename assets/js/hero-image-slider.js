@@ -222,19 +222,19 @@ let slides = [
   {
     city: "Sydney",
     //Image from https://www.shutterstock.com/image-photo/aerial-view-sydney-australia-drone-shot-1580548351
-    img: "assets/images/sydney1.jpg",
+    img: "assets/images/hero_images/sydney1.jpg",
     link: "sydney.html",
   },
   {
     city: "Melbourne",
     //Image from: https://pixabay.com/photos/central-station-melbourne-victoria-2661255/
-    img: "assets/images/melbourne1.jpg",
+    img: "assets/images/hero_images/melbourne1.jpg",
     link: "melbourne.html",
   },
   {
     city: "Brisbane",
     //Image from https://www.shutterstock.com/image-photo/brisbane-city-skyline-river-twilight-australia-657755617
-    img: "assets/images/brisbane1.jpg",
+    img: "assets/images/hero_images/brisbane1.jpg",
     link: "brisbane.html",
   },
 ];

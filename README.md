@@ -1,6 +1,6 @@
 # Discover Australia Website
 
-![Image of the website on different sized devices](assets/images/readme-main-image.png)
+![Image of the website on different sized devices](assets/images/readme_main_image/readme-main-image.png)
 
 [View the live website here](https://jonathan-odonnell.github.io/milestone-project-2/)
 
