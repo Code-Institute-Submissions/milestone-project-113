@@ -255,3 +255,7 @@
   6. Click on the submit button with the email address field containing an invalid email address and verify that an error message appears informing the user that the email address is not valid.
   7. Click on the submit button with the message field empty and verify that an error message appears informing the user that this is a required field.
   8. Click on the submit button with with all fields completed and verify that the text in the submit button changes to processing and then a message appears informing the user that the form has been successfully submitted.
+
+## 404 Page
+
+  1. Load up a non-existent page in the website and verify that the user is redirected back to the home page. 
