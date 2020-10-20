@@ -114,11 +114,11 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 4. Hotel Price Markers
 
-   - Display the price per night as the marker for each hotel. This information can be obtained by conducting a Hotel Prices search using the Google Hotel Prices API.
+   - Display the price per night as the marker for each hotel. This information can be obtained by conducting a hotel prices search using the Google Hotel Prices API.
 
 5. Add Attraction Entry Prices to Infowindows.
 
-   - Amend the attraction infowindows to include the attraction's entry price. This information can be obtained by amending the place details search.
+   - Amend the attraction infowindows to include the attraction's entry price. This information can be obtained by conducting a place details search using the Sygic Travel API.
 
 6. Add Restaurant Price Levels to Infowindows.
 
