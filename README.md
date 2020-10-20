@@ -295,7 +295,7 @@ The Google Lighthouse accessibility test was used to ensure that every page of t
 ### Known Bugs
 
 - Images in the discover the best of Australia carousel randomly fail to be returned by the Google Places API when the getURL function is called.
-- Images in the gallery randomly fail to be returned by the Instagram Getter API.
+- Images in the gallery randomly fail to be returned by the Instagram Grabber API.
 
 ## Deployment
 
