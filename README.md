@@ -274,6 +274,7 @@ Details of the manual testing carried out can be viewed [here](testing.md).
 ### Known Bugs
 
 - Images in the Discover the Best of Australia carousel randomly fail to be returned by the Google Places API when the getURL function is called.
+- Images in the Gallery randomly fail to be returned by the Instagram Getter API.
 
 ## Deployment
 
