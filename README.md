@@ -260,16 +260,29 @@ Details of the manual testing carried out can be viewed [here](testing.md).
 
    - Added jQuery to fix the issue.
 
-3. Results table spinner was not appearing both horizontally and vertically centered.
+3. Hero image slider was not loading.
+
+   - Moved the hhero-image-slider.js script to the bottom of the body tag so the script wasn't loaded until after the DOM had loaded.
+
+4. Images in the Discover the Best of Australia carousel were not being returned by the Google Places API.
+
+   - Took my account out of trial mode in the Google Console.
+   
+5. Google Maps markers were reloading when the user dragged the map a very short distance.
+
+   - Added code to prevent a new search from being conducted if the center of the map had changed by less than 500m.
+
+6. Google Maps markers were reloading when the user scrolled over the map on touch screen devices.
+
+   - Added code to prevent a new search from being conducted if the center of the map had not changed.
+
+7. Results table spinner was not appearing both horizontally and vertically centered.
 
    - Fixed an error in the code preventing the spinner from displaying in the correct position.
 
-4. InfoWindows were appearing with the previous result or no result in them.
+8. InfoWindows were appearing with the previous result or no result in them.
 
    - Changed the code to ensure that the results had been returned before the InfoWindow was opened.
-
-5. Hero image slider was not loading.
-   - Defered the running of the hero-image-slider.js script.
 
 ### Known Bugs
 
