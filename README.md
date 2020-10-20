@@ -224,10 +224,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 6. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
 
    - A link to each destination page is clearly highlighted in the navigation bar hero image slider and footer.
-   - Here there is a Google Map displaying up to 20 of the top attractions in the destination.
+   - Here there is a Google Map and results table displaying up to 20 of the top attractions in the destination.
    - If the user selects an option from the dropdown, a new search will be conducted for that type of place and new markers will be displayed on the map.
    - If the user drags the map, a new search will be conducted based on the new center of the map, and new markers will be displayed on the map.  
-   - If the user clicks on a marker in the map or table row in the results table, an InfoWindow will open which contains the place's icon, name, address, telephone number, rating and a link to their website.
+   - If the user clicks on a marker in the map or table row in the results table, an InfoWindow will open which contains the place's name, address, telephone number, rating, website link and place type icon.
 
 7. To be able to contact the organisation to get answers to any questions I may have.
 
