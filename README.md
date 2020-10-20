@@ -12,7 +12,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 1. To be able to navigate the website easily to find the content I am looking for.
 2. To be able to find out about the top attractions in Australia.
-3. To be able to view images to gain an understanding of what I can expect to experience if I visit Australia.
+3. To be able to gain an understanding of the experiences that are available in Australia.
 4. To be able to find out what destinations there are in Australia.
 5. To be able to find out why I should want to visit each destination.
 6. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
@@ -205,10 +205,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    - The discover the best of Australia carousel is clearly highlighted on the home page.
    - Here there is information about the top attractions across Australia including an image of the attraction, it's name, it's rating and a link to it's Google page.
 
-3. To be able to view images to gain an understanding of what I can expect to experience if I visit Australia.
+3. To be able to gain an understanding of the experiences that are available in Australia.
 
    - The gallery section is clearly highlighted on the home page.
-   - This contains images which gives the user an idea of the kind of experience they can expect if they visit Australia.
+   - This contains images which gives the user an idea of the kind of experiences they can expect if they visit Australia.
 
 4. To be able to find out what destinations there are in Australia.
 
