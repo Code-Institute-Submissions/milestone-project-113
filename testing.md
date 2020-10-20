@@ -10,14 +10,14 @@
   4. Verify that when the user clicks on the bars icon the menu expands and the icon changes to the times icon.
   5. Verify that when the user clicks on the times icon the menu collapses and the icon changes to the bars icon.
   6. Reduce and expand the width of the screen and verify that for all screen widths where the standard menu is visible, the links do not wrap onto the next line.
-  7. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane and Contact Us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
-  8. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
+  7. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane and contact us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
+  8. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
   9. Click on the Discover Australia logo and verfy that it takes the user back the the home page.
-  10. Click on the Home link and verify that it takes the user to the Home page.
+  10. Click on the home link and verify that it takes the user to the home page.
   11. Click on the Sydney link and verify that it takes the user to the Sydney page.
   12. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   13. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  14. Click on the Contact Us link and verify that the Contact Us modal opens.
+  14. Click on the contact us link and verify that the contact us modal opens.
 
 - Hero Image Slider
 
@@ -56,6 +56,12 @@
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
 
+- Back to top button
+
+  1. Load up the home page and verify that the back to top button appears when the user begins to scroll down the page.
+  2. Verify that the back to top button increases in size when the user hovers over it.
+  3. Click on the back to top button and verify that the user is taken back to the top of the page. 
+
 ## Sydney Page
 
 - Navigation bar
@@ -66,14 +72,14 @@
   4. Verify that when the user clicks on the bars icon the menu expands and the icon changes to the times icon.
   5. Verify that when the user clicks on the times icon the menu collapses and the icon changes to the bars icon.
   6. Reduce and expand the width of the screen and verify that for all screen widths where the standard menu is visible, the links do not wrap onto the next line.
-  7. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane and Contact Us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
-  8. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
+  7. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane and contact us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
+  8. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
   9. Click on the Discover Australia logo and verfy that it takes the user back the the home page.
-  10. Click on the Home link and verify that it takes the user to the Home page.
+  10. Click on the home link and verify that it takes the user to the home page.
   11. Click on the Sydney link and verify that it takes the user to the Sydney page.
   12. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   13. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  14. Click on the Contact Us link and verify that the Contact Us modal opens.
+  14. Click on the contact us link and verify that the contact us modal opens.
 
 - Hero Image, Heading and Quote
 
@@ -110,6 +116,12 @@
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
+
+- Back to top button
+
+  1. Load up the home page and verify that the back to top button appears when the user begins to scroll down the page.
+  2. Verify that the back to top button increases in size when the user hovers over it.
+  3. Click on the back to top button and verify that the user is taken back to the top of the page. 
 
 ## Melbourne Page
 
@@ -121,14 +133,14 @@
   4. Verify that when the user clicks on the bars icon the menu expands and the icon changes to the times icon.
   5. Verify that when the user clicks on the times icon the menu collapses and the icon changes to the bars icon.
   6. Reduce and expand the width of the screen and verify that for all screen widths where the standard menu is visible, the links do not wrap onto the next line.
-  7. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane and Contact Us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
-  8. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
+  7. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane and contact us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
+  8. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
   9. Click on the Discover Australia logo and verfy that it takes the user back the the home page.
-  10. Click on the Home link and verify that it takes the user to the Home page.
+  10. Click on the home link and verify that it takes the user to the home page.
   11. Click on the Sydney link and verify that it takes the user to the Sydney page.
   12. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   13. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  14. Click on the Contact Us link and verify that the Contact Us modal opens.
+  14. Click on the contact us link and verify that the contact us modal opens.
 
 - Hero Image, Heading and Quote
 
@@ -165,6 +177,12 @@
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
+
+- Back to top button
+
+  1. Load up the home page and verify that the back to top button appears when the user begins to scroll down the page.
+  2. Verify that the back to top button increases in size when the user hovers over it.
+  3. Click on the back to top button and verify that the user is taken back to the top of the page. 
 
 ## Brisbane Page
 
@@ -176,14 +194,14 @@
   4. Verify that when the user clicks on the bars icon the menu expands and the icon changes to the times icon.
   5. Verify that when the user clicks on the times icon the menu collapses and the icon changes to the bars icon.
   6. Reduce and expand the width of the screen and verify that for all screen widths where the standard menu is visible, the links do not wrap onto the next line.
-  7. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane and Contact Us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
-  8. Reduce and expand the width of the screen and verify that the Home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
+  7. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane and contact us links are only underlined in light blue when the user hovers over them when the standard menu is displayed. The underline should appear from the center when the user hovers on the link and disappear to the center when the user hovers off the link.
+  8. Reduce and expand the width of the screen and verify that the home, Sydney, Melbourne, Brisbane links are only underlined in white when the collapsable menu is displayed.
   9. Click on the Discover Australia logo and verfy that it takes the user back the the home page.
-  10. Click on the Home link and verify that it takes the user to the Home page.
+  10. Click on the home link and verify that it takes the user to the home page.
   11. Click on the Sydney link and verify that it takes the user to the Sydney page.
   12. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   13. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  14. Click on the Contact Us link and verify that the Contact Us modal opens.
+  14. Click on the contact us link and verify that the contact us modal opens.
 
 - Hero Image, Heading and Quote
 
@@ -220,6 +238,12 @@
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
+
+- Back to top button
+
+  1. Load up the home page and verify that the back to top button appears when the user begins to scroll down the page.
+  2. Verify that the back to top button increases in size when the user hovers over it.
+  3. Click on the back to top button and verify that the user is taken back to the top of the page. 
 
 ## Contact Us Modal
 
