@@ -86,7 +86,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
     - This displays the marker, name and vicinity for each result returned by the place search.
 
-11. Contact us form
+11. Contact Us form
 
     - This enables users to contact the organisation about any questions they may have by completing the form.
 
