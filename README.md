@@ -243,7 +243,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 Details of the manual testing carried out can be viewed [here](testing.md).
 
-### Jasmine Testing
+### Lighthouse Testing
+
+The Google Lighthouse accessibility test was used to ensure that every page of the website complies with acessibility standards.
+
+- [Home](assets/images/lighthouse_tests/home_lighthouse_test.png)
+- [Sydney](assets/images/lighthouse_tests/sydney_lighthouse_test.png)
+- [Melbourne](assets/images/lighthouse_tests/melbourne_lighthouse_test.png)
+- [Brisbane](assets/images/lighthouse_tests/brisbane_lighthouse_test.png)
 
 ### Further Testing
 
