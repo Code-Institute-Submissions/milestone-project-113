@@ -76,7 +76,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 8. Google Map
 
-   - This displays a map of the destination's city centre with a markers for each place returned by the place search. Attractions are shown if no place type has been selected from the dropdown. If the user drags the map and the center is changed by more than 500m a new search is conducted and new markers are displayed on the map.
+   - This displays a map of the destination's city centre with a markers for up to 20 of the top attractions returned by the place search. If the user drags the map, a new search will be conducted based on the new center of the map, and new markers will be displayed on the map. 
 
 9. InfoWindow
 
