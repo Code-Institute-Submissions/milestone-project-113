@@ -60,7 +60,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 4. Discover the Best of Australia Carousel
 
-   - This enables users to find out about the top attractions across Australia and view key information about each attraction such as an image of the attraction, it's name, it's rating and a link to it's website.
+   - This enables users to find out about the top attractions across Australia and view key information about each attraction such as an image of the attraction, it's name, it's rating and a link to it's Google page.
 
 5. Gallery
 
@@ -76,7 +76,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 8. Google Map
 
-   - This displays a map of the destination's city centre with a markers for each place returned by the place search. If the user drags the map a new search is conducted and new markers are displayed on the map.
+   - This displays a map of the destination's city centre with a markers for each place returned by the place search. Attractions are shown if no place type has been selected from the dropdown. If the user drags the map and the center is changed by more than 500m a new search is conducted and new markers are displayed on the map.
 
 9. InfoWindow
 
@@ -88,11 +88,11 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
 11. Contact us form
 
-    - This enables users to contact the cafe about any questions they may have by completing the form.
+    - This enables users to contact the organisation about any questions they may have by completing the form.
 
 12. Social Media links
 
-    - These provide users with links to the different social media platforms where the cafe has a presence.
+    - These provide users with links to the different social media platforms where the organisation has a presence.
 
 13. Responsive Design
 
