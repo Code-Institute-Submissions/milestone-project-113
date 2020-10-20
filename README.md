@@ -78,9 +78,9 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
    - This displays a map of the destination's city centre with a markers for up to 20 of the top attractions returned by the place search. If the user drags the map, a new search will be conducted based on the new center of the map, and new markers will be displayed on the map. 
 
-9. InfoWindow
+9. Info Window
 
-   - This provides users with the place's name, address, telephone number, rating, website link and place type icon. The relevant infowindow is opened when the user clicks on a marker or a results table row.
+   - This provides users with the place's name, address, telephone number, rating, website link and place type icon. The relevant info window is opened when the user clicks on a marker or a results table row.
 
 10. Place Search Results Table
 
@@ -116,17 +116,17 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
    - Display the price per night as the marker for each hotel. This information can be obtained by conducting a hotel prices search using the Google Hotel Prices API.
 
-5. Add Attraction Entry Prices to Infowindows.
+5. Add Attraction Entry Prices to info windows.
 
-   - Amend the attraction infowindows to include the attraction's entry price. This information can be obtained by conducting a place details search using the Sygic Travel API.
+   - Amend the attraction info windows to include the attraction's entry price. This information can be obtained by conducting a place details search using the Sygic Travel API.
 
-6. Add Restaurant Price Levels to Infowindows.
+6. Add Restaurant Price Levels to info windows.
 
-   - Amend the restaurant infowindows to include the restaurant's price level. This information can be obtained by amending the place details search.
+   - Amend the restaurant info windows to include the restaurant's price level. This information can be obtained by amending the place details search.
 
-7. Add Hotel Star Rating and Facilities to Infowindows.
+7. Add Hotel Star Rating and Facilities to info windows.
 
-   - Amend the hotel infowindows to include hotel star rating and details of hotel facilities. This information can be obtained by conducting a hotel content search using the Google Hotel Content API.
+   - Amend the hotel info windows to include hotel star rating and details of hotel facilities. This information can be obtained by conducting a hotel content search using the Google Hotel Content API.
 
 8. Custom Markers
 
@@ -160,7 +160,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 7. [Google Maps API](https://developers.google.com/maps/documentation/javascript/overview)
    - Google Maps API was used for the maps on each destination page.
 8. [Google Places API](https://developers.google.com/places/web-service/overview)
-   - Google Places API was used for the place details in the Discover the Best of Australia slider, results tables and map information windows.
+   - Google Places API was used for the place details in the discover the best of Australia carousel, results tables and map information windows.
 9. [Instagram Grabber API](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints)
    - Instagram Grabber API was used to request the images used in the gallery.
 10. [Cities Slider](https://codepen.io/suez/pen/OjGQza)
@@ -198,11 +198,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    - The Discover Australia logo is also a link which takes the user back to the home page.
    - The footer also contains key links which take the user to the destination pages and contact us modal.
    - The user can click the back to top button at any time to take them back to the top of the page if they want to access the navigation bar. They can also access links to key parts of the site in the footer.
-   - The website is structured in a logical way with the hero image slider, discover the best of Australia carousel and gallery on the home page, each destination on it's own page and the contact form in a modal which can be opened from any page.
+   - The website is structured in a logical way with the hero image slider, discover the best of Australia carousel and gallery on the Home page, each destination on it's own page and the contact form in a modal which can be opened from any page.
 
 2. To be able to find out about the top attractions in Australia.
 
-   - The Discover the Best of Australia carousel is clearly highlighted on the home page.
+   - The discover the best of Australia carousel is clearly highlighted on the home page.
    - Here there is information about the top attractions across Australia including an image of the attraction, it's name, it's rating and a link to it's Google page.
 
 3. To be able to view images to gain an understanding of what I can expect to experience if I visit Australia.
@@ -227,7 +227,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    - Here there is a Google Map and results table displaying up to 20 of the top attractions in the destination.
    - If the user selects an option from the dropdown, a new search will be conducted for that type of place and new markers will be displayed on the map.
    - If the user drags the map, a new search will be conducted based on the new center of the map, and new markers will be displayed on the map.  
-   - If the user clicks on a marker in the map or table row in the results table, an InfoWindow will open which contains the place's name, address, telephone number, rating, website link and place type icon.
+   - If the user clicks on a marker in the map or table row in the results table, an info window will open which contains the place's name, address, telephone number, rating, website link and place type icon.
 
 7. To be able to contact the organisation to get answers to any questions I may have.
 
@@ -263,9 +263,9 @@ Details of the manual testing carried out can be viewed [here](testing.md).
 
 3. Hero image slider was not loading.
 
-   - Moved the hhero-image-slider.js script to the bottom of the body tag so the script wasn't loaded until after the DOM had loaded.
+   - Moved the hero-image-slider.js script to the bottom of the body tag so the script wasn't loaded until after the DOM had loaded.
 
-4. Images in the Discover the Best of Australia carousel were not being returned by the Google Places API.
+4. Images in the discover the best of Australia carousel were not being returned by the Google Places API.
 
    - Took my account out of trial mode in the Google Console.
    
@@ -281,14 +281,14 @@ Details of the manual testing carried out can be viewed [here](testing.md).
 
    - Fixed an error in the code preventing the spinner from displaying in the correct position.
 
-8. InfoWindows were appearing with the previous result or no result in them.
+8. Info windows were appearing with the previous result or no result in them.
 
-   - Changed the code to ensure that the results had been returned before the InfoWindow was opened.
+   - Changed the code to ensure that the results had been returned before the info window was opened.
 
 ### Known Bugs
 
-- Images in the Discover the Best of Australia carousel randomly fail to be returned by the Google Places API when the getURL function is called.
-- Images in the Gallery randomly fail to be returned by the Instagram Getter API.
+- Images in the discover the best of Australia carousel randomly fail to be returned by the Google Places API when the getURL function is called.
+- Images in the gallery randomly fail to be returned by the Instagram Getter API.
 
 ## Deployment
 
@@ -384,7 +384,7 @@ More information about making a local clone of a GitHub repository is available 
 - Code for the map came from [Google](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch).
 - Code for the map nearby places search came from [Google](https://developers.google.com/maps/documentation/javascript/places#place_search_requests).
 - Code for the map place details search came from [Google](https://developers.google.com/maps/documentation/javascript/places#place_details_requests).
-- Code for setting the map InfoWindow content came from [Google](https://developers.google.com/maps/documentation/javascript/infowindows).
+- Code for setting the map info window content came from [Google](https://developers.google.com/maps/documentation/javascript/infowindows).
 - Code for the map event listeners came from [Google](https://developers.google.com/maps/documentation/javascript/events).
 - Code for preventing the map event listeners from triggering if the map center is changed by less than 500m is from [JSFiddle](https://jsfiddle.net/c2qto3v8/).
 - Code for showing and hiding the map markers is from [Google](https://developers.google.com/maps/documentation/javascript/examples/marker-remove).
@@ -412,12 +412,12 @@ More information about making a local clone of a GitHub repository is available 
 - The home page hero image slider Sydney image was from [Shutterstock](https://www.shutterstock.com/image-photo/aerial-view-sydney-australia-drone-shot-1580548351).
 - The home page hero image slider Melbourne image was from [Pixabay](https://pixabay.com/photos/central-station-melbourne-victoria-2661255/).
 - The home page hero image slider Brisbane image was from [Shutterstock](https://www.shutterstock.com/image-photo/brisbane-city-skyline-river-twilight-australia-657755617).
-- The Discover the Best of Australia images were from the [Google Places API](https://developers.google.com/places/web-service/overview).
-- The Gallery images were from the [Instagram Grabber API](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints).
+- The discover the best of Australia images were from the [Google Places API](https://developers.google.com/places/web-service/overview).
+- The gallery images were from the [Instagram Grabber API](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints).
 - The Sydney page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/sydney-nswaustralia-surfers-leaving-bondi-beach-1075866242).
 - The Melbourne page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/melbourne-australia-december-18-2016-degraves-558010618).
 - The Brisbane page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/arches-covered-pink-bougainvillea-flowers-southbank-379090987).
-- The Gallery placeholder images used when no result is returned by the API are from [Placeholder](https://placeholder.com/).
+- The gallery placeholder images used when no result is returned by the API are from [Placeholder](https://placeholder.com/).
 
 ### Acknowledgements
 
