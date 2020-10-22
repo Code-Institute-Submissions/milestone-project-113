@@ -84,33 +84,45 @@ function callback(results, status) {
   }
 }
 
-// Returns the HTML for the rating. HTML is from https://fontawesome.com/icons/star?style=solid, https://fontawesome.com/icons/star?style=regular and https://fontawesome.com/icons/star-half-alt?style=solid
+// Returns the HTML for the rating. Code is from https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript, https://fontawesome.com/icons/star?style=solid, https://fontawesome.com/icons/star?style=regular and https://fontawesome.com/icons/star-half-alt?style=solid
 
 function ratings(rating) {
-  if (rating >= 0 && rating < 0.5) {
-    return `<p><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 0.5 && rating < 1) {
-    return `<p><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 1 && rating < 1.5) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 1.5 && rating < 2) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 2 && rating < 2.5) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 2.5 && rating < 3) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 3 && rating < 3.5) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 3.5 && rating < 4) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 4 && rating < 4.5) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating >= 4.5 && rating < 5) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else if (rating === 5) {
-    return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
-  } else {
-    return "";
+  switch (true) {
+    case rating === 5:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break;
+    case rating >= 4.5:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 4:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 3.5:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 3:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 2.5:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 2:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 1.5:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 1:
+      return `<p><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 0.5:
+      return `<p><i class="fas fa-star-half-alt" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    case rating >= 0:
+      return `<p><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i><span class="sr-only">${rating}</span></p>`;
+      break
+    default:
+      return "";
   }
 }
 
