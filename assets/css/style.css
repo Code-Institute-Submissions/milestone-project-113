@@ -78,6 +78,17 @@
 
 /* Text Styling end */
 
+/* Vertical Center start. Code is from https://css-tricks.com/centering-css-complete-guide/ */
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Vertical Center end */
+
 /* Content Wrappers start */
 
 .content-wrapper {
@@ -674,15 +685,6 @@
 .results-height {
   position: relative;
   height: 480px;
-}
-
-/* Code is from https://css-tricks.com/centering-css-complete-guide/ */
-
-.results-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 #resultsTable {
