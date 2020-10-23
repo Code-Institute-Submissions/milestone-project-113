@@ -375,6 +375,7 @@ More information about making a local clone of a GitHub repository is available 
 - Code for the ratings full stars is from [Font Awesome](https://fontawesome.com/icons/star?style=solid).
 - Code for the ratings empty stars is from [Font Awesome](https://fontawesome.com/icons/star?style=regular).
 - Code for the ratings half stars is from [Font Awesome](https://fontawesome.com/icons/star-half-alt?style=solid).
+- Code for the ratings switch came from [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript).
 - Code for the Instagram Getter API request is from [RapidAPI](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints).
 - Code for the Facebook icon is from [Font Awesome](https://fontawesome.com/icons/facebook?style=brands).
 - Code for the Twitter icon is from [Font Awesome](https://fontawesome.com/icons/twitter?style=brands).
@@ -397,7 +398,7 @@ More information about making a local clone of a GitHub repository is available 
 - Code for showing and hiding the map markers is from [Google](https://developers.google.com/maps/documentation/javascript/examples/marker-remove).
 - Code from the spinner is from [Bootstrap](https://getbootstrap.com/docs/4.5/components/spinners/#about).
 - Code for the tables is from [Bootstrap](https://getbootstrap.com/docs/4.5/content/tables/).
-- Code for horizontally and vertically centering the spinner and error message in the results table came from [CSS Tricks](https://css-tricks.com/centering-css-complete-guide).
+- Code for horizontally and vertically centering the spinner and error messages came from [CSS Tricks](https://css-tricks.com/centering-css-complete-guide).
 - Code for back to top button icon is from [Font Awesome](https://fontawesome.com/icons/arrow-up?style=solid).
 - Code for back to top button styling is from [CoreLangs](http://www.corelangs.com/css/box/shadow.html).
 - Code for back to top button interactivity is from [CodePen](https://codepen.io/deveb22/pen/QxPmGz).
