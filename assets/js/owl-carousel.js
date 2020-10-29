@@ -42,7 +42,7 @@ function search(id) {
 // Determines how to process the results based on the status code returned by the search.
 
 function callback(results, status) {
-  // Adds the results to the relevant cards in the owl carousel if the search returns a status of OK.  Code for checking the search returned a status of OK is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests
+  // Adds the results to the relevant card in the owl carousel if the search returns a status of OK.  Code for checking the search returned a status of OK is from https://developers.google.com/maps/documentation/javascript/places#place_details_requests. HTML is from https://getbootstrap.com/docs/4.5/components/card/
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     $(".card")
       .eq(currentIndex)
