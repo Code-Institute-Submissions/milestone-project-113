@@ -39,7 +39,7 @@
 - Gallery
 
   1. Load up the home page on a desktop and scroll down to the gallery section. Verify that the gallery appears with 8 images displayed and looks good.
-  2. Reduce and expand the width of the screen and verify that the number of images displayed changes to 6 images at screen widths between 768px and 991px and 4 images at screen widths 768px. 
+  2. Reduce and expand the width of the screen and verify that the number of images displayed changes to 6 images at screen widths between 768px and 991px and 4 images at screen widths below 768px. 
   3. Reduce and expand the width of the screen and verify that the gallery looks good at all screen widths.
 
 - Footer
