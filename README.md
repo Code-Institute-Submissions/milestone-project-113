@@ -146,9 +146,9 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 ### Frameworks, Libraries & Programs Used
 
 1. [Bootstrap 4.4.1](https://getbootstrap.com/)
-   - Bootstrap was used for the jumbotron containing the hero image text, testimonials carousel, menu items cards, nutritional information modals contact us form. Bootstrap was also used for the grid which assists with the responsiveness of the website and for the styling.
+   - Bootstrap was used for the navbar, contact form modal, contact form, discover the best of Australia carousel cards, gallery grid, quote blockquotes, place type dropdown, and list view and map view tabs. Bootstrap was also used for the grid which assists with the responsiveness of the website and for the styling.
 2. [Hover.css](https://ianlunn.github.io/Hover/)
-   - Hover.css was used for the hover effects on the navbar links and social media icons.
+   - Hover.css was used for the hover effects on the navbar links, footer links, social media icons and back to top button.
 3. [Google Fonts](https://fonts.google.com/)
    - Google fonts was used to import the 'Montserrat' font into the style.css file which is used on all pages throughout the project.
 4. [Font Awesome](https://fontawesome.com/)
