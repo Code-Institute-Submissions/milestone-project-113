@@ -4,7 +4,7 @@
 
 [View the live website here](https://jonathan-odonnell.github.io/milestone-project-2/)
 
-Discover Australia is a fictitious tourism board based in Sydney, Australia. This is the organisation's main marketing website which aims to promote the different holiday destinations in Australia to potential customers in order to persuade them to book a holiday to Australia through one of their partners. It provides customers with information about the attractions, hotels, restaurants, bars and places to shop which are available in each destination. The website is designed to be responsive and easy to navigate on a range of devices.
+Discover Australia is a fictitious tourism board based in Sydney, Australia. This is the organisation's main marketing website which aims to promote the different holiday destinations in Australia to potential customers in order to persuade them to book a holiday to Australia through one of their partners. It provides customers with information about the attractions, hotels, cafes, bars, restaurants and shops which are available in each destination. The website is designed to be responsive and easy to navigate on a range of devices.
 
 ## User Experience (UX)
 
@@ -15,7 +15,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 3. To be able to gain an understanding of the experiences that are available in Australia.
 4. To be able to find out what destinations there are in Australia.
 5. To be able to find out why I should want to visit each destination.
-6. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
+6. To be able to find out about the attractions, hotels, cafes, bars, restaurants and shops in each destination.
 7. To be able to contact the organisation to get answers to any questions I may have.
 8. To be able to find the organisation's social media links.
 
@@ -221,7 +221,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    - Here there is a hero image which provides users with an idea of the kind of experience they can expect if they visit the destination.
    - There is also a quote on each destination page which provides the user with a reason why they should want to visit that destination. 
 
-6. To be able to find out about the attractions, hotels, restaurants, cafes bars and shops in each destination.
+6. To be able to find out about the attractions, hotels, cafes, bars, restaurants, and shops in each destination.
 
    - A link to each destination page is clearly highlighted in the navigation bar hero image slider and footer.
    - Here there is a Google Map and results table displaying up to 20 of the top attractions in the destination.
