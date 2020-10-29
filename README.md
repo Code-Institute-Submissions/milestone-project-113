@@ -66,23 +66,23 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
    - This allows users to view images which give them an idea of the kind of experience they can expect if they visit Australia.
 
-6. Destination Hero Image
+6. Destination Hero Images
 
    - This provides users with an idea of the kind of experience they can expect if they visit the destination.
 
-7. Dropdown Menu
+7. Place Type Dropdown
 
    - This enables the user to select the type of places they would like to be displayed on the map. A new search is then conducted and new markers are displayed on the map.
 
-8. Google Map
+8. Google Maps
 
    - This displays a map of the destination's city centre with a markers for up to 20 of the top attractions returned by the place search. If the user drags the map, a new search will be conducted based on the new center of the map, and new markers will be displayed on the map. 
 
-9. Info Window
+9. Info Windows
 
    - This provides users with the place's name, address, telephone number, rating, website link and place type icon. The relevant info window is opened when the user clicks on a marker or a results table row.
 
-10. Place Search Results Table
+10. Place Search Results Tables
 
     - This displays the marker, name and vicinity for each result returned by the place search.
 
@@ -124,7 +124,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
    - Amend the restaurant info windows to include the restaurant's price level. This information can be obtained by amending the place details search.
 
-7. Add Hotel Star Rating and Facilities to info windows.
+7. Add Hotel Star Rating and Facilities to Info Windows.
 
    - Amend the hotel info windows to include hotel star rating and details of hotel facilities. This information can be obtained by conducting a hotel content search using the Google Hotel Content API.
 
