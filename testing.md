@@ -50,11 +50,12 @@
   4. Click on the Twitter icon and verify that it takes the user to the Twitter home page.
   5. Click on the Instagram icon and verify that it takes the user to the Instagram home page.
   6. Click on the Youtube icon and verify that it takes the user to the Youtube home page.
-  7. Verify that when the user hovers over each icon increases in size and appears in light blue.
+  7. Verify that when the user hovers over each icon it increases in size and appears in light blue.
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
+  12. Verify that when the user hovers over each link it appears in light blue.
 
 - Back to top button
 
@@ -111,11 +112,12 @@
   4. Click on the Twitter icon and verify that it takes the user to the Twitter home page.
   5. Click on the Instagram icon and verify that it takes the user to the Instagram home page.
   6. Click on the Youtube icon and verify that it takes the user to the Youtube home page.
-  7. Verify that when the user hovers over each icon increases in size and appears in light blue.
+  7. Verify that when the user hovers over each icon it increases in size and appears in light blue.
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
+  12. Verify that when the user hovers over each link it appears in light blue.
 
 - Back to top button
 
@@ -172,11 +174,12 @@
   4. Click on the Twitter icon and verify that it takes the user to the Twitter home page.
   5. Click on the Instagram icon and verify that it takes the user to the Instagram home page.
   6. Click on the Youtube icon and verify that it takes the user to the Youtube home page.
-  7. Verify that when the user hovers over each icon increases in size and appears in light blue.
+  7. Verify that when the user hovers over each icon it increases in size and appears in light blue.
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
+  12. Verify that when the user hovers over each link it appears in light blue.
 
 - Back to top button
 
@@ -233,11 +236,12 @@
   4. Click on the Twitter icon and verify that it takes the user to the Twitter home page.
   5. Click on the Instagram icon and verify that it takes the user to the Instagram home page.
   6. Click on the Youtube icon and verify that it takes the user to the Youtube home page.
-  7. Verify that when the user hovers over each icon increases in size and appears in light blue.
+  7. Verify that when the user hovers over each icon it increases in size and appears in light blue.
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
   11. Click on the Contact link and verify that it opens the Contact Us modal.
+  12. Verify that when the user hovers over each link it appears in light blue.
 
 - Back to top button
 
