@@ -31,7 +31,7 @@
 
 - Discover the Best of Australia Carousel
 
-  1. Scroll down to the Discover the Best of Australia carousel and verify that it appears with 4 cards displayed.
+  1. Scroll down to the discover the best of Australia carousel and verify that it appears with 4 cards displayed.
   2. Click the left arrow and verify that the carousel now shows the 2nd, 3rd, 4th and 5th cards. 
   3. Click the right arrow and verify that the carousel now shows the 10th, 1st, 2nd and 3rd cards.
   4. Reduce and expand the width of the screen and verify that the number of cards changes to 3 at screen widths between 991px and 768px 2 cards at screen widths below 768px.
@@ -55,7 +55,7 @@
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  11. Click on the Contact link and verify that it opens the Contact Us modal.
+  11. Click on the contact link and verify that it opens the contact us modal.
   12. Verify that when the user hovers over each link, it appears in light blue.
 
 - Back to top button
@@ -119,7 +119,7 @@
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  11. Click on the Contact link and verify that it opens the Contact Us modal.
+  11. Click on the contact link and verify that it opens the contact us modal.
   12. Verify that when the user hovers over each link, it appears in light blue.
 
 - Back to top button
@@ -183,7 +183,7 @@
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  11. Click on the Contact link and verify that it opens the Contact Us modal.
+  11. Click on the contact link and verify that it opens the contact us modal.
   12. Verify that when the user hovers over each link, it appears in light blue.
 
 - Back to top button
@@ -247,7 +247,7 @@
   8. Click on the Sydney link and verify that it takes the user to the Sydney page.
   9. Click on the Melbourne link and verify that it takes the user to the Melbourne page.
   10. Click on the Brisbane link and verify that it takes the user to the Brisbane page.
-  11. Click on the Contact link and verify that it opens the Contact Us modal.
+  11. Click on the contact link and verify that it opens the contact us modal.
   12. Verify that when the user hovers over each link, it appears in light blue.
 
 - Back to top button
