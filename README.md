@@ -54,7 +54,7 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
    - These enable users to access the different pages of the website so they can easily find the content they are looking for.
 
-3. Home Page Hero Image Slider
+3. Hero Image Slider
 
    - This provides users with an image which gives them an idea of the kind of experience they can expect if they visit the destination and a link to the destination's page.
 
@@ -116,11 +116,11 @@ Discover Australia is a fictitious tourism board based in Sydney, Australia. Thi
 
    - Display the price per night as the marker for each hotel. This information can be obtained by conducting a hotel prices search using the Google Hotel Prices API.
 
-5. Add Attraction Entry Prices to info windows.
+5. Add Attraction Entry Prices to Info Windows.
 
    - Amend the attraction info windows to include the attraction's entry price. This information can be obtained by conducting a place details search using the Sygic Travel API.
 
-6. Add Restaurant Price Levels to info windows.
+6. Add Restaurant Price Levels to Info Windows.
 
    - Amend the restaurant info windows to include the restaurant's price level. This information can be obtained by amending the place details search.
 
@@ -198,7 +198,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
    - The Discover Australia logo is also a link which takes the user back to the home page.
    - The footer also contains key links which take the user to the destination pages and contact us modal.
    - The user can click the back to top button at any time to take them back to the top of the page if they want to access the navigation bar. They can also access links to key parts of the site in the footer.
-   - The website is structured in a logical way with the hero image slider, discover the best of Australia carousel and gallery on the Home page, each destination on it's own page and the contact form in a modal which can be opened from any page.
+   - The website is structured in a logical way with the hero image slider, discover the best of Australia carousel and gallery on the home page, each destination on it's own page and the contact form in a modal which can be opened from any page.
 
 2. To be able to find out about the top attractions in Australia.
 
@@ -418,10 +418,10 @@ More information about making a local clone of a GitHub repository is available 
 ### Media
 
 - The brand logo was designed using [Hatchful](https://hatchful.shopify.com/).
-- The home page hero image slider Sydney image was from [Shutterstock](https://www.shutterstock.com/image-photo/aerial-view-sydney-australia-drone-shot-1580548351).
-- The home page hero image slider Melbourne image was from [Pixabay](https://pixabay.com/photos/central-station-melbourne-victoria-2661255/).
-- The home page hero image slider Brisbane image was from [Shutterstock](https://www.shutterstock.com/image-photo/brisbane-city-skyline-river-twilight-australia-657755617).
-- The discover the best of Australia images were from the [Google Places API](https://developers.google.com/places/web-service/overview).
+- The hero image slider Sydney image was from [Shutterstock](https://www.shutterstock.com/image-photo/aerial-view-sydney-australia-drone-shot-1580548351).
+- The hero image slider Melbourne image was from [Pixabay](https://pixabay.com/photos/central-station-melbourne-victoria-2661255/).
+- The hero image slider Brisbane image was from [Shutterstock](https://www.shutterstock.com/image-photo/brisbane-city-skyline-river-twilight-australia-657755617).
+- The discover the best of Australia card images were from the [Google Places API](https://developers.google.com/places/web-service/overview).
 - The gallery images were from the [Instagram Grabber API](https://rapidapi.com/victor.beck123123/api/instagram-grabber/endpoints).
 - The Sydney page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/sydney-nswaustralia-surfers-leaving-bondi-beach-1075866242).
 - The Melbourne page hero image was from [Shutterstock](https://www.shutterstock.com/image-photo/melbourne-australia-december-18-2016-degraves-558010618).
